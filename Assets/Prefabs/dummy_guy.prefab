@@ -187,3 +187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 5
+  smoothTime: 0.1
+  projectorLight: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
+    type: 3}

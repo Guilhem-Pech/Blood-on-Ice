@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5912283165948092105}
   - component: {fileID: 238710573415132772}
   m_Layer: 0
-  m_Name: Freeform Light 2D
+  m_Name: dummy_ProjectorLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4815047321896482984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.5999997, y: -1.4999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

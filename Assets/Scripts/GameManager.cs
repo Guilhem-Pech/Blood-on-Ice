@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Trying to register a Player who's already registered !",this);
             return;
         }
-        targetGroup.AddMember(playerObject.transform,1f,2f);
+        targetGroup.AddMember(playerObject.transform,1f,1.4f);
     }
 
     public void RemovePlayer(GameObject playerObject)

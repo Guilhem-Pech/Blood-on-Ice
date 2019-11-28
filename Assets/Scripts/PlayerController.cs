@@ -21,9 +21,9 @@ public class PlayerController : MonoBehaviour
     private Vector2 _inputDir;
     private Rigidbody2D _rigidbody2D;
     private Vector3 _projectorVelocity = Vector3.zero;
-
     private void Start()
     {
+        GameManager.GetInstance().RegisterPlayer(gameObject);
         projectorLight = Instantiate(projectorLight,transform.position,Quaternion.identity);
         
         _rigidbody2D = GetComponent<Rigidbody2D>();

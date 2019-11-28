@@ -43,4 +43,10 @@ public class PlayerController : MonoBehaviour
     {
         _rigidbody2D.AddForce(_inputDir * force);
     }
+
+    private void OnDestroy()
+    {
+        Destroy(projectorLight);
+        GameManager.GetInstance().RemovePlayer(gameObject);
+    }
 }

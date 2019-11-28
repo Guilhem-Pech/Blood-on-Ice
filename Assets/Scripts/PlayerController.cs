@@ -43,4 +43,9 @@ public class PlayerController : MonoBehaviour
     {
         _rigidbody2D.AddForce(_inputDir * force);
     }
+
+    private void OnDestroy()
+    {
+        GameManager.GetInstance().RemovePlayer(gameObject);
+    }
 }

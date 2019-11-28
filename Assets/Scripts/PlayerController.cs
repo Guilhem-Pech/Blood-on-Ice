@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
+        Destroy(projectorLight);
         GameManager.GetInstance().RemovePlayer(gameObject);
     }
 }

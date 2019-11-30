@@ -19,7 +19,8 @@ namespace States
             int layerIndex)
         {
         }
-
+    
+        /*
         public override void OnStateMove(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
@@ -29,5 +30,6 @@ namespace States
             int layerIndex)
         {
         }
+        */
     }
 }

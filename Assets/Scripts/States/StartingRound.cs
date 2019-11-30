@@ -18,8 +18,10 @@ namespace States
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
+            Debug.Log("SALUT");
         }
-
+        
+        /*
         public override void OnStateMove(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
@@ -29,5 +31,6 @@ namespace States
             int layerIndex)
         {
         }
+        */
     }
 }

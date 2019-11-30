@@ -8,7 +8,15 @@ public class GameManager : MonoBehaviour
     private HashSet<GameObject> _playerSet = new HashSet<GameObject>();
     private static GameManager _instance;
     public CinemachineTargetGroup targetGroup;
-    
+    private Animator _animator;
+    private static readonly int StartRound = Animator.StringToHash("StartRound");
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+        _animator.SetTrigger(StartRound);
+    }
+
     public static GameManager GetInstance()
     {
         return _instance; 
@@ -33,6 +41,7 @@ public class GameManager : MonoBehaviour
     {
         return _playerSet;
     }
+    
     
     
     private void Awake()

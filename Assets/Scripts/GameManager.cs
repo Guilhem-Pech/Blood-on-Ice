@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour
             return;
         }
         _instance = this;
-        DontDestroyOnLoad( this.gameObject );
     }
     
     

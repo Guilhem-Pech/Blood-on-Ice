@@ -7,10 +7,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 312176950425514724, guid: 0e26d1532ab6b894cb691e182efc89ab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 312176950425514727, guid: 0e26d1532ab6b894cb691e182efc89ab,
         type: 3}
       propertyPath: m_Name
       value: dummy_guy_quick
+      objectReference: {fileID: 0}
+    - target: {fileID: 312176950425514746, guid: 0e26d1532ab6b894cb691e182efc89ab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 312176950425514747, guid: 0e26d1532ab6b894cb691e182efc89ab,
         type: 3}
@@ -67,15 +77,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 312176950425514724, guid: 0e26d1532ab6b894cb691e182efc89ab,
+    - target: {fileID: 1549322459655899467, guid: 0e26d1532ab6b894cb691e182efc89ab,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 312176950425514746, guid: 0e26d1532ab6b894cb691e182efc89ab,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      propertyPath: _listOfPoints.Array.size
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6786907845331993728, guid: 0e26d1532ab6b894cb691e182efc89ab,
         type: 3}

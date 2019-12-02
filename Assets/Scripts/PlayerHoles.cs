@@ -39,7 +39,7 @@ public class PlayerHoles : MonoBehaviour
     {
 
         List<Vector3> vPos = new List<Vector3>(vertexPos);
-        int findIndex = vPos.FindIndex(x => Mathf.Abs(Vector2.Distance(x,pos)) <= 0.08);
+        int findIndex = vPos.FindIndex(x => Mathf.Abs(Vector2.Distance(x,pos)) <= 0.1);
         vPos.RemoveRange(0,findIndex);
         vPos[vPos.Count - 1] = vPos[0];
         
@@ -50,14 +50,28 @@ public class PlayerHoles : MonoBehaviour
         mesh.mesh.SetVertices(vPos);
         //mesh.mesh.SetTriangles(CreateTriangles(vPos),0);
         mesh.mesh.triangles = CreateTriangles(vPos).ToArray();
+        hole.GetComponent<EdgeCollider2D>().points = vec3ToVec2(vPos.ToArray());
         _trailRenderer.Clear();
       
     }
 
+
+
+    private static Vector2[] vec3ToVec2(IReadOnlyList<Vector3> tab)
+    {
+        Vector2[] result = new Vector2[tab.Count];
+        for (int i = 0; i < tab.Count; i++)
+        {
+            result[i] = tab[i]; 
+        }
+
+        return result;
+    }
+    
     private List<int> CreateTriangles(List<Vector3> vertex)
     {
         int originPoint = vertex.Count - 1;
-        List<int> result = new List<int>();
+        List<int> result = new List<int>(6*originPoint);
         for (int i = 0; i < originPoint; i++)
         {
             result.Add((i+1) % originPoint );
@@ -67,7 +81,6 @@ public class PlayerHoles : MonoBehaviour
             result.Add((i+1) % originPoint );
             result.Add(originPoint);
             result.Add(i);
-            
         }
         return result;
     }

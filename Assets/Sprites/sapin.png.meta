@@ -1,0 +1,1939 @@
+fileFormatVersion: 2
+guid: 5cbdb1173a9e08848ae1363be788c981
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -982379922605733436
+    second: sapin_0
+  - first:
+      213: 4128003956260276891
+    second: sapin_1
+  - first:
+      213: 7670280458145482932
+    second: sapin_2
+  - first:
+      213: -8842116126870749107
+    second: sapin_3
+  - first:
+      213: 3414451776940216908
+    second: sapin_4
+  - first:
+      213: 7533787878102364221
+    second: sapin_5
+  - first:
+      213: 158664645651249901
+    second: sapin_6
+  - first:
+      213: -1545346610018974159
+    second: sapin_7
+  - first:
+      213: 8355887686014055826
+    second: sapin_8
+  - first:
+      213: 6156334706112562941
+    second: sapin_9
+  - first:
+      213: 1781491462902755025
+    second: sapin_10
+  - first:
+      213: 801263242461008656
+    second: sapin_11
+  - first:
+      213: -2646107088835901736
+    second: sapin_12
+  - first:
+      213: -5679021414191324893
+    second: sapin_13
+  - first:
+      213: -1706918559999480781
+    second: sapin_14
+  - first:
+      213: 7694488652835015291
+    second: sapin_15
+  - first:
+      213: 2289309510860372999
+    second: sapin_16
+  - first:
+      213: 3570397339777261070
+    second: sapin_17
+  - first:
+      213: 9097246326331117381
+    second: sapin_18
+  - first:
+      213: 878726366892299331
+    second: sapin_19
+  - first:
+      213: 1298990236646239257
+    second: sapin_20
+  - first:
+      213: 4275896327652909514
+    second: sapin_21
+  - first:
+      213: -1676853729492027375
+    second: sapin_22
+  - first:
+      213: 8725763672667879208
+    second: sapin_23
+  - first:
+      213: -5945036989746513393
+    second: sapin_24
+  - first:
+      213: 2122592710274348535
+    second: sapin_25
+  - first:
+      213: -2889960456878982551
+    second: sapin_26
+  - first:
+      213: -5816601320469746278
+    second: sapin_27
+  - first:
+      213: -8378316281139093686
+    second: sapin_28
+  - first:
+      213: 1221337647430248237
+    second: sapin_29
+  - first:
+      213: 8512102843246555772
+    second: sapin_30
+  - first:
+      213: 7917400280384326831
+    second: sapin_31
+  - first:
+      213: -7206471022136751838
+    second: sapin_32
+  - first:
+      213: 2102588500517618785
+    second: sapin_33
+  - first:
+      213: 5447515985176931598
+    second: sapin_34
+  - first:
+      213: -5415555523385218496
+    second: sapin_35
+  - first:
+      213: -7632756000959807787
+    second: sapin_36
+  - first:
+      213: -5886625575581712024
+    second: sapin_37
+  - first:
+      213: 3659523058449725303
+    second: sapin_38
+  - first:
+      213: 5578892528479127514
+    second: sapin_39
+  - first:
+      213: -7098782485108098372
+    second: sapin_40
+  - first:
+      213: -990954209802001832
+    second: sapin_41
+  - first:
+      213: -338083677160716773
+    second: sapin_42
+  - first:
+      213: 3585954034243926018
+    second: sapin_43
+  - first:
+      213: 2243511252162479673
+    second: sapin_44
+  - first:
+      213: 1226209776035810535
+    second: sapin_45
+  - first:
+      213: 8665890363865514138
+    second: sapin_46
+  - first:
+      213: 4867178996372145797
+    second: sapin_47
+  - first:
+      213: 6690552145621688192
+    second: sapin_48
+  - first:
+      213: 1773114411525542617
+    second: sapin_49
+  - first:
+      213: 4780199765014220452
+    second: sapin_50
+  - first:
+      213: 7064140250355054615
+    second: sapin_51
+  - first:
+      213: 2720079566659933223
+    second: sapin_52
+  - first:
+      213: 732229736279060653
+    second: sapin_53
+  - first:
+      213: 5329924870774349578
+    second: sapin_54
+  - first:
+      213: 1675530649021593309
+    second: sapin_55
+  - first:
+      213: 3952935458258475822
+    second: sapin_56
+  - first:
+      213: -8801715131832907065
+    second: sapin_57
+  - first:
+      213: -2573771777073581175
+    second: sapin_58
+  - first:
+      213: -4674683255190360247
+    second: sapin_59
+  - first:
+      213: 8544599732590472709
+    second: sapin_60
+  - first:
+      213: -1565047467406950237
+    second: sapin_61
+  - first:
+      213: -7248302310951660384
+    second: sapin_62
+  - first:
+      213: 7021700077492003918
+    second: sapin_63
+  - first:
+      213: -4678644649632954608
+    second: sapin_64
+  - first:
+      213: 1281680735819782368
+    second: sapin_65
+  - first:
+      213: 5642904940829102373
+    second: sapin_66
+  - first:
+      213: 7413129749400949055
+    second: sapin_67
+  - first:
+      213: -2140994814549366735
+    second: sapin_68
+  - first:
+      213: 5549682446539968561
+    second: sapin_69
+  - first:
+      213: -7604653492171315313
+    second: sapin_70
+  - first:
+      213: 4639796179543115727
+    second: sapin_71
+  - first:
+      213: 6813088210022752693
+    second: sapin_72
+  - first:
+      213: 625792160809055064
+    second: sapin_73
+  - first:
+      213: 194969164089832376
+    second: sapin_74
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sapin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5af7531b8958604189b7e28442968f7
+      internalID: -982379922605733436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3584
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd93293387f1954580c26bec1241d95
+      internalID: 4128003956260276891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3584
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e069c4672ab867469ae3ba288494179
+      internalID: 7670280458145482932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3584
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120b1bb200c1584409fa5554db42db7c
+      internalID: -8842116126870749107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3584
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c0b829b834def4680fb6951a6f4ed3
+      internalID: 3414451776940216908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3584
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817d291d474be31439734003bbc00287
+      internalID: 7533787878102364221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3584
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723ae8805542a57468d8e3df4d2a979e
+      internalID: 158664645651249901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_7
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 3584
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03e864fc83c6fc4699a339fdf0202d9
+      internalID: -1545346610018974159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_8
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3584
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f7222a7801a4a4da804f9f80ad65e8
+      internalID: 8355887686014055826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_9
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3584
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01afea17ae6e3cf4b811d21ac8bc1dda
+      internalID: 6156334706112562941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80259647e47990f4985c8c3e5ea22bb5
+      internalID: 1781491462902755025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3072
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e58d0bfe82f73479963fcc2b803994
+      internalID: 801263242461008656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3072
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9883263cef4cf0a41bca3cdcfaa5d6fc
+      internalID: -2646107088835901736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3072
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdeca8e19abcf74997bf89714dd1d82
+      internalID: -5679021414191324893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_14
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3072
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f21e5c2d299516419d204e9973228b1
+      internalID: -1706918559999480781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_15
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3072
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4162e04498d11f348987e22e8c01d75c
+      internalID: 7694488652835015291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3072
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b305e7e22e9eb64fb2ea29f86ff06c2
+      internalID: 2289309510860372999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_17
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 3072
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1125c523daef1bf49a0a72a1df31c2c0
+      internalID: 3570397339777261070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_18
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3072
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63b9500179f23749892c7955b1ed768
+      internalID: 9097246326331117381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_19
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3072
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c58d1ce3b012c24db9c154beb78fe4f
+      internalID: 878726366892299331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5bb9d5afcec184eaf182a45055c239
+      internalID: 1298990236646239257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2560
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c6eb99cdd600e45bb0f83ff6afd5e4
+      internalID: 4275896327652909514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2560
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f05c20824d920044b455c3ee946d6b8
+      internalID: -1676853729492027375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2560
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ba36ae142e9cd49a9ff257b93d9295
+      internalID: 8725763672667879208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_24
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2560
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854bf96a597c6774aac7f46ab4a9b7dd
+      internalID: -5945036989746513393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_25
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2560
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cc784ddef942c4fb14700cefac30d1
+      internalID: 2122592710274348535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_26
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2560
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfd714d255257d429abb2de23355987
+      internalID: -2889960456878982551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_27
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2560
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281813744611a994d8766090462f76bb
+      internalID: -5816601320469746278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_28
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2560
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff18ea80cc43f540ac261ffe46f0d05
+      internalID: -8378316281139093686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_29
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2560
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786565813e7a82746a03a0d155688bc8
+      internalID: 1221337647430248237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107e4c8cbde3fe745be4727914e5d5db
+      internalID: 8512102843246555772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_31
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2048
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9740ea967477c43499717c424a2aa46a
+      internalID: 7917400280384326831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_32
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2048
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedd46078aa2aaa4dba9e56dc4597d03
+      internalID: -7206471022136751838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_33
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2048
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec9bffbc0650b94989bff579048747c
+      internalID: 2102588500517618785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_34
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2048
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c20a7aff21c328469f57f49da548d8f
+      internalID: 5447515985176931598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_35
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2048
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf0c663ecae8c4439f518843215a356
+      internalID: -5415555523385218496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_36
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2048
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a11ae91653620c48aa22386570ac973
+      internalID: -7632756000959807787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_37
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2048
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5784f1a3e4d6cba4b8b71db650d72e1d
+      internalID: -5886625575581712024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_38
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2048
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982fec0ecb8251f4283235821416a2ea
+      internalID: 3659523058449725303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_39
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2048
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714e5997baaedea4fb15a20b54297981
+      internalID: 5578892528479127514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713f48c1413d9af4984b59814b5efcc5
+      internalID: -7098782485108098372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_41
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1536
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5dea711344dd440923c982d663e075
+      internalID: -990954209802001832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_42
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1536
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8908f4c19ca99d14480ee3d8a75ddc04
+      internalID: -338083677160716773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_43
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1536
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c69c45a81220345b8629d49695f680
+      internalID: 3585954034243926018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_44
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1536
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a11b32c47bf2d4280b022be063aa0e
+      internalID: 2243511252162479673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_45
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1536
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccf7071da6d10941b8cba80d21ce40a
+      internalID: 1226209776035810535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_46
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1536
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d140bcebd11593347933674810be6641
+      internalID: 8665890363865514138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_47
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1536
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f546091b4bf83c048a9d2d252d37b54c
+      internalID: 4867178996372145797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_48
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1536
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2289cdb62fdc548a260cb5f3990cb6
+      internalID: 6690552145621688192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_49
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1536
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8a16df20ac32e4394f83f22513e34c
+      internalID: 1773114411525542617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b1e25f1318a0b439a31566312a160e
+      internalID: 4780199765014220452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_51
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1024
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09971b52a04a924dbdfa7c02850f450
+      internalID: 7064140250355054615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_52
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1024
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055ffe0d35bd1b945b967d57e2ff75a7
+      internalID: 2720079566659933223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_53
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1024
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4827606c4b3f5ba4abcce3316a4b9cf0
+      internalID: 732229736279060653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_54
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1024
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68461d4deb4c65e40b203a0d5d44b585
+      internalID: 5329924870774349578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_55
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1024
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792c7cca03b700a4fafefa3ff0af28df
+      internalID: 1675530649021593309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_56
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1024
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa9f829b443dc44098206bca4d40ad1
+      internalID: 3952935458258475822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_57
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1024
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3064f0438709f14ea54721f18d45c61
+      internalID: -8801715131832907065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_58
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1024
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a914b1fe528dd42825a2f4a1e432c4
+      internalID: -2573771777073581175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_59
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1024
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d98f6f9a125c484f8ae258c36dee7ad
+      internalID: -4674683255190360247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f60585fe688a94a90a5333b6b8699d
+      internalID: 8544599732590472709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_61
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 512
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f1af4c12a53574fa2de1f09ac65b5d
+      internalID: -1565047467406950237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_62
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 512
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f31edf60ddf3643a058ca93057a6e4
+      internalID: -7248302310951660384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_63
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 512
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aff7da37667fbf4cbf30a9dccedd91b
+      internalID: 7021700077492003918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_64
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 512
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9b3bceaa7379e408ec76cd0c647f5e
+      internalID: -4678644649632954608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_65
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 512
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92acd36e3a48d848aa373a54064996a
+      internalID: 1281680735819782368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_66
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 512
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdef280427c59745879ebdbfb1da72c
+      internalID: 5642904940829102373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_67
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 512
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d976deb131e6944a8c6018fe3a81ac
+      internalID: 7413129749400949055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_68
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 512
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f1e0554f019f84bb0d15db6c963117
+      internalID: -2140994814549366735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_69
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 512
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f94255aad4a9f04d87831179237a94f
+      internalID: 5549682446539968561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311c67af947f56746b03ac52b1bd9228
+      internalID: -7604653492171315313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_71
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5e166c2a7943a49961bebd761ca373
+      internalID: 4639796179543115727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_72
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d524f39d033b40840b5b50c47bbb12cb
+      internalID: 6813088210022752693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_73
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ef1c9a12d4b0946af569c651f30548
+      internalID: 625792160809055064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapin_74
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 400
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9f223b98084f44e95c8cd7e6e60911
+      internalID: 194969164089832376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5919acf40e1300e49a52fabe92d3ca90
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

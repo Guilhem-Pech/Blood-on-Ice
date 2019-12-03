@@ -91,17 +91,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc01d30ee5a742fa90f6626a3356c799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shape:
-  - {x: -0.22711325, y: -0.2242146, z: 0}
-  - {x: -0.032211065, y: -0.32060856, z: 0}
-  - {x: 0.15972781, y: -0.2673176, z: 0}
-  - {x: 0.30242193, y: -0.16296256, z: 0}
-  - {x: 0.35641444, y: 0.0003760437, z: 0}
-  - {x: 0.34121823, y: 0.16875915, z: 0}
-  - {x: 2.52924, y: 6.449197, z: 0}
-  - {x: 2.21024, y: 6.402138, z: 0}
-  - {x: -0.28867483, y: 0.15184203, z: 0}
-  - {x: -0.33006096, y: -0.031384256, z: 0}
+  anchor1: {fileID: 0}
+  anchor2: {fileID: 0}
 --- !u!1 &4815047321896482984
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +159,7 @@ MonoBehaviour:
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 48
   m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 0.38
+  m_ShapeLightParametricRadius: 0.54
   m_ShapeLightFalloffSize: 0.42
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:

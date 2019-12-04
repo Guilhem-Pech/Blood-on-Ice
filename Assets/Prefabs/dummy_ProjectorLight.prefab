@@ -147,7 +147,7 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 21300000, guid: 870fd2b4baa80454391dce717f6060e4,
     type: 3}
   m_UseNormalMap: 0
-  m_LightOrder: 0
+  m_LightOrder: 1
   m_AlphaBlendOnOverlap: 0
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0

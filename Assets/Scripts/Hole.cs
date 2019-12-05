@@ -10,11 +10,10 @@ public class Hole : MonoBehaviour
     public float delayActivation = 1f;
     private bool isCActive = false;
     private SpriteShapeController _spriteShape;
-    private EdgeCollider2D _edgeCollider2D;
+
     private void Start()
     {
         _spriteShape = GetComponent<SpriteShapeController>();
-        _edgeCollider2D = _spriteShape.edgeCollider;
         Destroy(gameObject,destructionTime);
         StartCoroutine(StartTrigger(1f));
     }

@@ -17,16 +17,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject projectorLight;
     
-    // Start is called before the first frame update
+    [SerializeField]
+    private Vector3 projectorOffset = Vector3.zero;
+    
     private Vector2 _inputDir;
     private Rigidbody2D _rigidbody2D;
-    private Vector3 _projectorVelocity = Vector3.zero;
+    private Vector2 _projectorVelocity = Vector2.zero;
+    [SerializeField]
+    private SpriteRenderer spriteRenderer;
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.enabled = true;
         GameManager.GetInstance().RegisterPlayer(gameObject);
         gameObject.layer = 9;
         projectorLight = Instantiate(projectorLight,transform.position,Quaternion.identity);
-        
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
@@ -37,7 +42,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        projectorLight.transform.position = Vector3.SmoothDamp(projectorLight.transform.position, transform.position, ref _projectorVelocity, smoothTime);
+        projectorLight.transform.position = Vector2.SmoothDamp(projectorLight.transform.position, transform.position + projectorOffset, ref _projectorVelocity, smoothTime);
     }
 
     private void FixedUpdate()

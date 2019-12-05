@@ -10,7 +10,11 @@ public class GameManager : MonoBehaviour
     public CinemachineTargetGroup targetGroup;
     private Animator _animator;
     private static readonly int StartRound = Animator.StringToHash("StartRound");
-
+    
+    
+    public Transform spotLightAnchor1;
+    public Transform spotLightAnchor2;
+    
     private void Start()
     {
         _animator = GetComponent<Animator>();

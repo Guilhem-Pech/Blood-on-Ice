@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
@@ -27,6 +28,8 @@ public class PlayerController : MonoBehaviour
     private Vector2 _projectorVelocity = Vector2.zero;
     [SerializeField]
     private SpriteRenderer spriteRenderer;
+    [SerializeField]
+    private GameObject trailPrefab;
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -34,6 +37,7 @@ public class PlayerController : MonoBehaviour
         GameManager.GetInstance().RegisterPlayer(gameObject);
         gameObject.layer = 9;
         projectorLight = Instantiate(projectorLight,transform.position,Quaternion.identity);
+        trailPrefab = Instantiate(trailPrefab, transform.position, quaternion.identity);
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _attackSystem = GetComponent<PlayerAttackSystem>();
         _playerInput = GetComponent<PlayerInput>();
@@ -49,7 +53,9 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        projectorLight.transform.position = Vector2.SmoothDamp(projectorLight.transform.position, transform.position + projectorOffset, ref _projectorVelocity, smoothTime);
+        Vector3 position = transform.position;
+        projectorLight.transform.position = Vector2.SmoothDamp(projectorLight.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
+        trailPrefab.transform.SetPositionAndRotation(position,transform.rotation);
     }
 
     private void FixedUpdate()

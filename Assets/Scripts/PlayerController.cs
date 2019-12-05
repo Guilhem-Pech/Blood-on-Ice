@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         GameManager.GetInstance().RegisterPlayer(gameObject);
+        gameObject.layer = 9;
         projectorLight = Instantiate(projectorLight,transform.position,Quaternion.identity);
         
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -48,5 +49,10 @@ public class PlayerController : MonoBehaviour
     {
         Destroy(projectorLight);
         GameManager.GetInstance().RemovePlayer(gameObject);
+    }
+
+    public void OnAttack1(InputAction.CallbackContext context)
+    {
+
     }
 }

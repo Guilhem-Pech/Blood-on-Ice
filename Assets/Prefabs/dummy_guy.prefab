@@ -14,13 +14,14 @@ GameObject:
   - component: {fileID: 312176950425514726}
   - component: {fileID: 312176950425514745}
   - component: {fileID: 312176950425514746}
-  m_Layer: 0
+  - component: {fileID: 7161780114205624760}
+  m_Layer: 9
   m_Name: dummy_guy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &312176950425514747
 Transform:
   m_ObjectHideFlags: 0
@@ -190,3 +191,16 @@ MonoBehaviour:
   smoothTime: 0.1
   projectorLight: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
     type: 3}
+--- !u!114 &7161780114205624760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312176950425514727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa8a70b16416014ab2b07510b571857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceOfKnockback: 46

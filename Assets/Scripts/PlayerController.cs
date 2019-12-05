@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     
     private Vector2 _inputDir;
     private Rigidbody2D _rigidbody2D;
+    private PlayerAttackSystem _attackSystem;
+    private PlayerInput _playerInput;
     private Vector2 _projectorVelocity = Vector2.zero;
     [SerializeField]
     private SpriteRenderer spriteRenderer;
@@ -33,6 +35,11 @@ public class PlayerController : MonoBehaviour
         gameObject.layer = 9;
         projectorLight = Instantiate(projectorLight,transform.position,Quaternion.identity);
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _attackSystem = GetComponent<PlayerAttackSystem>();
+        _playerInput = GetComponent<PlayerInput>();
+
+        _playerInput.actions.FindActionMap("PlayersControls").FindAction("Attack1").started += OnAttack1;
+        _playerInput.actions.FindActionMap("PlayersControls").FindAction("Attack2").started += OnAttack2;
     }
 
     public void OnMovements(InputAction.CallbackContext context)
@@ -58,6 +65,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack1(InputAction.CallbackContext context)
     {
+        Debug.Log("c");
+        _attackSystem.AOEAttack();
+    }
 
+    public void OnAttack2(InputAction.CallbackContext context)
+    {
+        Debug.Log("b");
     }
 }

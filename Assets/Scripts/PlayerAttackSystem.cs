@@ -31,7 +31,7 @@ public class PlayerAttackSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Trigger the Area Of Effect attack of the player
+    /// Trigger the knockback of the player
     /// </summary>
     public void AOEAttack()
     {
@@ -48,7 +48,7 @@ public class PlayerAttackSystem : MonoBehaviour
         }
         if (player !=null)
         {
-            Vector2 direction = new Vector2((player.transform.position.x - transform.position.x), (player.transform.position.y - transform.position.y));
+            Vector2 direction = new Vector2((player.transform.position.x - transform.position.x), (player.transform.position.y - transform.position.y)).normalized;
             player.attachedRigidbody.AddForce(direction * 0.01f * forceOfKnockback, ForceMode2D.Impulse);
         }
         

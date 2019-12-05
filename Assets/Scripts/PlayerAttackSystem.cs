@@ -15,7 +15,10 @@ public class PlayerAttackSystem : MonoBehaviour
 
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.A))
+        {
+            this.AOEAttack();
+        }
     }
 
 

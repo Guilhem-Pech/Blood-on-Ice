@@ -15,9 +15,7 @@ public class PlayerHoles : MonoBehaviour
     private EdgeCollider2D _edgeCollider2D;
     [SerializeField] [CanBeNull] private GameObject holePrefab;
 
-    [SerializeField] private float timeBetweenHoles = 3f;
-    
-    
+
     private void Start()
     {
         _edgeCollider2D = GetComponent<EdgeCollider2D>();

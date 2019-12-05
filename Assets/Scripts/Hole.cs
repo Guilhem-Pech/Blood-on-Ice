@@ -7,10 +7,28 @@ using UnityEngine.U2D;
 public class Hole : MonoBehaviour
 {
     public float destructionTime = 5f;
+    public float delayActivation = 1f;
+    private bool isCActive = false;
     private SpriteShapeController _spriteShape;
+    private EdgeCollider2D _edgeCollider2D;
     private void Start()
     {
         _spriteShape = GetComponent<SpriteShapeController>();
+        _edgeCollider2D = _spriteShape.edgeCollider;
         Destroy(gameObject,destructionTime);
+        StartCoroutine(StartTrigger(1f));
+    }
+
+    IEnumerator StartTrigger(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        isCActive = true;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(!isCActive)
+            return;
+        Debug.Log("You ded");
     }
 }

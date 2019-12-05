@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructionTime: 5
+  delayActivation: 1
 --- !u!1971053207 &3670175274474350382
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0

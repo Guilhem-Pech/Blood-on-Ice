@@ -25,6 +25,22 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Attack1"",
+                    ""type"": ""Button"",
+                    ""id"": ""663e4ab0-279a-40a9-8847-f7ede315f2de"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Attack2"",
+                    ""type"": ""Button"",
+                    ""id"": ""3c9b685f-3b50-4a44-a85c-fc8b3a0801c7"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -148,6 +164,50 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Movements"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""af27f550-20ac-4292-84e9-466b44043487"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""GamePads"",
+                    ""action"": ""Attack1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""35db9dc1-e813-45ec-b2dd-bdcfeab2b02e"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Attack1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5997a6ac-9f19-45ac-8a5f-bd51c756078d"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""GamePads"",
+                    ""action"": ""Attack2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6deb04a9-33e7-4b2b-9c0b-8c2ad0b0126e"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Attack2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -180,6 +240,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         // PlayersControls
         m_PlayersControls = asset.FindActionMap("PlayersControls", throwIfNotFound: true);
         m_PlayersControls_Movements = m_PlayersControls.FindAction("Movements", throwIfNotFound: true);
+        m_PlayersControls_Attack1 = m_PlayersControls.FindAction("Attack1", throwIfNotFound: true);
+        m_PlayersControls_Attack2 = m_PlayersControls.FindAction("Attack2", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -230,11 +292,15 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_PlayersControls;
     private IPlayersControlsActions m_PlayersControlsActionsCallbackInterface;
     private readonly InputAction m_PlayersControls_Movements;
+    private readonly InputAction m_PlayersControls_Attack1;
+    private readonly InputAction m_PlayersControls_Attack2;
     public struct PlayersControlsActions
     {
         private @PlayerControls m_Wrapper;
         public PlayersControlsActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movements => m_Wrapper.m_PlayersControls_Movements;
+        public InputAction @Attack1 => m_Wrapper.m_PlayersControls_Attack1;
+        public InputAction @Attack2 => m_Wrapper.m_PlayersControls_Attack2;
         public InputActionMap Get() { return m_Wrapper.m_PlayersControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -247,6 +313,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Movements.started -= m_Wrapper.m_PlayersControlsActionsCallbackInterface.OnMovements;
                 @Movements.performed -= m_Wrapper.m_PlayersControlsActionsCallbackInterface.OnMovements;
                 @Movements.canceled -= m_Wrapper.m_PlayersControlsActionsCallbackInterface.OnMovements;
+                @Attack1.started -= m_Wrapper.m_PlayersControlsActionsCallbackInterface.OnAttack1;
+                @Attack1.performed -= m_Wrapper.m_PlayersControlsActionsCallbackInterface.OnAttack1;
+                @Attack1.canceled -= m_Wrapper.m_PlayersControlsActionsCallbackInterface.OnAttack1;
+                @Attack2.started -= m_Wrapper.m_PlayersControlsActionsCallbackInterface.OnAttack2;
+                @Attack2.performed -= m_Wrapper.m_PlayersControlsActionsCallbackInterface.OnAttack2;
+                @Attack2.canceled -= m_Wrapper.m_PlayersControlsActionsCallbackInterface.OnAttack2;
             }
             m_Wrapper.m_PlayersControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -254,6 +326,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Movements.started += instance.OnMovements;
                 @Movements.performed += instance.OnMovements;
                 @Movements.canceled += instance.OnMovements;
+                @Attack1.started += instance.OnAttack1;
+                @Attack1.performed += instance.OnAttack1;
+                @Attack1.canceled += instance.OnAttack1;
+                @Attack2.started += instance.OnAttack2;
+                @Attack2.performed += instance.OnAttack2;
+                @Attack2.canceled += instance.OnAttack2;
             }
         }
     }
@@ -279,5 +357,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     public interface IPlayersControlsActions
     {
         void OnMovements(InputAction.CallbackContext context);
+        void OnAttack1(InputAction.CallbackContext context);
+        void OnAttack2(InputAction.CallbackContext context);
     }
 }

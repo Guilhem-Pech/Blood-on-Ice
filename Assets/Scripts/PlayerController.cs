@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = true;
         GameManager.GetInstance().RegisterPlayer(gameObject);
+        gameObject.layer = 9;
         projectorLight = Instantiate(projectorLight,transform.position,Quaternion.identity);
         trailPrefab = Instantiate(trailPrefab, transform.position, quaternion.identity);
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -59,5 +60,10 @@ public class PlayerController : MonoBehaviour
     {
         Destroy(projectorLight);
         GameManager.GetInstance().RemovePlayer(gameObject);
+    }
+
+    public void OnAttack1(InputAction.CallbackContext context)
+    {
+
     }
 }

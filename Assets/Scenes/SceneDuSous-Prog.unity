@@ -132,11 +132,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: dummy_guy
       objectReference: {fileID: 0}
-    - target: {fileID: 312176950425514727, guid: 0e26d1532ab6b894cb691e182efc89ab,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 312176950425514747, guid: 0e26d1532ab6b894cb691e182efc89ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -194,8 +189,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 312176950425514745, guid: 0e26d1532ab6b894cb691e182efc89ab,
         type: 3}
-      propertyPath: m_DefaultControlScheme
-      value: 
+      propertyPath: m_ActionEvents.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 312176950425514745, guid: 0e26d1532ab6b894cb691e182efc89ab,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 312176950425514745, guid: 0e26d1532ab6b894cb691e182efc89ab,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 312176950425514745, guid: 0e26d1532ab6b894cb691e182efc89ab,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 312176950425514745, guid: 0e26d1532ab6b894cb691e182efc89ab,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionId
+      value: 663e4ab0-279a-40a9-8847-f7ede315f2de
+      objectReference: {fileID: 0}
+    - target: {fileID: 312176950425514745, guid: 0e26d1532ab6b894cb691e182efc89ab,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionName
+      value: PlayersControls/Attack1[/XInputControllerWindows/buttonWest,/XInputControllerWindows/buttonWest,/Mouse/leftButton]
+      objectReference: {fileID: 0}
+    - target: {fileID: 312176950425514745, guid: 0e26d1532ab6b894cb691e182efc89ab,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: 3c9b685f-3b50-4a44-a85c-fc8b3a0801c7
+      objectReference: {fileID: 0}
+    - target: {fileID: 312176950425514745, guid: 0e26d1532ab6b894cb691e182efc89ab,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: PlayersControls/Attack2[/XInputControllerWindows/buttonNorth,/XInputControllerWindows/buttonNorth,/Mouse/rightButton]
+      objectReference: {fileID: 0}
+    - target: {fileID: 7161780114205624760, guid: 0e26d1532ab6b894cb691e182efc89ab,
+        type: 3}
+      propertyPath: velocityTrigger
+      value: 4.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e26d1532ab6b894cb691e182efc89ab, type: 3}

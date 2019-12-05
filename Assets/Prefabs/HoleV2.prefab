@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1908080310387510728}
+  - component: {fileID: 3813970784063793723}
   - component: {fileID: 3670175274474350382}
   - component: {fileID: 5939866089448202035}
+  - component: {fileID: 5140293475195091931}
   m_Layer: 0
   m_Name: HoleV2
   m_TagString: Untagged
@@ -32,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3813970784063793723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797192769631415649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea33831cc243eea4d89c8743333cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionTime: 5
 --- !u!1971053207 &3670175274474350382
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -144,3 +159,21 @@ MonoBehaviour:
   m_OptimizeCollider: 1
   m_OptimizeGeometry: 1
   m_EnableTangents: 0
+--- !u!68 &5140293475195091931
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797192769631415649}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.0000002, y: -0.00000023841858}
+  - {x: 2.0000002, y: -0.00000023841858}

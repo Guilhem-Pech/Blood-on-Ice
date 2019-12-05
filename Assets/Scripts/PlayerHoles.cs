@@ -142,6 +142,8 @@ public class PlayerHoles : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("DE");
+        
         Vector3 pos = _edgeCollider2D.ClosestPoint(other.transform.position);
         CloseHole(pos);
     }

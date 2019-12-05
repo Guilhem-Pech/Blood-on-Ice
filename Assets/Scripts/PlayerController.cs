@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     [SerializeField]
     private GameObject trailPrefab;
+    [SerializeField] Vector3 trailOffset = Vector2.zero;
+    
     
     private void Start()
     {
@@ -50,7 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 position = transform.position;
         projectorLight.transform.position = Vector2.SmoothDamp(projectorLight.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
-        trailPrefab.transform.SetPositionAndRotation(position,transform.rotation);
+        trailPrefab.transform.SetPositionAndRotation(position + trailOffset,transform.rotation);
     }
 
     private void FixedUpdate()

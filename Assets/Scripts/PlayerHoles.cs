@@ -41,10 +41,8 @@ public class PlayerHoles : MonoBehaviour
        
     }
 
-    private void CloseHole(Vector3 pos)
+    private void CloseHole(Vector3 pos, List<Vector3> vPos)
     {
-
-        List<Vector3> vPos = new List<Vector3>(vertexPos);
         int findIndex = FindIndex(pos, vPos);
         if(findIndex == -1)
             return;
@@ -145,7 +143,7 @@ public class PlayerHoles : MonoBehaviour
         Debug.Log("DE");
         
         Vector3 pos = _edgeCollider2D.ClosestPoint(other.transform.position);
-        CloseHole(pos);
+        CloseHole(pos, new List<Vector3>(vertexPos));
     }
 
 }

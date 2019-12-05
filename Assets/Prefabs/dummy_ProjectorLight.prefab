@@ -47,7 +47,7 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.491
-  m_Color: {r: 0.99607843, g: 1, b: 0.7019608, a: 1}
+  m_Color: {r: 0.92156863, g: 0.9607843, b: 1, a: 1}
   m_Intensity: 0.67
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 83c60d6a00000000
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_LightType: 0
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.32
-  m_Color: {r: 0.99517065, g: 1, b: 0.7028302, a: 1}
+  m_Color: {r: 0.9198113, g: 0.95911884, b: 1, a: 1}
   m_Intensity: 0.57
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 48
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 0.54
-  m_ShapeLightFalloffSize: 0.42
+  m_ShapeLightFalloffSize: 0.29
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: -1.8757758, y: -0.24877155, z: 0}

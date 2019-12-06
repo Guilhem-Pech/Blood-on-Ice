@@ -15,9 +15,7 @@ public class PlayerHoles : MonoBehaviour
     private EdgeCollider2D _edgeCollider2D;
     [SerializeField] [CanBeNull] private GameObject holePrefab;
 
-    [SerializeField] private float timeBetweenHoles = 3f;
-    
-    
+
     private void Start()
     {
         _edgeCollider2D = GetComponent<EdgeCollider2D>();
@@ -41,10 +39,8 @@ public class PlayerHoles : MonoBehaviour
        
     }
 
-    private void CloseHole(Vector3 pos)
+    private void CloseHole(Vector3 pos, List<Vector3> vPos)
     {
-
-        List<Vector3> vPos = new List<Vector3>(vertexPos);
         int findIndex = FindIndex(pos, vPos);
         if(findIndex == -1)
             return;
@@ -143,7 +139,7 @@ public class PlayerHoles : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Vector3 pos = _edgeCollider2D.ClosestPoint(other.transform.position);
-        CloseHole(pos);
+        CloseHole(pos, new List<Vector3>(vertexPos));
     }
 
 }

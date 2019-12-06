@@ -48,7 +48,6 @@ MonoBehaviour:
   vertexPos: []
   holePrefab: {fileID: 6797192769631415649, guid: cac54967988112a45847973ed09c7f60,
     type: 3}
-  timeBetweenHoles: 3
 --- !u!96 &31550754200994720
 TrailRenderer:
   serializedVersion: 2
@@ -88,7 +87,7 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Time: 3
   m_Parameters:
     serializedVersion: 3

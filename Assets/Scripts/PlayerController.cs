@@ -30,10 +30,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject trailPrefab;
     [SerializeField] Vector3 trailOffset = Vector2.zero;
-    
+
+    private PlayerInput _playerInput;
     
     private void Start()
     {
+        _playerInput = GetComponent<PlayerInput>();
         spriteRenderer.enabled = true;
         GameManager.GetInstance().RegisterPlayer(gameObject);
         gameObject.layer = 9;

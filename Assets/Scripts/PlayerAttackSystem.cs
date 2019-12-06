@@ -27,11 +27,11 @@ public class PlayerAttackSystem : MonoBehaviour
     /// </summary>
     public void FrontAttack()
     {
-
+        this.GetComponent<Rigidbody2D>().AddForce((this.GetComponent<Rigidbody2D>().velocity.normalized)*5, ForceMode2D.Impulse);
     }
 
     /// <summary>
-    /// Trigger the Area Of Effect attack of the player
+    /// Trigger the knockback of the player
     /// </summary>
     public void AOEAttack()
     {
@@ -48,8 +48,10 @@ public class PlayerAttackSystem : MonoBehaviour
         }
         if (player !=null)
         {
-            Vector2 direction = new Vector2((player.transform.position.x - transform.position.x), (player.transform.position.y - transform.position.y));
+            Vector2 direction = new Vector2((player.transform.position.x - transform.position.x), (player.transform.position.y - transform.position.y)).normalized;
+            player.GetComponent<PlayerHealthSystem>().takeDamage(10);
             player.attachedRigidbody.AddForce(direction * 0.01f * forceOfKnockback, ForceMode2D.Impulse);
+            
         }
         
         
@@ -62,10 +64,9 @@ public class PlayerAttackSystem : MonoBehaviour
     /// <param name="collision"></param>
     void OnCollisionEnter2D(Collision2D collision)
     {
-        
         if (collision.relativeVelocity.magnitude > velocityTrigger)
         {
-            collision.otherCollider.gameObject.GetComponent<PlayerHealthSystem>();
+            collision.otherCollider.gameObject.GetComponent<PlayerHealthSystem>().takeDamage(10);
         }
     }
 }

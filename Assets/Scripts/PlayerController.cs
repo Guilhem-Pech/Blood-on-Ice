@@ -31,7 +31,10 @@ public class PlayerController : MonoBehaviour
     private GameObject trailPrefab;
     [SerializeField] Vector3 trailOffset = Vector2.zero;
 
+    [SerializeField] private Collider2D trailCollider;
+    
     private PlayerInput _playerInput;
+    
     
     private void Start()
     {
@@ -42,6 +45,7 @@ public class PlayerController : MonoBehaviour
         Vector3 position = transform.position;
         projectorLight = Instantiate(projectorLight,position,Quaternion.identity);
         trailPrefab = Instantiate(trailPrefab, position, quaternion.identity);
+        trailPrefab.GetComponent<PlayerHoles>()._playerCollider2D = trailCollider;
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 

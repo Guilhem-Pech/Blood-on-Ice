@@ -185,6 +185,8 @@ MonoBehaviour:
   spriteRenderer: {fileID: 7008469195930362976}
   trailPrefab: {fileID: 4616875079839427704, guid: 5abea99496ca2dd4d88787496643a0ba,
     type: 3}
+  trailOffset: {x: 0, y: 0, z: 0}
+  trailCollider: {fileID: 6037034952450644606}
 --- !u!1 &7008469195930362979
 GameObject:
   m_ObjectHideFlags: 0

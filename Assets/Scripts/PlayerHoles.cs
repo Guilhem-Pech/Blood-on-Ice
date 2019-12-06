@@ -13,6 +13,7 @@ public class PlayerHoles : MonoBehaviour
     private Vector3[] vertexPos;
     private TrailRenderer _trailRenderer;
     private EdgeCollider2D _edgeCollider2D;
+    public Collider2D _playerCollider2D;
     [SerializeField] [CanBeNull] private GameObject holePrefab;
 
 
@@ -138,6 +139,8 @@ public class PlayerHoles : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (_playerCollider2D != other)
+            return;
         Vector3 pos = _edgeCollider2D.ClosestPoint(other.transform.position);
         CloseHole(pos, new List<Vector3>(vertexPos));
     }

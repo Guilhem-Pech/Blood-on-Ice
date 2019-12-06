@@ -5,6 +5,7 @@ using System.Linq;
 using JetBrains.Annotations;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class PlayerHoles : MonoBehaviour
 {
@@ -12,8 +13,10 @@ public class PlayerHoles : MonoBehaviour
     private Vector3[] vertexPos;
     private TrailRenderer _trailRenderer;
     private EdgeCollider2D _edgeCollider2D;
+    public Collider2D _playerCollider2D;
     [SerializeField] [CanBeNull] private GameObject holePrefab;
-    
+
+
     private void Start()
     {
         _edgeCollider2D = GetComponent<EdgeCollider2D>();
@@ -37,26 +40,37 @@ public class PlayerHoles : MonoBehaviour
        
     }
 
-    private void CloseHole(Vector3 pos)
+    private void CloseHole(Vector3 pos, List<Vector3> vPos)
     {
-
-        List<Vector3> vPos = new List<Vector3>(vertexPos);
         int findIndex = FindIndex(pos, vPos);
+        if(findIndex == -1)
+            return;
+        
         vPos.RemoveRange(0,findIndex);
         vPos[vPos.Count - 1] = vPos[0];
         
         GameObject hole = Instantiate(holePrefab, Vector3.zero, Quaternion.identity);
-        MeshFilter mesh = hole.GetComponent<MeshFilter>();
-      
-        vPos.Add(AvgVector(vPos));
-        mesh.mesh.SetVertices(vPos);
-        mesh.mesh.triangles = CreateTriangles(vPos).ToArray();
-        hole.GetComponent<EdgeCollider2D>().points = Vec3ToVec2(vPos.ToArray());
+
+        SpriteShapeController spriteShapeController = hole.GetComponent<SpriteShapeController>();
+        Spline spline = spriteShapeController.spline;
+        for (int i = 0; i < vPos.Count - 1; ++i)
+        {
+            if (i < spline.GetPointCount())
+            {
+                spline.SetPosition(i,vPos[i]);
+            }
+            else
+            {
+                spline.InsertPointAt(i, vPos[i]);
+            }
+        }
+        
         _trailRenderer.Clear();
-      
+        StartCoroutine(DisableTrailFor(3f));
+
     }
 
-    private static int FindIndex(Vector3 pos, List<Vector3> vPos, float defDist = 0.05f , float maxDist = 0.2f)
+    private static int FindIndex(Vector3 pos, List<Vector3> vPos, float defDist = 0.1f , float maxDist = 0.2f)
     {
         int findIndex =  vPos.FindIndex(x => Mathf.Abs(Vector2.Distance(x, pos)) <= defDist);
         while (findIndex == -1 && defDist <= maxDist)
@@ -68,6 +82,18 @@ public class PlayerHoles : MonoBehaviour
     }
 
 
+    IEnumerator DisableTrailFor(float second)
+    {
+        _trailRenderer.enabled = false;
+        yield return new WaitForSeconds(second);
+        _trailRenderer.enabled = true;
+        
+    }
+    
+    
+    /**
+     * Old version with mesh
+     
     private static Vector2[] Vec3ToVec2(IReadOnlyList<Vector3> tab)
     {
         Vector2[] result = new Vector2[tab.Count];
@@ -109,12 +135,14 @@ public class PlayerHoles : MonoBehaviour
         avg.y /= vertex.Count;
         return avg;
     }
-
+    **/
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (_playerCollider2D != other)
+            return;
         Vector3 pos = _edgeCollider2D.ClosestPoint(other.transform.position);
-        CloseHole(pos);
+        CloseHole(pos, new List<Vector3>(vertexPos));
     }
 
 }

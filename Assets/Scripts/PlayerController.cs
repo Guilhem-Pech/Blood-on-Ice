@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 projectorOffset = Vector3.zero;
     
     private Vector2 _inputDir;
+    [SerializeField]
     private Rigidbody2D _rigidbody2D;
     private PlayerAttackSystem _attackSystem;
     private PlayerInput _playerInput;
@@ -30,14 +31,23 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     [SerializeField]
     private GameObject trailPrefab;
+    [SerializeField] Vector3 trailOffset = Vector2.zero;
+
+    [SerializeField] private Collider2D trailCollider;
+    
+    private PlayerInput _playerInput;
+    
+    
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        _playerInput = GetComponent<PlayerInput>();
         spriteRenderer.enabled = true;
         GameManager.GetInstance().RegisterPlayer(gameObject);
         gameObject.layer = 9;
-        projectorLight = Instantiate(projectorLight,transform.position,Quaternion.identity);
-        trailPrefab = Instantiate(trailPrefab, transform.position, quaternion.identity);
+        Vector3 position = transform.position;
+        projectorLight = Instantiate(projectorLight,position,Quaternion.identity);
+        trailPrefab = Instantiate(trailPrefab, position, quaternion.identity);
+        trailPrefab.GetComponent<PlayerHoles>()._playerCollider2D = trailCollider;
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _attackSystem = GetComponent<PlayerAttackSystem>();
         _playerInput = GetComponent<PlayerInput>();
@@ -48,14 +58,14 @@ public class PlayerController : MonoBehaviour
 
     public void OnMovements(InputAction.CallbackContext context)
     {
-       _inputDir = context.ReadValue<Vector2>();
+        _inputDir = context.ReadValue<Vector2>();
     }
 
     private void Update()
     {
         Vector3 position = transform.position;
         projectorLight.transform.position = Vector2.SmoothDamp(projectorLight.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
-        trailPrefab.transform.SetPositionAndRotation(position,transform.rotation);
+        trailPrefab.transform.SetPositionAndRotation(position + trailOffset,transform.rotation);
     }
 
     private void FixedUpdate()

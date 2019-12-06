@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,7 +12,7 @@ public class LobbyManager : MonoBehaviour
     private HashSet<GameObject> _playerSet = new HashSet<GameObject>();
     private static LobbyManager _instance;
 
-    [SerializeField] private TextMeshProUGUI countOfPlayers;
+    [SerializeField] [CanBeNull] private TextMeshProUGUI countOfPlayers;
     [SerializeField] private TextMeshProUGUI countDownGame;
     [SerializeField] private GameObject[] iconPlayers;
     

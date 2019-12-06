@@ -50,7 +50,7 @@ public class PlayerAttackSystem : MonoBehaviour
         {
             Vector2 direction = new Vector2((player.transform.position.x - transform.position.x), (player.transform.position.y - transform.position.y)).normalized;
             player.GetComponent<PlayerHealthSystem>().takeDamage(10);
-            player.attachedRigidbody.AddForce(direction * 0.01f * forceOfKnockback, ForceMode2D.Impulse);
+            player.attachedRigidbody.AddForce(forceOfKnockback * 0.01f * direction, ForceMode2D.Impulse);
             
         }
         
@@ -66,7 +66,7 @@ public class PlayerAttackSystem : MonoBehaviour
     {
         if (collision.relativeVelocity.magnitude > velocityTrigger)
         {
-            collision.otherCollider.gameObject.GetComponent<PlayerHealthSystem>().takeDamage(10);
+            //collision.otherCollider.gameObject.GetComponent<PlayerHealthSystem>().takeDamage(10);
         }
     }
 }

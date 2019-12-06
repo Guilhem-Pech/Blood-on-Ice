@@ -78,5 +78,6 @@ public class PlayerController : MonoBehaviour
     public void OnAttack2(InputAction.CallbackContext context)
     {
         Debug.Log("b");
+        _attackSystem.FrontAttack();
     }
 }

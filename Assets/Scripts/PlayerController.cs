@@ -35,8 +35,6 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Collider2D trailCollider;
     
-    private PlayerInput _playerInput;
-
     private Animator _animator;
     private static readonly int IsWalking = Animator.StringToHash("isWalking");
 

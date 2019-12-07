@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -10,7 +11,10 @@ public class GameManager : MonoBehaviour
     public CinemachineTargetGroup targetGroup;
     private Animator _animator;
     private static readonly int StartRound = Animator.StringToHash("StartRound");
+    private int _playerCount = 0; 
     
+    [SerializeField]
+    private List<AnimatorOverrideController> playersAnimator;
     
     public Transform spotLightAnchor1;
     public Transform spotLightAnchor2;
@@ -19,6 +23,8 @@ public class GameManager : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _animator.SetTrigger(StartRound);
+        if (playersAnimator.Count < 0)
+            Debug.LogError("Players' Animator not set in the Game Manager", this);
     }
 
     public static GameManager GetInstance()
@@ -34,6 +40,8 @@ public class GameManager : MonoBehaviour
             return;
         }
         targetGroup.AddMember(playerObject.transform,1f,1.4f);
+        playerObject.GetComponentInChildren<Animator>().runtimeAnimatorController = playersAnimator[_playerCount % playersAnimator.Count];
+        ++_playerCount;
     }
 
     public void RemovePlayer(GameObject playerObject)

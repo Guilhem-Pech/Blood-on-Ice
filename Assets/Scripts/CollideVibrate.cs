@@ -9,17 +9,32 @@ using UnityEngine.InputSystem.Utilities;
 public class CollideVibrate : MonoBehaviour
 {
   public float timeMotor = 0.7f;
+  
+  public float lowFrequency = 0.5f;
+  public float highFrequency = 0.5f;
   private ReadOnlyArray<InputDevice> _devices;
 
   private void OnCollisionEnter2D(Collision2D other)
+  {
+    CameraManager.Instance.Shake(0.5f,0.5f,timeMotor);
+    _devices = other.gameObject.GetComponent<PlayerInput>().devices;
+    Gamepad gamepadFromDevices = GetGamepadFromDevices(_devices);
+    if(gamepadFromDevices == null)
+      return;
+    gamepadFromDevices.SetMotorSpeeds(lowFrequency,highFrequency);
+    StartCoroutine(StopMotor(timeMotor,gamepadFromDevices));
+  }
+
+
+  private void OnCollisionExit2D(Collision2D other)
   {
     _devices = other.gameObject.GetComponent<PlayerInput>().devices;
     Gamepad gamepadFromDevices = GetGamepadFromDevices(_devices);
     if(gamepadFromDevices == null)
       return;
-    gamepadFromDevices.SetMotorSpeeds(1f,0);
-    StartCoroutine(StopMotor(timeMotor,gamepadFromDevices));
+    gamepadFromDevices.SetMotorSpeeds(0,0);
   }
+
 
   private IEnumerator StopMotor(float time, Gamepad gamepad)
   {

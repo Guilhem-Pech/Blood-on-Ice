@@ -104,6 +104,8 @@ GameObject:
   m_Component:
   - component: {fileID: 382604607686987538}
   - component: {fileID: 382604607686987539}
+  - component: {fileID: 928297066478721755}
+  - component: {fileID: 9222071148169284372}
   m_Layer: 0
   m_Name: 1st plan
   m_TagString: Untagged
@@ -140,6 +142,84 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   parallaxEffect: 0
+--- !u!68 &928297066478721755
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382604607686987541}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.73, y: 2.79}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.5631795, y: 4.667227}
+  - {x: -0.41844895, y: 4.2535787}
+  - {x: -0.3574593, y: 4.2521777}
+  - {x: 1.9586906, y: 4.806281}
+  - {x: 2.0625687, y: 4.8083653}
+  - {x: 2.90513, y: 4.468277}
+  - {x: 2.9412277, y: 4.4661984}
+  - {x: 3.6163342, y: 4.8255153}
+  - {x: 3.6673489, y: 4.8240504}
+  - {x: 5.7509246, y: 4.386986}
+  - {x: 5.8264637, y: 4.3838177}
+  - {x: 7.1905284, y: 4.7037177}
+  - {x: 7.316386, y: 4.7066126}
+  - {x: 8.265844, y: 4.612183}
+  - {x: 8.520987, y: 3.7764015}
+  - {x: 8.457156, y: 3.4095469}
+  - {x: 8.4834585, y: 3.155372}
+  - {x: 8.510595, y: 2.8764057}
+  - {x: 8.249265, y: 1.9565209}
+  - {x: 8.024641, y: 1.2183992}
+  - {x: 8.126141, y: 0.24079117}
+  - {x: 8.213305, y: -0.5857364}
+  - {x: 8.308867, y: -1.9746108}
+  - {x: 8.210206, y: -2.3565452}
+  - {x: 7.6786623, y: -3.4908347}
+  - {x: 7.3544307, y: -4.126783}
+  - {x: 7.1020355, y: -4.4043508}
+  - {x: 5.970526, y: -4.0383654}
+  - {x: 4.6602173, y: -3.5258083}
+  - {x: 4.082095, y: -3.501505}
+  - {x: 2.316477, y: -3.226431}
+  - {x: 0.69722164, y: -4.222609}
+  - {x: -2.0571797, y: -4.2851715}
+  - {x: -3.5379062, y: -5.0036983}
+  - {x: -4.042754, y: -5.0360994}
+  - {x: -5.500171, y: -4.194642}
+  - {x: -8.144457, y: -4.4587965}
+  - {x: -7.758491, y: -2.0717776}
+  - {x: -8.271708, y: -1.5986977}
+  - {x: -8.077402, y: -0.34196764}
+  - {x: -8.792196, y: 1.6653768}
+  - {x: -8.783625, y: 2.2791452}
+  - {x: -8.2526245, y: 4.0044584}
+  - {x: -6.707102, y: 3.666366}
+  - {x: -6.616924, y: 3.6636763}
+  - {x: -5.7623167, y: 4.3875175}
+  - {x: -4.405393, y: 4.337337}
+  - {x: -2.6555998, y: 4.665971}
+  - {x: -2.5623481, y: 4.666344}
+--- !u!114 &9222071148169284372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382604607686987541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f70812a0647ff469b223f1e72c783c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeMotor: 0.2
 --- !u!1 &382604608222862871
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,6 +265,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -265,6 +346,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 5
   m_RendererPriority: 0
   m_Materials:
@@ -345,6 +427,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 5
   m_RendererPriority: 0
   m_Materials:
@@ -425,6 +508,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 5
   m_RendererPriority: 0
   m_Materials:

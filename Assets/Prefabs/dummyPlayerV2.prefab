@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589de482bbc35bd4a82808304f23c36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 100
 --- !u!114 &-4779228874300833149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa8a70b16416014ab2b07510b571857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceOfKnockback: 0
+  forceOfKnockback: 100
   velocityTrigger: 0
 --- !u!1 &7008469195930362979
 GameObject:

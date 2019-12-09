@@ -97,13 +97,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack1(InputAction.CallbackContext context)
     {
-        Debug.Log("c");
         _attackSystem.AOEAttack();
     }
 
     public void OnAttack2(InputAction.CallbackContext context)
     {
-        Debug.Log("b");
         _attackSystem.FrontAttack();
     }
 }

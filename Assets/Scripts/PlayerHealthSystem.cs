@@ -7,11 +7,16 @@ public class PlayerHealthSystem : MonoBehaviour
     /// <summary>
     /// The player current amount of health
     /// </summary>
-                        private int currentHealth;
+    [SerializeField]    private int currentHealth;
     /// <summary>
     /// The player maximum amount of health
     /// </summary>
     [SerializeField]    private int maxHealth;
+
+    public void Awake()
+    {
+        this.currentHealth = this.getMaxHealth();
+    }
 
     /// <summary>
     /// Returns the current health of a player
@@ -39,7 +44,7 @@ public class PlayerHealthSystem : MonoBehaviour
     {
         
         currentHealth -= damage;
-        if(currentHealth < 0)
+        if(currentHealth <= 0)
         {
             this.getKilled();
         }
@@ -52,6 +57,7 @@ public class PlayerHealthSystem : MonoBehaviour
     public int getKilled()
     {
         //Kill the player here
+        this.gameObject.SetActive(false);
         return Mathf.Abs(this.currentHealth);
     }
 }

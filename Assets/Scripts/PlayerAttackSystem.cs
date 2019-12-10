@@ -45,7 +45,7 @@ public class PlayerAttackSystem : MonoBehaviour
         Collider2D player= null;
         foreach (var item in players)
         {
-            if (!item.Equals(this))
+            if (!item.Equals(this.GetComponentInChildren<Collider2D>()))
             {
                 player = item;
             }
@@ -57,9 +57,6 @@ public class PlayerAttackSystem : MonoBehaviour
             direction = direction.normalized;
             _directionToPush = direction;
             pushed = true;
-            //player.GetComponentInParent<PlayerHealthSystem>().takeDamage(10);
-            //player.GetComponentInParent<Rigidbody2D>().AddForce(forceOfKnockback * 0.01f * direction, ForceMode2D.Impulse);
-            //Debug.Log(player);
             Debug.Log(direction);
         }
     }

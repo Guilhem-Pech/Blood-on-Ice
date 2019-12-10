@@ -17,57 +17,207 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 22aad9c882285344b2b11abe8992f614
     GuidInternal: 
-    m_lastTime: -8586264929627941844
+    m_lastTime: -8586256248606257575
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 74b5c4dfc1992341b7cc0ea4531dff80
     GuidInternal: 
-    m_lastTime: -8586264856470812152
+    m_lastTime: -8586256248606965708
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d5e5753a2329da41ad765ca003fd718e
     GuidInternal: 
-    m_lastTime: -8586264929628244389
-    List: []
+    m_lastTime: -8586256221112844017
+    List:
+    - name: NanoProjet
+      guid: a17bdb324bffd14bab12d03be6366983
+      id: 3045981741
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NanoProjet
+        ObjectType: 7
+      Path: Default Work Unit\NanoProjet
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8a2a687da3f77c4f8f95326d88d3a924
     GuidInternal: 
-    m_lastTime: -8586264929628263927
-    List: []
+    m_lastTime: -8586256227930377196
+    List:
+    - name: Ambience_menu
+      guid: 6028ad0ad6eb1f4786fdbe057e6c5b40
+      id: 3654873777
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience_menu
+        ObjectType: 3
+      Path: Default Work Unit\Ambience_menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Load_fight_music
+      guid: 84dac6eca624b841b085b25ef536e819
+      id: 876917906
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Load_fight_music
+        ObjectType: 3
+      Path: Default Work Unit\Load_fight_music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Introduction_to_Combat_Distance
+      guid: ad0f9197f1081f4b94df83c76e797d71
+      id: 3174149608
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_Introduction_to_Combat_Distance
+        ObjectType: 3
+      Path: Default Work Unit\Music_Introduction_to_Combat_Distance
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_menu
+      guid: 3ab9f90a73a81744aa2821ee5291d18e
+      id: 1598298728
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_menu
+        ObjectType: 3
+      Path: Default Work Unit\Music_menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Deplacements
+      guid: fcd503ee6c9f674c9195adf63fae2078
+      id: 799872408
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Deplacements
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Deplacements
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 692f8ac3d0aefc428093bf9a821f6ff3
     GuidInternal: 
-    m_lastTime: -8586264929628195607
-    List: []
+    m_lastTime: -8586256226775445741
+    List:
+    - name: RTPC_PlayersDistancce
+      guid: ab1921dc79449f4986617c0b205cb09a
+      id: 1199014345
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPC_PlayersDistancce
+        ObjectType: 13
+      Path: Default Work Unit\RTPC_PlayersDistancce
+    - name: RTPC_Timer
+      guid: c33e1dbff55dd2438f56adfeca8b8c33
+      id: 2286992438
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPC_Timer
+        ObjectType: 13
+      Path: Default Work Unit\RTPC_Timer
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c8697e2ed467284ba0ef79e0ba80b002
     GuidInternal: 
-    m_lastTime: -8586264929628029687
-    List: []
+    m_lastTime: -8586256248606018242
+    List:
+    - name: Music
+      guid: 7db00a54dba0784caa39ce623cd607e9
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 9
+      Path: Default Work Unit\Music
+      values:
+      - name: Combat_Distance
+        guid: 8d691c27f53df34b8d89b1b8fc82715c
+        id: 711635313
+        PathAndIcons:
+        - ElementName: Combat_Distance
+          ObjectType: 8
+      - name: Intro
+        guid: 5a7e870f2410a64e9ab946f3b2748808
+        id: 1125500713
+        PathAndIcons:
+        - ElementName: Intro
+          ObjectType: 8
+      - name: Intro_loop
+        guid: 13d799c28126ad48b8768f95d2c979c6
+        id: 3664581238
+        PathAndIcons:
+        - ElementName: Intro_loop
+          ObjectType: 8
+      - name: None
+        guid: adb8bab6eff82b4496bf6f0ed20130de
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c066f6b829a1514e8b39018b5d7d18a1
     GuidInternal: 
-    m_lastTime: -8586264929628049210
-    List: []
+    m_lastTime: -8586256227930427054
+    List:
+    - name: Switch_Music
+      guid: ecc3bddfc2921d49939e1bb498f047fc
+      id: 2963455281
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Switch_Music
+        ObjectType: 11
+      Path: Default Work Unit\Switch_Music
+      values:
+      - name: Combat_Close
+        guid: 4d4efbcca0cd0e4f9b67dd971aa467ad
+        id: 3357285716
+        PathAndIcons:
+        - ElementName: Combat_Close
+          ObjectType: 10
+      - name: Combat_Distance
+        guid: b152e578857b86479d0e2cf642e74bb1
+        id: 711635313
+        PathAndIcons:
+        - ElementName: Combat_Distance
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 69b8ae5067247945b1bbef1fdbc87da1
     GuidInternal: 
-    m_lastTime: -8586264929628117530
+    m_lastTime: -8586256248606107998
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Session Wwise - Nano Projet 1
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -12,22 +12,14 @@ public class PlayerController : MonoBehaviour
     // Configuration fields
     [SerializeField]
     private float force = 1;
-    [SerializeField]
-    private float smoothTime = 0.1F;
     
-    [SerializeField]
-    private GameObject projectorLight;
     
-    [SerializeField]
-    private Vector3 projectorOffset = Vector3.zero;
     private bool _facingRight = false;
     private Vector2 _inputDir;
     [SerializeField]
     private Rigidbody2D _rigidbody2D;
     private PlayerAttackSystem _attackSystem;
     private PlayerInput _playerInput;
-    private Vector2 _projectorVelocity = Vector2.zero;
-    [SerializeField]
     private SpriteRenderer spriteRenderer;
     [SerializeField]
     private GameObject trailPrefab;
@@ -46,7 +38,6 @@ public class PlayerController : MonoBehaviour
         GameManager.GetInstance().RegisterPlayer(gameObject);
         gameObject.layer = 9;
         Vector3 position = transform.position;
-        projectorLight = Instantiate(projectorLight,position,Quaternion.identity);
         trailPrefab = Instantiate(trailPrefab, position, quaternion.identity);
         trailPrefab.GetComponent<PlayerHoles>().playerCollider2D = trailCollider;
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -73,7 +64,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         Vector3 position = transform.position;
-        projectorLight.transform.position = Vector2.SmoothDamp(projectorLight.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
+
         trailPrefab.transform.SetPositionAndRotation(position + trailOffset,transform.rotation);
         
         _animator.SetBool(IsWalking, _rigidbody2D.velocity.sqrMagnitude > 0.5f);
@@ -91,7 +82,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
-        Destroy(projectorLight);
         GameManager.GetInstance().RemovePlayer(gameObject);
     }
 

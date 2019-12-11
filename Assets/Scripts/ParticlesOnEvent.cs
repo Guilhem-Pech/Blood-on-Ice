@@ -15,10 +15,10 @@ public class ParticlesOnEvent : MonoBehaviour
         OnPas += OnEvent;
     }
 
-    void OnEvent()
+    public void OnEvent()
     {
         particules.Play();
-        Debug.Log("\nKRSSSHHH!!!");
+        Debug.Log("KRSSSHHH!!!");
         //Son
     }
 }

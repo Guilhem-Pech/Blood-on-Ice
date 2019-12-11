@@ -201,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589de482bbc35bd4a82808304f23c36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHealth: 0
   maxHealth: 100
 --- !u!114 &-4779228874300833149
 MonoBehaviour:
@@ -228,6 +229,8 @@ GameObject:
   - component: {fileID: 7008469195930362976}
   - component: {fileID: 6777438080408003737}
   - component: {fileID: 591039864002108947}
+  - component: {fileID: 972805588359328171}
+  - component: {fileID: 4964064882265790740}
   m_Layer: 9
   m_Name: PlayerSprite
   m_TagString: Untagged
@@ -345,3 +348,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &972805588359328171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7008469195930362979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb98542594ea794c8051e0bc7c1f003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4964064882265790740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7008469195930362979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd19fd3885992e4f90b104ec8ca2f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1

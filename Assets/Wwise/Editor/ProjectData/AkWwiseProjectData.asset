@@ -213,5 +213,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Session Wwise - Nano Projet 1
+  - /Session Wwise - Nano Projet 1/Events
+  - /Session Wwise - Nano Projet 1/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

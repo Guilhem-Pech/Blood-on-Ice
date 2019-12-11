@@ -14,9 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE_MENU = 3654873777U;
-        static const AkUniqueID LOAD_FIGHT_MUSIC = 876917906U;
-        static const AkUniqueID MUSIC_INTRODUCTION_TO_COMBAT_DISTANCE = 3174149608U;
+        static const AkUniqueID MUSIC_END = 2227419164U;
         static const AkUniqueID MUSIC_MENU = 1598298728U;
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID SFX_DEPLACEMENTS = 799872408U;
     } // namespace EVENTS
 
@@ -28,9 +28,8 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID COMBAT_DISTANCE = 711635313U;
-                static const AkUniqueID INTRO = 1125500713U;
-                static const AkUniqueID INTRO_LOOP = 3664581238U;
+                static const AkUniqueID FIRE_COMBAT = 948314252U;
+                static const AkUniqueID INTRODUCTION = 1034344105U;
             } // namespace STATE
         } // namespace MUSIC
 
@@ -44,8 +43,8 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID COMBAT_CLOSE = 3357285716U;
-                static const AkUniqueID COMBAT_DISTANCE = 711635313U;
+                static const AkUniqueID END_COMBAT = 4195088783U;
+                static const AkUniqueID START_COMBAT = 1658298262U;
             } // namespace SWITCH
         } // namespace SWITCH_MUSIC
 

@@ -47,17 +47,29 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8a2a687da3f77c4f8f95326d88d3a924
     GuidInternal: 
-    m_lastTime: -8586255493876666512
+    m_lastTime: -8586255370500052289
     List:
-    - name: Ambience_menu
+    - name: Ambience
       guid: 6028ad0ad6eb1f4786fdbe057e6c5b40
-      id: 3654873777
+      id: 85412153
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Ambience_menu
+      - ElementName: Ambience
         ObjectType: 3
-      Path: Default Work Unit\Ambience_menu
+      Path: Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dash_Attack
+      guid: 2c9e1437850f6d43bf55827ab38b6b84
+      id: 622818416
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dash_Attack
+        ObjectType: 3
+      Path: Default Work Unit\Dash_Attack
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -106,6 +118,18 @@ MonoBehaviour:
       - ElementName: SFX_Deplacements
         ObjectType: 3
       Path: Default Work Unit\SFX_Deplacements
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Spotlight_on
+      guid: 46cec1117573504685468e4df27a2730
+      id: 2290831937
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Spotlight_on
+        ObjectType: 3
+      Path: Default Work Unit\Spotlight_on
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

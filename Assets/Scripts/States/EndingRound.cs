@@ -4,10 +4,12 @@ namespace States
 {
     public class EndingRound : StateMachineBehaviour
     {
+        private static readonly int EndGame = Animator.StringToHash("EndGame");
+
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
-            
+            animator.SetTrigger(EndGame);
         }
 
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo,

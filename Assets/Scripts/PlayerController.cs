@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
         Vector3 position = transform.position;
         projectorLight = Instantiate(projectorLight,position,Quaternion.identity);
         trailPrefab = Instantiate(trailPrefab, position, quaternion.identity);
-        trailPrefab.GetComponent<PlayerHoles>()._playerCollider2D = trailCollider;
+        trailPrefab.GetComponent<PlayerHoles>().playerCollider2D = trailCollider;
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _attackSystem = GetComponent<PlayerAttackSystem>();
         _playerInput = GetComponent<PlayerInput>();

@@ -47,6 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetGroup: {fileID: 0}
+  playersAnimator:
+  - {fileID: 22100000, guid: 607ea63ed086d6341b7822bfe46b1f4a, type: 2}
+  - {fileID: 22100000, guid: a882f3a76c11ca84aad67b5ba533e56f, type: 2}
   spotLightAnchor1: {fileID: 6271733839882031998}
   spotLightAnchor2: {fileID: 8290809462921221183}
 --- !u!95 &1133054461616864314

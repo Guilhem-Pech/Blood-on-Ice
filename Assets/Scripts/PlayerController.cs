@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
         Vector3 position = transform.position;
         projectorLight = Instantiate(projectorLight,position,Quaternion.identity);
         trailPrefab = Instantiate(trailPrefab, position, quaternion.identity);
-        trailPrefab.GetComponent<PlayerHoles>()._playerCollider2D = trailCollider;
+        trailPrefab.GetComponent<PlayerHoles>().playerCollider2D = trailCollider;
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _attackSystem = GetComponent<PlayerAttackSystem>();
         _playerInput = GetComponent<PlayerInput>();
@@ -97,13 +97,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack1(InputAction.CallbackContext context)
     {
-        Debug.Log("c");
         _attackSystem.AOEAttack();
     }
 
     public void OnAttack2(InputAction.CallbackContext context)
     {
-        Debug.Log("b");
         _attackSystem.FrontAttack();
     }
 }

@@ -5,13 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerHealthSystem))]
 public class PlayerAttackSystem : MonoBehaviour
 {
-    [SerializeField] [Range(1, 100)]
+    [SerializeField] [Range(1, 1000)]
     [Tooltip("Percentage value of the knockback power.")] 
     private int forceOfKnockback = 100;
 
     [SerializeField] [Range(0, 5)]
     [Tooltip("Percentage value of the knockback power.")] 
     private float velocityTrigger = 5;
+
+    [SerializeField] [Range(1, 5)]
+    [Tooltip("Radius of the knockback attack.")]
+    private float radius = 1;
 
     private GameObject _playerToPush;
     private Vector2 _directionToPush;
@@ -41,7 +45,7 @@ public class PlayerAttackSystem : MonoBehaviour
     {
         int layerMask = 1 << 9;
         Collider2D[] players = null;
-        players = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), 1, layerMask);
+        players = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), radius, layerMask);
         Collider2D player= null;
         foreach (var item in players)
         {

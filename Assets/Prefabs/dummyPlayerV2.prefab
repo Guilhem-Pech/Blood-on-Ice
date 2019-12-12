@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 8464394681402879426}
   - component: {fileID: 4042334471189514619}
   - component: {fileID: -4779228874300833149}
+  - component: {fileID: 2241496655630705726}
   m_Layer: 0
   m_Name: dummyPlayerV2
   m_TagString: Untagged
@@ -179,12 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 7
-  smoothTime: 0.1
-  projectorLight: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
-    type: 3}
-  projectorOffset: {x: 0, y: 0.07, z: 0}
   _rigidbody2D: {fileID: 1584707663895930356}
-  spriteRenderer: {fileID: 7008469195930362976}
   trailPrefab: {fileID: 4616875079839427704, guid: 5abea99496ca2dd4d88787496643a0ba,
     type: 3}
   trailOffset: {x: 0, y: 0.05, z: 0}
@@ -201,6 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589de482bbc35bd4a82808304f23c36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHealth: 0
   maxHealth: 100
 --- !u!114 &-4779228874300833149
 MonoBehaviour:
@@ -216,6 +213,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceOfKnockback: 100
   velocityTrigger: 0
+--- !u!114 &2241496655630705726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7008469195816025659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb4ef2e4519be2429f40a04c9ec58ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothTime: 0.1
+  projectorLightPrefab: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
+    type: 3}
+  projectorOffset: {x: 0, y: 0, z: 0}
+  _projectorVelocity: {x: -5.8951015, y: 5.74928}
 --- !u!1 &7008469195930362979
 GameObject:
   m_ObjectHideFlags: 0

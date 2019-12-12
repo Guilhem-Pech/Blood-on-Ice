@@ -21,14 +21,6 @@ public class PlayerAttackSystem : MonoBehaviour
     private Vector2 _directionToPush;
     private bool pushed;
 
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.A))
-        {
-            this.AOEAttack();
-        }
-    }
-
 
     /// <summary>
     /// Trigger the front attack of the player

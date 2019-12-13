@@ -8,25 +8,25 @@ public class Hole : MonoBehaviour
 {
     public float destructionTime = 5f;
     public float delayActivation = 1f;
-    private bool isCActive = false;
+    private bool _isCActive = false;
     private SpriteShapeController _spriteShape;
 
     private void Start()
     {
         _spriteShape = GetComponent<SpriteShapeController>();
         Destroy(gameObject,destructionTime);
-        StartCoroutine(StartTrigger(1f));
+        StartCoroutine(StartTrigger(delayActivation));
     }
 
-    IEnumerator StartTrigger(float delay)
+    private IEnumerator StartTrigger(float delay)
     {
         yield return new WaitForSeconds(delay);
-        isCActive = true;
+        _isCActive = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(!isCActive)
+        if(!_isCActive)
             return;
         Debug.Log("You ded");
     }

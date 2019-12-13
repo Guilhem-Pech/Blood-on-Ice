@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3813970784063793723}
   - component: {fileID: 3670175274474350382}
   - component: {fileID: 5939866089448202035}
-  - component: {fileID: 5140293475195091931}
+  - component: {fileID: 8274734343891188927}
   m_Layer: 0
   m_Name: HoleV2
   m_TagString: Untagged
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea33831cc243eea4d89c8743333cfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destructionTime: 5
+  destructionTime: 50
   delayActivation: 1
   vortexPrefab: {fileID: 5085297092843969111, guid: c9fb8d5d955eecf428ee47e013044f4d,
     type: 3}
@@ -166,8 +166,8 @@ MonoBehaviour:
   m_OptimizeCollider: 1
   m_OptimizeGeometry: 1
   m_EnableTangents: 1
---- !u!68 &5140293475195091931
-EdgeCollider2D:
+--- !u!60 &8274734343891188927
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -180,12 +180,19 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 1
   m_Points:
-  - {x: -1.00008, y: -1}
-  - {x: -1, y: 1.00008}
-  - {x: 1.00008, y: 1}
-  - {x: 1, y: -1.00008}
-  - {x: -0.97451854, y: -1.00008}
-  - {x: -0.9999999, y: -1.00008}
-  - {x: -1.00008, y: -1}
+    m_Paths:
+    - - {x: 0, y: 1.04}
+      - {x: -0.9890989, y: 0.32137755}
+      - {x: -0.61129665, y: -0.8413779}
+      - {x: 0.61129683, y: -0.8413778}
+      - {x: 0.9890988, y: 0.32137772}

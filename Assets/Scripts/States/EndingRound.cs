@@ -9,7 +9,7 @@ namespace States
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
-            Debug.Log("c");
+            
             animator.SetTrigger(EndGame);
 
         }

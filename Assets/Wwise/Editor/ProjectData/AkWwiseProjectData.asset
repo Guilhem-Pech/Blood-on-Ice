@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 74b5c4dfc1992341b7cc0ea4531dff80
     GuidInternal: 
-    m_lastTime: -8586255493876516933
+    m_lastTime: -8586253726289752941
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8a2a687da3f77c4f8f95326d88d3a924
     GuidInternal: 
-    m_lastTime: -8586255370500052289
+    m_lastTime: -8586253726289901151
     List:
     - name: Ambience
       guid: 6028ad0ad6eb1f4786fdbe057e6c5b40
@@ -61,6 +61,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Attack_High
+      guid: 1fd253a648ca424f9799cc1bcb5bd668
+      id: 1734322172
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Attack_High
+        ObjectType: 3
+      Path: Default Work Unit\Attack_High
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Attack_Low
+      guid: 6f206ed41bd77440af1394f901c38fa8
+      id: 3349596862
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Attack_Low
+        ObjectType: 3
+      Path: Default Work Unit\Attack_Low
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Dash_Attack
       guid: 2c9e1437850f6d43bf55827ab38b6b84
       id: 622818416
@@ -70,6 +94,54 @@ MonoBehaviour:
       - ElementName: Dash_Attack
         ObjectType: 3
       Path: Default Work Unit\Dash_Attack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Gap_Crunch
+      guid: 8a622200955f364b8c31762e0aa65fa5
+      id: 94004485
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Gap_Crunch
+        ObjectType: 3
+      Path: Default Work Unit\Gap_Crunch
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Geyser_Start
+      guid: 580aee5f60cb0e4390d701143683b698
+      id: 2353751109
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Geyser_Start
+        ObjectType: 3
+      Path: Default Work Unit\Geyser_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Geyser_Stop
+      guid: d8a9ff0a6183884289250e73a746e8e9
+      id: 891207143
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Geyser_Stop
+        ObjectType: 3
+      Path: Default Work Unit\Geyser_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ice_Break_Gap
+      guid: 61f37b3c35651a4a815821fb0da6f501
+      id: 3126391515
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ice_Break_Gap
+        ObjectType: 3
+      Path: Default Work Unit\Ice_Break_Gap
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -97,6 +169,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Deplacements_J1
+      guid: fcd503ee6c9f674c9195adf63fae2078
+      id: 3134751173
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Deplacements_J1
+        ObjectType: 3
+      Path: Default Work Unit\Play_Deplacements_J1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Deplacements_J2
+      guid: fbedf64222614c40a9f8f1528d7cf8ff
+      id: 3134751174
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Deplacements_J2
+        ObjectType: 3
+      Path: Default Work Unit\Play_Deplacements_J2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Music
       guid: 6f7efea937d8be40b58c289310c1b8b0
       id: 2932040671
@@ -109,18 +205,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Deplacements
-      guid: fcd503ee6c9f674c9195adf63fae2078
-      id: 799872408
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: SFX_Deplacements
-        ObjectType: 3
-      Path: Default Work Unit\SFX_Deplacements
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Spotlight_on
       guid: 46cec1117573504685468e4df27a2730
       id: 2290831937
@@ -130,6 +214,128 @@ MonoBehaviour:
       - ElementName: Spotlight_on
         ObjectType: 3
       Path: Default Work Unit\Spotlight_on
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Deplacements_J1
+      guid: 3023d3242ac97040a9f2aaf5030ec4c3
+      id: 929594323
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Deplacements_J1
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Deplacements_J1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Deplacements_J2
+      guid: f77e527428564841bb3f7d1240811fa4
+      id: 929594320
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Deplacements_J2
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Deplacements_J2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Fight
+      guid: ef1f2d1de902584881f2d7fbc216758d
+      id: 2224959990
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Fight
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Fight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Player_1_Wins
+      guid: 2480cc63048594468864e755cd2b1b2b
+      id: 555004839
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Player_1_Wins
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Player_1_Wins
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Player_2_Wins
+      guid: 3d8e8f2e7cdb70448a5516929177ac9c
+      id: 934231090
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Player_2_Wins
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Player_2_Wins
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Round_1
+      guid: 363c8ed50a00d1428d1bd098ef94fb37
+      id: 1399799472
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Round_1
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Round_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Round_2
+      guid: f91ab4c328c632458ec4d829415064eb
+      id: 1399799475
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Round_2
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Round_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Round_3
+      guid: 2d34c64ac1bd414cb8f08510ec9b607a
+      id: 1399799474
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Round_3
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Round_3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Win
+      guid: 111d5007514d83418366038ae016fbeb
+      id: 552777022
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Win
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Win
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

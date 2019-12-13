@@ -36,6 +36,7 @@ public class Hole : MonoBehaviour
     private void OnDestroy()
     {
        Destroy(_vortex);
+       AkSoundEngine.PostEvent("Geyser_Stop", gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -22,6 +22,18 @@ namespace DefaultNamespace
             anchor2 = GameManager.GetInstance().spotLightAnchor2;
         }
 
+        private void OnEnable()
+        {
+            try
+            {
+                AkSoundEngine.PostEvent("Spotlight_on", gameObject);
+            }
+            catch
+            {
+                // ignored
+            }
+        }
+
         private void Update()
         {
             shape = _light2D.shapePath;

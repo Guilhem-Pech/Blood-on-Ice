@@ -29,6 +29,6 @@ public class SpotlightPlayer : MonoBehaviour
 
     private void OnDestroy()
     {
-        Destroy(projectorLightRuntime);
+//        Destroy(projectorLightRuntime);
     }
 }

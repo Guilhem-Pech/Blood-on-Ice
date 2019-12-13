@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 7
   _rigidbody2D: {fileID: 1584707663895930356}
+  spriteRenderer: {fileID: 7008469195930362976}
   trailPrefab: {fileID: 4616875079839427704, guid: 5abea99496ca2dd4d88787496643a0ba,
     type: 3}
   trailOffset: {x: 0, y: 0.05, z: 0}
@@ -213,6 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceOfKnockback: 100
   velocityTrigger: 0
+  radius: 1
 --- !u!114 &2241496655630705726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,8 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothTime: 0.1
-  projectorLightPrefab: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
-    type: 3}
+  projectorLightRuntime: {fileID: 0}
   projectorOffset: {x: 0, y: 0, z: 0}
   _projectorVelocity: {x: -5.8951015, y: 5.74928}
 --- !u!1 &7008469195930362979

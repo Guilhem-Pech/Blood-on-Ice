@@ -4,7 +4,6 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 namespace DefaultNamespace
 {
-    [ExecuteAlways]
     public class FreeformLight : MonoBehaviour
     {
         private Light2D _light2D;

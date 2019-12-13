@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private PlayerAttackSystem _attackSystem;
     private PlayerInput _playerInput;
+    [SerializeField]
     private SpriteRenderer spriteRenderer;
     [SerializeField]
     private GameObject trailPrefab;

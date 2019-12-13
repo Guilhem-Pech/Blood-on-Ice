@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84b8875e1c4a4048a3ee61ca13a61c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePercent: 0.9
+  lifePercent: 1
   roundCounter: 0
 --- !u!1 &9183493696310229436
 GameObject:

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using JetBrains.Annotations;
-using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.U2D;
 
 public class PlayerHoles : MonoBehaviour
@@ -13,7 +11,7 @@ public class PlayerHoles : MonoBehaviour
     private Vector3[] vertexPos;
     private TrailRenderer _trailRenderer;
     private EdgeCollider2D _edgeCollider2D;
-    public Collider2D _playerCollider2D;
+    [FormerlySerializedAs("_playerCollider2D")] public Collider2D playerCollider2D;
     [SerializeField] [CanBeNull] private GameObject holePrefab;
 
 
@@ -42,15 +40,14 @@ public class PlayerHoles : MonoBehaviour
 
     private void CloseHole(Vector3 pos, List<Vector3> vPos)
     {
+        if (vPos.Count < 4) return;
         int findIndex = FindIndex(pos, vPos);
-        if(findIndex == -1)
-            return;
         
         vPos.RemoveRange(0,findIndex);
         vPos[vPos.Count - 1] = vPos[0];
         
         GameObject hole = Instantiate(holePrefab, Vector3.zero, Quaternion.identity);
-
+        
         SpriteShapeController spriteShapeController = hole.GetComponent<SpriteShapeController>();
         Spline spline = spriteShapeController.spline;
         for (int i = 0; i < vPos.Count - 1; ++i)
@@ -82,7 +79,7 @@ public class PlayerHoles : MonoBehaviour
     }
 
 
-    IEnumerator DisableTrailFor(float second)
+    private IEnumerator DisableTrailFor(float second)
     {
         _trailRenderer.enabled = false;
         yield return new WaitForSeconds(second);
@@ -139,7 +136,7 @@ public class PlayerHoles : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (_playerCollider2D != other)
+        if (playerCollider2D != other)
             return;
         Vector3 pos = _edgeCollider2D.ClosestPoint(other.transform.position);
         CloseHole(pos, new List<Vector3>(vertexPos));

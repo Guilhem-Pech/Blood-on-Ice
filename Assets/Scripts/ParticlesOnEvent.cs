@@ -13,10 +13,10 @@ public class ParticlesOnEvent : MonoBehaviour
         particules = particulesPrefab.GetComponent<ParticleSystem>();
     }
 
-    void OnEvent()
+    public void OnEvent()
     {
         particules.Play();
-        Debug.Log("\nKRSSSHHH!!!");
+        Debug.Log("KRSSSHHH!!!");
         //Son
     }
 }

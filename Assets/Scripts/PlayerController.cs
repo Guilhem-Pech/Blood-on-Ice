@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float force = 1;
     
-    
     private bool _facingRight = false;
     private Vector2 _inputDir;
     [SerializeField]
@@ -31,6 +30,11 @@ public class PlayerController : MonoBehaviour
     private Animator _animator;
     private static readonly int IsWalking = Animator.StringToHash("isWalking");
 
+    public int GetPlayerIndex()
+    {
+        return _playerInput.playerIndex;
+    }
+    
     private void Start()
     {
         _animator = GetComponentInChildren<Animator>();

@@ -9,7 +9,7 @@ public class SpotlightPlayer : MonoBehaviour
     [SerializeField]
     private float smoothTime = 0.1F;
     [SerializeField]
-    private GameObject projectorLight;
+    private GameObject projectorLightRuntime;
     [SerializeField]
     private Vector3 projectorOffset = Vector3.zero;
     [SerializeField]
@@ -18,18 +18,17 @@ public class SpotlightPlayer : MonoBehaviour
     private void Start()
     {
         Vector3 position = transform.position;
-        projectorLight = Instantiate(projectorLight, position, Quaternion.identity);   
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 position = transform.position;
-        projectorLight.transform.position = Vector2.SmoothDamp(projectorLight.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
+        projectorLightRuntime.transform.position = Vector2.SmoothDamp(projectorLightRuntime.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
     }
 
     private void OnDestroy()
     {
-        Destroy(projectorLight);
+        Destroy(projectorLightRuntime);
     }
 }

@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothTime: 0.1
-  projectorLight: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
+  projectorLightPrefab: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
     type: 3}
   projectorOffset: {x: 0, y: 0, z: 0}
   _projectorVelocity: {x: -5.8951015, y: 5.74928}

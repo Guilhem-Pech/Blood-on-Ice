@@ -49,7 +49,7 @@ public class PlayerHoles : MonoBehaviour
             return;
         
         GameObject hole = Instantiate(holePrefab, Vector3.zero, Quaternion.identity);
-        
+        hole.GetComponent<Hole>().vertexPos = vPos;
         SpriteShapeController spriteShapeController = hole.GetComponent<SpriteShapeController>();
         Spline spline = spriteShapeController.spline;
         for (int i = 0; i < vPos.Count - 1; ++i)

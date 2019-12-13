@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: artoonWater
-  m_Shader: {fileID: -6465566751694194690, guid: 59ea9c935821d414abc3923be5b69825,
+  m_Shader: {fileID: -6465566751694194690, guid: bff513ac7cd1c4749b2be027da23eb9c,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -30,7 +30,14 @@ Material:
     - Vector1_129A2380: 0.64
     - Vector1_294AF3B3: 5
     - Vector1_420AA3FE: 2
+    - Vector1_4D099BCE: 5
     - Vector1_B2ECE880: 10
+    - Vector1_D011C934: 1
+    - Vector1_EC3A6AE8: 30
+    - Vector1_ECCF61F3: 1
     m_Colors:
+    - Color_1EFAEB0B: {r: 0.47071913, g: 0.701794, b: 0.8113208, a: 1}
+    - Color_89677F42: {r: 0.2745098, g: 0.9019608, b: 1, a: 1}
     - Color_B43ADE80: {r: 0.089711644, g: 0.618127, b: 0.9056604, a: 0}
     - Color_E53B8B5F: {r: 0.18689926, g: 0.41810098, b: 0.5283019, a: 0}
+    - _MainTex: {r: 0, g: 0, b: 0, a: 0}

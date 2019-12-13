@@ -22,14 +22,6 @@ public class ScrollingBg : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-            ScrollLeft();
-        if(Input.GetKeyDown(KeyCode.E))
-            ScrollRight();
-    }
-
     private void ScrollLeft()
     {
         int LastRight = rightIndex;

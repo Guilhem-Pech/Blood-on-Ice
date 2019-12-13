@@ -14,7 +14,6 @@ public class SkipIntro : MonoBehaviour
             if (Input.GetKeyDown("l"))
             {
                 Intro.SetActive(false);
-                Debug.Log("yolo");
             }
         }
     }

@@ -1,67 +1,46 @@
 fileFormatVersion: 2
-guid: 09d9b80aca1252a4fb55ca850d1a18e2
+guid: 6fbb32c878d864942a48f4c6fadd8b7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3119335104695823479
-    second: SpriteOrange_Idle_0
+      213: 1588237903557945856
+    second: SpriteVerte_LowAttack_0
   - first:
-      213: -2061911528335878082
-    second: SpriteOrange_Idle_1
+      213: -2140379720459891958
+    second: SpriteVerte_LowAttack_1
   - first:
-      213: -4881593658951568275
-    second: SpriteOrange_Idle_2
+      213: 3406278721906775277
+    second: SpriteVerte_LowAttack_2
   - first:
-      213: 2719921305732010940
-    second: SpriteOrange_Idle_3
+      213: 4044821954159233107
+    second: SpriteVerte_LowAttack_3
   - first:
-      213: 6544054468571829655
-    second: SpriteOrange_Idle_4
+      213: -4243842209762137705
+    second: SpriteVerte_LowAttack_4
   - first:
-      213: -3288102017831054973
-    second: SpriteOrange_Idle_5
+      213: -5818550946750535693
+    second: SpriteVerte_LowAttack_5
   - first:
-      213: -9200403505530480557
-    second: SpriteOrange_Idle_6
+      213: 3442676048468650156
+    second: SpriteVerte_LowAttack_6
   - first:
-      213: 3893106964195835456
-    second: SpriteOrange_Idle_7
+      213: 7695254632069149401
+    second: SpriteVerte_LowAttack_7
   - first:
-      213: -679777794144213040
-    second: SpriteOrange_Idle_8
+      213: 4267727362856771094
+    second: SpriteVerte_LowAttack_8
   - first:
-      213: -7094635226926622789
-    second: SpriteOrange_Idle_9
+      213: 9059007016435369754
+    second: SpriteVerte_LowAttack_9
   - first:
-      213: 411917050916790638
-    second: SpriteOrange_Idle_10
+      213: -1687037734738539503
+    second: SpriteVerte_LowAttack_10
   - first:
-      213: -75297347610099203
-    second: SpriteOrange_Idle_11
+      213: -8163038006542808118
+    second: SpriteVerte_LowAttack_11
   - first:
-      213: -8052215387243569609
-    second: SpriteOrange_Idle_12
-  - first:
-      213: -6312378109451821595
-    second: SpriteOrange_Idle_13
-  - first:
-      213: 6473990889437469984
-    second: SpriteOrange_Idle_14
-  - first:
-      213: -422846120348319951
-    second: SpriteOrange_Idle_15
-  - first:
-      213: -2464531820101709591
-    second: SpriteOrange_Idle_16
-  - first:
-      213: 5369928743755750742
-    second: SpriteOrange_Idle_17
-  - first:
-      213: 1108592304226672163
-    second: SpriteOrange_Idle_18
-  - first:
-      213: 2444380275033529160
-    second: SpriteOrange_Idle_19
+      213: -4806490396213914797
+    second: SpriteVerte_LowAttack_12
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -91,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: -1
     aniso: 2
     mipBias: -100
     wrapU: 1
@@ -120,10 +99,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,10 +111,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -182,7 +161,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteOrange_Idle_0
+      name: SpriteVerte_LowAttack_0
       rect:
         serializedVersion: 2
         x: 0
@@ -196,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad33453651b11e8428ee6d9b3cfd9902
-      internalID: 3119335104695823479
+      spriteID: 243dfbbf8d2f5e242ad44ecdffbfb74a
+      internalID: 1588237903557945856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_1
+      name: SpriteVerte_LowAttack_1
       rect:
         serializedVersion: 2
         x: 200
@@ -217,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a091cc028de22844b82e78f74dc66c11
-      internalID: -2061911528335878082
+      spriteID: 8cde5cc6eecd126489223625c2ddd3a7
+      internalID: -2140379720459891958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_2
+      name: SpriteVerte_LowAttack_2
       rect:
         serializedVersion: 2
         x: 400
@@ -238,14 +217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09749948d5f6d5942a8e5f46160a92b3
-      internalID: -4881593658951568275
+      spriteID: e5e9b31dd508fb0498875915582628c3
+      internalID: 3406278721906775277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_3
+      name: SpriteVerte_LowAttack_3
       rect:
         serializedVersion: 2
         x: 600
@@ -259,14 +238,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd7821b244c96704fa947665bcfeca5f
-      internalID: 2719921305732010940
+      spriteID: 2cdcee743c78380499c3e4e98dfdb55d
+      internalID: 4044821954159233107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_4
+      name: SpriteVerte_LowAttack_4
       rect:
         serializedVersion: 2
         x: 800
@@ -280,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e301310bb9d5d2f4e8b41594b2aa3112
-      internalID: 6544054468571829655
+      spriteID: a9245a5cad46da3409dc754deb388d93
+      internalID: -4243842209762137705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_5
+      name: SpriteVerte_LowAttack_5
       rect:
         serializedVersion: 2
         x: 0
@@ -301,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1073b4f2c195c584ab0e58ac5db83463
-      internalID: -3288102017831054973
+      spriteID: 72b6ea4112860aa41b6b684bf04a6d79
+      internalID: -5818550946750535693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_6
+      name: SpriteVerte_LowAttack_6
       rect:
         serializedVersion: 2
         x: 200
@@ -322,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b6c46639c2e71444a4664e81b7fbbe7
-      internalID: -9200403505530480557
+      spriteID: 881ee4765b7523646acfad32f6b03cba
+      internalID: 3442676048468650156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_7
+      name: SpriteVerte_LowAttack_7
       rect:
         serializedVersion: 2
         x: 400
@@ -343,14 +322,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab35b777b015f8f42892b529fe54974e
-      internalID: 3893106964195835456
+      spriteID: ca01f54c6174a24479db3611daba4b6c
+      internalID: 7695254632069149401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_8
+      name: SpriteVerte_LowAttack_8
       rect:
         serializedVersion: 2
         x: 600
@@ -364,14 +343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2b6ec74a90446747a0d7f6d9ecc5579
-      internalID: -679777794144213040
+      spriteID: c6fe59c4d3d6f044d85c35be391a715d
+      internalID: 4267727362856771094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_9
+      name: SpriteVerte_LowAttack_9
       rect:
         serializedVersion: 2
         x: 800
@@ -385,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d94e73ddaddc2ed4085067a658acbebb
-      internalID: -7094635226926622789
+      spriteID: af46150332c11494c8b81e070c1f6b6f
+      internalID: 9059007016435369754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_10
+      name: SpriteVerte_LowAttack_10
       rect:
         serializedVersion: 2
         x: 0
@@ -406,14 +385,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8a66c45ab73bf0458bdebd0ed9b87e9
-      internalID: 411917050916790638
+      spriteID: cb0b8291f20d67d4c8db0a9228cecfa0
+      internalID: -1687037734738539503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_11
+      name: SpriteVerte_LowAttack_11
       rect:
         serializedVersion: 2
         x: 200
@@ -427,14 +406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1e8871403c751b468ae7b39938b64be
-      internalID: -75297347610099203
+      spriteID: ac613c8303c6e8b4eab4d8bc047e9d6f
+      internalID: -8163038006542808118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteOrange_Idle_12
+      name: SpriteVerte_LowAttack_12
       rect:
         serializedVersion: 2
         x: 400
@@ -448,155 +427,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3552a3c66e4988947815e1beabf50d39
-      internalID: -8052215387243569609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteOrange_Idle_13
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 427
-        width: 200
-        height: 199
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd24e3e9484a7684da067d9e539b3274
-      internalID: -6312378109451821595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteOrange_Idle_14
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 427
-        width: 200
-        height: 199
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03e55415feac8be4681198c80547afd5
-      internalID: 6473990889437469984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteOrange_Idle_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 228
-        width: 200
-        height: 199
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66c9b6cd3a96e6f4ba32d36958bc5508
-      internalID: -422846120348319951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteOrange_Idle_16
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 228
-        width: 200
-        height: 199
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bf89316e224a4c4da45d6c9f2d6481f
-      internalID: -2464531820101709591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteOrange_Idle_17
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 228
-        width: 200
-        height: 199
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 483d1e239e619ee4089bb581c59a0b16
-      internalID: 5369928743755750742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteOrange_Idle_18
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 228
-        width: 200
-        height: 199
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2499b4a825ba8149b70bd9b436bbe4d
-      internalID: 1108592304226672163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteOrange_Idle_19
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 228
-        width: 200
-        height: 199
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29f0d75c5c24bee4aa7d492c9216699a
-      internalID: 2444380275033529160
+      spriteID: 286b81b919bf1884783be1bdc208af8f
+      internalID: -4806490396213914797
       vertices: []
       indices: 
       edges: []
@@ -604,7 +436,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 390a780ce8704814da67b3d1e0b15cd8
+    spriteID: bdc04717c80f1c049a0c94886d40cd08
     internalID: 0
     vertices: []
     indices: 

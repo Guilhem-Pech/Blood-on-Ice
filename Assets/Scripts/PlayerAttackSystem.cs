@@ -20,6 +20,14 @@ public class PlayerAttackSystem : MonoBehaviour
     private GameObject _playerToPush;
     private Vector2 _directionToPush;
     private bool pushed;
+    private float actualVelocity;
+
+    private Animator animator;
+
+    void Awake()
+    {
+        this.animator = this.GetComponentInChildren<Animator>();
+    }
 
 
     /// <summary>
@@ -27,6 +35,7 @@ public class PlayerAttackSystem : MonoBehaviour
     /// </summary>
     public void FrontAttack()
     {
+        animator.SetTrigger("HighAttack");
         this.GetComponent<Rigidbody2D>().AddForce((this.GetComponent<Rigidbody2D>().velocity.normalized)*5, ForceMode2D.Impulse);
     }
 
@@ -35,6 +44,7 @@ public class PlayerAttackSystem : MonoBehaviour
     /// </summary>
     public void AOEAttack()
     {
+        animator.SetTrigger("LowAttack");
         int layerMask = 1 << 9;
         Collider2D[] players = null;
         players = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), radius, layerMask);
@@ -52,8 +62,9 @@ public class PlayerAttackSystem : MonoBehaviour
             Vector2 direction = new Vector2((player.transform.parent.position.x - transform.position.x), (player.transform.parent.position.y - transform.position.y));
             direction = direction.normalized;
             _directionToPush = direction;
+            _playerToPush.GetComponent<Rigidbody2D>().AddForce(forceOfKnockback * 0.03f * _directionToPush, ForceMode2D.Impulse);
+            _playerToPush.GetComponent<PlayerHealthSystem>().takeDamage(10);
             pushed = true;
-            Debug.Log(direction);
         }
     }
 
@@ -64,24 +75,15 @@ public class PlayerAttackSystem : MonoBehaviour
     /// <param name="collision"></param>
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.relativeVelocity.magnitude > velocityTrigger)
+        Debug.Log(actualVelocity + this.gameObject.ToString());
+        if (this.actualVelocity > velocityTrigger)
         {
-            //collision.otherCollider.gameObject.GetComponent<PlayerHealthSystem>().takeDamage(10);
+            collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>().takeDamage(10);
         }
     }
 
     void FixedUpdate()
     {
-        if (pushed)
-        {
-            _playerToPush.GetComponent<Rigidbody2D>().AddForce(forceOfKnockback * 0.03f * _directionToPush, ForceMode2D.Impulse);
-            _playerToPush.GetComponent<PlayerHealthSystem>().takeDamage(10);
-            pushed = false;
-        }
-        else
-        {
-            _playerToPush = null;
-        }
-        
+        actualVelocity = this.GetComponent<Rigidbody2D>().velocity.magnitude;
     }
 }

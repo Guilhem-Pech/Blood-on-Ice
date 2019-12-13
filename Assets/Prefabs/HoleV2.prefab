@@ -66,7 +66,7 @@ SpriteShapeRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1f6f7123efd8d5249af12485dcaf738c, type: 2}
+  - {fileID: 2100000, guid: a8106fdcc79d449449acce22e0bc7a16, type: 2}
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -91,10 +91,13 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 8f53370908729864e8021b588d1a8586, type: 3}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: 300563184341f6d449fd26e1c866ffea, type: 3}
+  - {fileID: 21300000, guid: 038a9fd5e62341840bf21739151cb17e, type: 3}
+  - {fileID: 21300000, guid: 9b336b8ee1c68b34da03a2a7c7450636, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 1.0000001, y: 1, z: 0}
+    m_Center: {x: 0, y: 0.019999862, z: -0.00501}
+    m_Extent: {x: 1.0400001, y: 1.02, z: 0.00501}
 --- !u!114 &5939866089448202035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,10 +179,10 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -1, y: -1}
-  - {x: -1, y: 1}
-  - {x: 1, y: 1}
+  - {x: -1.00008, y: -1}
+  - {x: -1, y: 1.00008}
+  - {x: 1.00008, y: 1}
   - {x: 1, y: -1}
   - {x: -0.90281487, y: -1}
   - {x: -0.97451854, y: -1}
-  - {x: -1, y: -1}
+  - {x: -1.00008, y: -1}

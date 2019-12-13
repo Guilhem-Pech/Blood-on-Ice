@@ -4446,11 +4446,6 @@ PrefabInstance:
       propertyPath: _projectorVelocity.y
       value: -1.6837624
       objectReference: {fileID: 0}
-    - target: {fileID: 1756068875614800037, guid: 323a53559708ccf409acdc2eb2053a46,
-        type: 3}
-      propertyPath: ak
-      value: Play_Deplacements_J1
-      objectReference: {fileID: 0}
     - target: {fileID: 8403087194661472052, guid: 323a53559708ccf409acdc2eb2053a46,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5592,7 +5587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652306761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.941767, y: -0.68250763, z: 0}
+  m_LocalPosition: {x: -3.9365647, y: -0.6966076, z: 0}
   m_LocalScale: {x: 1, y: 0.85, z: 1}
   m_Children:
   - {fileID: 241161200}

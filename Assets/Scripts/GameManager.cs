@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     public Transform playerOrangeSpawnPos;
     public GameObject[] lifeBars;
     public GameObject canvasTitle;
+    public GameObject victoryScreen;
     
     public int GetNbRound()
     {

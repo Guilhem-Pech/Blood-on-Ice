@@ -690,5 +690,6 @@ MonoBehaviour:
   - /Session Wwise - Nano Projet 1/Events
   - /Session Wwise - Nano Projet 1/Events/Default Work Unit
   - /Session Wwise - Nano Projet 1/Events/Default Work Unit/UI
+  - /Session Wwise - Nano Projet 1/Events/Default Work Unit/Voices
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

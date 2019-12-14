@@ -16,6 +16,8 @@ public class PlayerHealthSystem : MonoBehaviour
     /// </summary>
     [SerializeField]    private int maxHealth;
 
+    [SerializeField] private GameObject[] bloodPrebabs;
+
     public void Awake()
     {
         this.currentHealth = this.getMaxHealth();
@@ -45,7 +47,13 @@ public class PlayerHealthSystem : MonoBehaviour
     /// <param name="damage">The amount of health to remove of the player</param>
     public void takeDamage(int damage)
     {
-        
+        if (Random.Range(0, 3) > 0)
+        {
+            Transform t;
+            GameObject blood = Instantiate(bloodPrebabs[Random.Range(0, 4)], (t = transform).position, t.rotation);
+            Destroy(blood, 4f);
+        }
+
         currentHealth -= damage;
         if(currentHealth <= 0)
         {

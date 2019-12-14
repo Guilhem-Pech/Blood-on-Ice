@@ -202,6 +202,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 100
+  bloodPrebabs:
+  - {fileID: 7388060131295864305, guid: 0ede4ae3afc2d2f4dbd0060ecd4c378c, type: 3}
+  - {fileID: 8511842458949017012, guid: 0a025b263c990224e9c470bcfbd65927, type: 3}
+  - {fileID: 8511842458949017012, guid: 69fab897dcba08d46b10ec6aed8efd93, type: 3}
+  - {fileID: 8511842458949017012, guid: 2503ef8ea8711934d8d7cc682cb7ee50, type: 3}
+  - {fileID: 8511842458949017012, guid: f8f6adea880093444a1ce0582eb97028, type: 3}
 --- !u!114 &-4779228874300833149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,7 +238,6 @@ MonoBehaviour:
   smoothTime: 0.1
   projectorLightRuntime: {fileID: 0}
   projectorOffset: {x: 0, y: 0, z: 0}
-  _projectorVelocity: {x: -5.8951015, y: 5.74928}
 --- !u!1 &7008469195930362979
 GameObject:
   m_ObjectHideFlags: 0

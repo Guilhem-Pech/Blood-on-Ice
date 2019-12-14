@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1002704122046108782}
   - component: {fileID: 1002704122046108783}
   - component: {fileID: 1133054461616864314}
+  - component: {fileID: 882255576522004124}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -65,6 +66,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   canvasTitle: {fileID: 0}
+  victoryScreen: {fileID: 0}
   playersAnimator:
   - {fileID: 22100000, guid: 607ea63ed086d6341b7822bfe46b1f4a, type: 2}
   - {fileID: 22100000, guid: a882f3a76c11ca84aad67b5ba533e56f, type: 2}
@@ -89,6 +91,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &882255576522004124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002704122046108785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52effbe5d75daf4e8c0c279d83442ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1123614181474793063
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class PlayerHealthSystem : MonoBehaviour
 {
+    private bool dead;
+
     /// <summary>
     /// The player current amount of health
     /// </summary>
@@ -75,9 +77,23 @@ public class PlayerHealthSystem : MonoBehaviour
     {
         //Kill the player here
         GameManager.GetInstance().GetPlayerKilledEvent().Invoke(gameObject);
-        this.gameObject.SetActive(false);
         GetComponentInChildren<Animator>().SetTrigger("youDie");
         return Mathf.Abs(this.currentHealth);
         
+    }
+
+    private void Update()
+    {
+        if (GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName(""))
+        {
+            this.dead = true;
+        }
+        if (dead)
+        {
+            if (GetComponentInChildren<Animator>().IsInTransition(0))
+            {
+                Destroy(this.gameObject);
+            }
+        }
     }
 }

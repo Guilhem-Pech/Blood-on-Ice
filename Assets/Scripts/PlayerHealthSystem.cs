@@ -62,7 +62,9 @@ public class PlayerHealthSystem : MonoBehaviour
         if(currentHealth <= 0)
         {
             this.getKilled();
+            return;
         }
+        GetComponentInChildren<Animator>().SetTrigger("takeDamage");
     }
 
     /// <summary>
@@ -74,6 +76,8 @@ public class PlayerHealthSystem : MonoBehaviour
         //Kill the player here
         GameManager.GetInstance().GetPlayerKilledEvent().Invoke(gameObject);
         this.gameObject.SetActive(false);
+        GetComponentInChildren<Animator>().SetTrigger("youDie");
         return Mathf.Abs(this.currentHealth);
+        
     }
 }

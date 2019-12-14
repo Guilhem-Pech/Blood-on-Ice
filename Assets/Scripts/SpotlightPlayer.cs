@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
@@ -12,7 +13,6 @@ public class SpotlightPlayer : MonoBehaviour
     [SerializeField] [NotNull] private GameObject projectorLightRuntime;
     [SerializeField]
     private Vector3 projectorOffset = Vector3.zero;
-    [SerializeField]
     private Vector2 _projectorVelocity = Vector2.zero;
 
     private void Start()
@@ -27,8 +27,26 @@ public class SpotlightPlayer : MonoBehaviour
         projectorLightRuntime.transform.position = Vector2.SmoothDamp(projectorLightRuntime.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
     }
 
+    private void OnDisable()
+    {
+        if(projectorLightRuntime != null)
+            projectorLightRuntime.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        if(projectorLightRuntime != null)
+            projectorLightRuntime.SetActive(true);
+    }
+
     private void OnDestroy()
     {
-//        Destroy(projectorLightRuntime);
+        if(projectorLightRuntime != null)
+            Destroy(projectorLightRuntime);
+    }
+
+    public void SetProjectorRuntime(GameObject projector)
+    {
+        projectorLightRuntime = projector;
     }
 }

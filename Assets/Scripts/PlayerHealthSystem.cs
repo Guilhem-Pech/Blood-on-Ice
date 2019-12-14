@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
 public class PlayerHealthSystem : MonoBehaviour
 {
     /// <summary>
@@ -12,6 +15,8 @@ public class PlayerHealthSystem : MonoBehaviour
     /// The player maximum amount of health
     /// </summary>
     [SerializeField]    private int maxHealth;
+
+    [SerializeField] private GameObject[] bloodPrebabs;
 
     public void Awake()
     {
@@ -42,7 +47,13 @@ public class PlayerHealthSystem : MonoBehaviour
     /// <param name="damage">The amount of health to remove of the player</param>
     public void takeDamage(int damage)
     {
-        
+        if (Random.Range(0, 3) > 0)
+        {
+            Transform t;
+            GameObject blood = Instantiate(bloodPrebabs[Random.Range(0, 4)], (t = transform).position, t.rotation);
+            Destroy(blood, 4f);
+        }
+
         currentHealth -= damage;
         if(currentHealth <= 0)
         {
@@ -59,6 +70,7 @@ public class PlayerHealthSystem : MonoBehaviour
     public int getKilled()
     {
         //Kill the player here
+        GameManager.GetInstance().GetPlayerKilledEvent().Invoke(gameObject);
         this.gameObject.SetActive(false);
         GetComponentInChildren<Animator>().SetTrigger("youDie");
         return Mathf.Abs(this.currentHealth);

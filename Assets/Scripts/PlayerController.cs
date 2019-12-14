@@ -40,7 +40,6 @@ public class PlayerController : MonoBehaviour
         _animator = GetComponentInChildren<Animator>();
         _playerInput = GetComponent<PlayerInput>();
         spriteRenderer.enabled = true;
-        GameManager.GetInstance().RegisterPlayer(gameObject);
         gameObject.layer = 9;
         Vector3 position = transform.position;
         trailPrefab = Instantiate(trailPrefab, position, quaternion.identity);
@@ -87,7 +86,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
-        GameManager.GetInstance().RemovePlayer(gameObject);
+        //GameManager.GetInstance().RemovePlayer(gameObject);
     }
 
     public void OnAttack1(InputAction.CallbackContext context)

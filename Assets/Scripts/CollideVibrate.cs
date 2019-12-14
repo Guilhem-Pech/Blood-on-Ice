@@ -16,7 +16,7 @@ public class CollideVibrate : MonoBehaviour
 
   private void OnCollisionEnter2D(Collision2D other)
   {
-    CameraManager.Instance.Shake(0.5f,0.5f,timeMotor);
+    if (CameraManager.Instance != null) CameraManager.Instance.Shake(0.5f, 0.5f, timeMotor);
     _devices = other.gameObject.GetComponent<PlayerInput>().devices;
     Gamepad gamepadFromDevices = GetGamepadFromDevices(_devices);
     if(gamepadFromDevices == null)

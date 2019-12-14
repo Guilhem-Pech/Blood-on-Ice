@@ -12,7 +12,6 @@ public class SpotlightPlayer : MonoBehaviour
     [SerializeField] [NotNull] private GameObject projectorLightRuntime;
     [SerializeField]
     private Vector3 projectorOffset = Vector3.zero;
-    [SerializeField]
     private Vector2 _projectorVelocity = Vector2.zero;
 
     private void Start()
@@ -29,6 +28,12 @@ public class SpotlightPlayer : MonoBehaviour
 
     private void OnDestroy()
     {
-//        Destroy(projectorLightRuntime);
+        if(projectorLightRuntime != null)
+            Destroy(projectorLightRuntime);
+    }
+
+    public void SetProjectorRuntime(GameObject projector)
+    {
+        projectorLightRuntime = projector;
     }
 }

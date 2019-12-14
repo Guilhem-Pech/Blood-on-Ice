@@ -40,7 +40,6 @@ public class PlayerController : MonoBehaviour
         _animator = GetComponentInChildren<Animator>();
         _playerInput = GetComponent<PlayerInput>();
         spriteRenderer.enabled = true;
-        GameManager.GetInstance().RegisterPlayer(gameObject);
         gameObject.layer = 9;
         Vector3 position = transform.position;
         trailPrefab = Instantiate(trailPrefab, position, quaternion.identity);

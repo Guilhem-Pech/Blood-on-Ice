@@ -21,11 +21,15 @@ namespace States
             _animator = animator;
             _players = GameManager.GetInstance().GetPlayers();
             GameManager.GetInstance().GetPlayerKilledEvent().AddListener(OnPlayerKilled);
+            _alreadyCalled = false;
         }
 
+        private bool _alreadyCalled = false;
 
         private void OnPlayerKilled(GameObject player)
         {
+            if(_alreadyCalled)
+                return;
             List<GameObject> plyList = new List<GameObject>(_players);
             if (plyList[0] == player)
             {
@@ -35,9 +39,10 @@ namespace States
             else
             {
                 _animator.SetInteger(Players1Wins, _animator.GetInteger(Players1Wins) + 1);
-                plyList[1].GetComponent<PlayerHealthSystem>().lifeBar.roundCounter = _animator.GetInteger(Players1Wins);
+                plyList[0].GetComponent<PlayerHealthSystem>().lifeBar.roundCounter = _animator.GetInteger(Players1Wins);
             }
 
+            _alreadyCalled = true;
             _animator.SetTrigger(EndRound);
         }
     }

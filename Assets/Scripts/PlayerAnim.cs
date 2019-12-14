@@ -15,9 +15,13 @@ public class PlayerAnim : MonoBehaviour
         _playerController = GetComponentInParent<PlayerController>();
     }
 
-    public void PlayFootstep()
+    public void PlayFootstep1()
     { 
-       AkSoundEngine.PostEvent($"Play_Deplacements_J{(_playerController.GetPlayerIndex() + 1)}", gameObject);
+       AkSoundEngine.PostEvent($"Play_Deplacement_01", gameObject);
+    }
+    public void PlayFootstep2()
+    { 
+        AkSoundEngine.PostEvent($"Play_Deplacement_02", gameObject);
     }
 }
 

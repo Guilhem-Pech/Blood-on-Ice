@@ -16,7 +16,7 @@ namespace States.Players
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             base.OnStateExit(animator, stateInfo, layerIndex);
-            AkSoundEngine.PostEvent($"Stop_Deplacements_J{(_playerController.GetPlayerIndex() + 1)}", animator.gameObject);
+            AkSoundEngine.PostEvent($"Stop_Deplacement_01", animator.gameObject);
         }
     }
 }

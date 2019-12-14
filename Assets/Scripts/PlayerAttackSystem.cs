@@ -18,6 +18,18 @@ public class PlayerAttackSystem : MonoBehaviour
     [Tooltip("Radius of the knockback attack.")]
     private float radius = 1;
 
+    [SerializeField]
+    [Range(1, 5)]
+    [Tooltip("Radius of the knockback attack.")]
+    private float AOECooldown = 1;
+    private float AOECountdown;
+    
+
+    [SerializeField] [Range(1, 5)]
+    [Tooltip("Radius of the knockback attack.")]
+    private float DashCooldown = 1;
+    private float DashCountdown;
+
     private GameObject _playerToPush;
     private Vector2 _directionToPush;
     private bool pushed;
@@ -28,6 +40,8 @@ public class PlayerAttackSystem : MonoBehaviour
     void Awake()
     {
         this.animator = this.GetComponentInChildren<Animator>();
+        DashCountdown = DashCooldown;
+        AOECountdown = AOECooldown;
     }
 
     private Animator GetAnimator()
@@ -39,11 +53,16 @@ public class PlayerAttackSystem : MonoBehaviour
     /// </summary>
     public void FrontAttack()
     {
+        if (DashCountdown > 0)
+        {
+            return;
+        }
         animator.SetTrigger("HighAttack");
         AkSoundEngine.PostEvent("Dash_Attack", this.gameObject);
         AkSoundEngine.PostEvent("Attack_High", this.gameObject);
         AkSoundEngine.PostEvent("Voice_Attack", this.gameObject);
         this.GetComponent<Rigidbody2D>().AddForce((this.GetComponent<Rigidbody2D>().velocity.normalized)*5, ForceMode2D.Impulse);
+        DashCountdown = DashCooldown;
     }
 
     /// <summary>
@@ -51,6 +70,10 @@ public class PlayerAttackSystem : MonoBehaviour
     /// </summary>
     public void AOEAttack()
     {
+        if(AOECountdown > 0)
+        {
+            return;
+        }
         animator.SetTrigger("LowAttack");
         AkSoundEngine.PostEvent("Attack_Low", this.gameObject);
         AkSoundEngine.PostEvent("Voice_Attack", this.gameObject);
@@ -76,6 +99,7 @@ public class PlayerAttackSystem : MonoBehaviour
             AkSoundEngine.PostEvent("Punchs", this.gameObject);
             pushed = true;
         }
+        AOECountdown = AOECooldown;
     }
 
 
@@ -102,5 +126,17 @@ public class PlayerAttackSystem : MonoBehaviour
     void FixedUpdate()
     {
         actualVelocity = this.GetComponent<Rigidbody2D>().velocity.magnitude;
+    }
+
+    void Update()
+    {
+        if(AOECountdown > 0)
+        {
+            AOECountdown -= Time.deltaTime;
+        }
+        if (DashCountdown > 0)
+        {
+            DashCountdown -= Time.deltaTime;
+        }
     }
 }

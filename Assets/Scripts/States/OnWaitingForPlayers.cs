@@ -27,21 +27,27 @@ namespace States
         private void OnPlayerAdded(GameObject player)
         {
             ++_nbPlayer;
+             AkSoundEngine.PostEvent("Ice_Skates_Slide_Player_"+_nbPlayer, _animator.gameObject);
             _canvasTitle.GetComponent<Animator>().SetInteger(NbPlayer,_nbPlayer);
-            if (GameManager.GetInstance().GetPlayersWaiting().Count >= 2)
-                _start = true;
+            if (GameManager.GetInstance().GetPlayersWaiting().Count < 2) return;
+            _start = true;
+            AkSoundEngine.PostEvent("Break_Ice_When_Character_are_Ready", _animator.gameObject);
 
         }
-        
+
+        private bool _pass = true;
         private float _timeStart = 2;
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             if(!_start)
                 return;
             _timeStart -= Time.deltaTime;
+            
             _canvasTitle.GetComponent<Animator>().SetInteger(NbPlayer,_nbPlayer + 1);
-           if(_timeStart <= 0f)
-               _animator.SetTrigger(StartRound);
+            if (!(_timeStart <= 0f || !_pass)) return;
+            _pass = true;
+            _animator.SetTrigger(StartRound);
+           
         }
 
 

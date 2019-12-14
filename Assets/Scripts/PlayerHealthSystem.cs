@@ -1,8 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
+using Random = UnityEngine.Random;
 
 
 public class PlayerHealthSystem : MonoBehaviour
@@ -27,6 +27,11 @@ public class PlayerHealthSystem : MonoBehaviour
     {
         this.currentHealth = this.getMaxHealth();
         this.dead = false;
+    }
+
+    private void Start()
+    {
+        lifeBar.lifePercent = 1.0f;
     }
 
     /// <summary>

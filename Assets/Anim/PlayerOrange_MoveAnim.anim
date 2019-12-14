@@ -225,6 +225,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.375
+    functionName: PlayFootstep1
+    data: 
+    objectReferenceParameter: {fileID: 7008469195816025659, guid: 9e6d0efaf4306264e8a50379ac0d3967,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.625
     functionName: OnEvent
     data: 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -76,10 +77,14 @@ public class PlayerAttackSystem : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(actualVelocity + this.gameObject.ToString());
-        if (this.actualVelocity > velocityTrigger)
+        try
         {
-            collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>().takeDamage(10);
+            if (!(this.actualVelocity > velocityTrigger)) return;
+            if (collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>() != null)
+                collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>().takeDamage(10);
         }
+        catch (NullReferenceException e)
+        {}
     }
 
     void FixedUpdate()

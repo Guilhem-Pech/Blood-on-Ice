@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace States
 {
@@ -7,12 +8,12 @@ namespace States
     {
         private Animator _animator;
         private static readonly int StartRound = Animator.StringToHash("StartRound");
-        private PlayerAddedEvent _playerAddedEvent;
+        private PlayerEvent _playerEvent;
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             _animator = animator;
-            _playerAddedEvent = GameManager.GetInstance().GetPlayerAddedEvent();
-            _playerAddedEvent.AddListener(OnPlayerAdded);
+            _playerEvent = GameManager.GetInstance().GetPlayerAddedEvent();
+            _playerEvent.AddListener(OnPlayerAdded);
         }
 
         private void OnPlayerAdded(GameObject player)
@@ -23,7 +24,8 @@ namespace States
 
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            _playerAddedEvent.RemoveListener(OnPlayerAdded);
+            PlayerInputManager.instance.joinBehavior = PlayerJoinBehavior.JoinPlayersManually;
+            _playerEvent.RemoveListener(OnPlayerAdded);
         }
     }
 

@@ -16,11 +16,11 @@ namespace States
         {
             _playersWaiting = GameManager.GetInstance().GetPlayersWaiting();
             _players = GameManager.GetInstance().GetPlayers();
-            
             foreach (GameObject gameObject in _playersWaiting)
             {
                 Destroy(gameObject);
             }
+            _playersWaiting.Clear();
             animator.SetTrigger(StartRound);
         }
 

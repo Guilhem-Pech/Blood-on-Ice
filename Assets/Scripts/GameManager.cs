@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEditor.Animations;
@@ -8,29 +9,36 @@ using UnityEngine.InputSystem;
 
 
 [System.Serializable]
-public class PlayerAddedEvent : UnityEvent<GameObject>
+public class PlayerEvent : UnityEvent<GameObject>
 {}
 
 public class GameManager : MonoBehaviour
 {
-    private HashSet<GameObject> _playerSet = new HashSet<GameObject>();
-    private HashSet<GameObject> _playersWaiting = new HashSet<GameObject>();
-    
+    private readonly HashSet<GameObject> _playerSet = new HashSet<GameObject>();
+    private readonly HashSet<GameObject> _playersWaiting = new HashSet<GameObject>();
+    [SerializeField]
+    private int nbRound = 3;
     private static GameManager _instance;
     public CinemachineTargetGroup targetGroup;
     private Animator _animator;
     private int _playerCount = 0;
     public GameObject introPrefab;
     
-    private PlayerAddedEvent _playerAddedEvent = new PlayerAddedEvent ();
+    private PlayerEvent _playerAddEvent = new PlayerEvent ();
+    private PlayerEvent _playerKilledEvent = new PlayerEvent();
+    
+    public GameObject playerWaitingPrefab;
     public GameObject playerGreenPrefab;
     public GameObject playerOrangePrefab;
     public GameObject projectorPrefab;
     public Transform playerGreenSpawnPos;
     public Transform playerOrangeSpawnPos;
-    
-    
-    
+
+
+    public int GetNbRound()
+    {
+        return Math.Abs(nbRound);
+    }
     
     [SerializeField]
     private List<AnimatorOverrideController> playersAnimator;
@@ -38,7 +46,7 @@ public class GameManager : MonoBehaviour
     public Transform spotLightAnchor1;    
     public Transform spotLightAnchor2;
     private static readonly int NbPlayers = Animator.StringToHash("nbPlayers");
-
+    
     public HashSet<GameObject> GetPlayersWaiting()
     {
         return _playersWaiting;
@@ -56,9 +64,14 @@ public class GameManager : MonoBehaviour
         return _instance; 
     }
 
-    public PlayerAddedEvent GetPlayerAddedEvent()
+    public PlayerEvent GetPlayerAddedEvent()
     {
-        return _playerAddedEvent;
+        return _playerAddEvent;
+    }
+
+    public PlayerEvent GetPlayerKilledEvent()
+    {
+        return _playerKilledEvent; 
     }
     
     public void RegisterPlayer(GameObject playerObject)
@@ -70,7 +83,6 @@ public class GameManager : MonoBehaviour
         }
         targetGroup.AddMember(playerObject.transform,1f,1.4f);
         ++_playerCount;
-        GetComponent<Animator>().SetInteger(NbPlayers,_playerCount);
     }
     
     public void RemovePlayer(GameObject playerObject)
@@ -87,19 +99,20 @@ public class GameManager : MonoBehaviour
     public void InputPlayerJoinEvent(PlayerInput playerInput)
     {
         _playersWaiting.Add(playerInput.gameObject);
-        _playerAddedEvent.Invoke(playerInput.gameObject);
+        _playerAddEvent.Invoke(playerInput.gameObject);
     }
     
     public void SpawnPlayer()
     {
         GameObject projector = Instantiate(projectorPrefab);
         
-        GameObject player = _playerCount == 0 ? 
+        GameObject player = _playerCount % 2 == 0 ? 
             Instantiate(playerGreenPrefab,playerGreenSpawnPos.position,playerGreenSpawnPos.rotation) 
             : Instantiate(playerOrangePrefab,playerOrangeSpawnPos.position,playerOrangeSpawnPos.rotation);
         
         RegisterPlayer(player);
         player.GetComponent<SpotlightPlayer>().SetProjectorRuntime(projector);
+        
 
     }
     
@@ -112,7 +125,11 @@ public class GameManager : MonoBehaviour
         }
         _instance = this;
     }
-    
-    
-    
+
+
+    public void SpawnPlayerWaiting()
+    {
+        GameObject wPly = Instantiate(playerWaitingPrefab);
+        _playersWaiting.Add(wPly);
+    }
 }

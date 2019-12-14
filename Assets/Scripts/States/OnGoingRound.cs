@@ -10,37 +10,21 @@ namespace States
     {
 
         private HashSet<GameObject> _players;
-        
-        
+        private Animator _animator;
+        private static readonly int EndRound = Animator.StringToHash("EndRound");
+
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
+            _animator = animator;
             _players = GameManager.GetInstance().GetPlayers();
+            GameManager.GetInstance().GetPlayerKilledEvent().AddListener(OnPlayerKilled);
         }
 
-        public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo,
-            int layerIndex)
+
+        private void OnPlayerKilled(GameObject player)
         {
+            _animator.SetTrigger(EndRound);
         }
-
-        public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo,
-            int layerIndex)
-        {
-
-        }
-
-        
-
-        /*
-        public override void OnStateMove(Animator animator, AnimatorStateInfo stateInfo,
-            int layerIndex)
-        {
-        }
-
-        public override void OnStateIK(Animator animator, AnimatorStateInfo stateInfo,
-            int layerIndex)
-        {
-        }
-        */
     }
 }

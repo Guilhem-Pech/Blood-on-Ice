@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
-        GameManager.GetInstance().RemovePlayer(gameObject);
+        //GameManager.GetInstance().RemovePlayer(gameObject);
     }
 
     public void OnAttack1(InputAction.CallbackContext context)

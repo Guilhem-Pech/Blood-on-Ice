@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
 public class PlayerHealthSystem : MonoBehaviour
 {
     /// <summary>
@@ -57,6 +60,7 @@ public class PlayerHealthSystem : MonoBehaviour
     public int getKilled()
     {
         //Kill the player here
+        GameManager.GetInstance().GetPlayerKilledEvent().Invoke(gameObject);
         this.gameObject.SetActive(false);
         return Mathf.Abs(this.currentHealth);
     }

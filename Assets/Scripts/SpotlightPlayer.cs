@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
@@ -24,6 +25,18 @@ public class SpotlightPlayer : MonoBehaviour
     {
         Vector3 position = transform.position;
         projectorLightRuntime.transform.position = Vector2.SmoothDamp(projectorLightRuntime.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
+    }
+
+    private void OnDisable()
+    {
+        if(projectorLightRuntime != null)
+            projectorLightRuntime.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        if(projectorLightRuntime != null)
+            projectorLightRuntime.SetActive(true);
     }
 
     private void OnDestroy()

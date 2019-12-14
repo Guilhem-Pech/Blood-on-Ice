@@ -22,13 +22,14 @@ public class LifeBar : MonoBehaviour
 
     void Start()
     {
-        hpBackground = GameObject.Find("BackCritical").GetComponent<Image>();
-        dmgImg = GameObject.Find("DmgBuffer").GetComponent<Image>();
-        dmgMask = GameObject.Find("DmgBufferMask").GetComponent<Image>();
-        lifeImg = GameObject.Find("LifeBarColor").GetComponent<Image>();
-        lifeMask = GameObject.Find("LifeBarMask").GetComponent<Image>();
-        snow1 = GameObject.Find("SnowFlake1").GetComponent<Image>();
-        snow2 = GameObject.Find("SnowFlake2").GetComponent<Image>();
+        
+        hpBackground = transform.Find("BackCritical").GetComponent<Image>();
+        dmgImg = transform.Find("DmgBufferMask").Find("DmgBuffer").GetComponent<Image>();
+        dmgMask = transform.Find("DmgBufferMask").GetComponent<Image>();
+        lifeImg = transform.Find("LifeBarMask").Find("LifeBarColor").GetComponent<Image>();
+        lifeMask = transform.Find("LifeBarMask").GetComponent<Image>();
+        snow1 = transform.Find("SnowBack1").Find("SnowFlake1").GetComponent<Image>();
+        snow2 = transform.Find("SnowBack2").Find("SnowFlake2").GetComponent<Image>();
         dmgTimer = 0;
     }
 
@@ -51,18 +52,16 @@ public class LifeBar : MonoBehaviour
         }
 
         if (dmgPercent > lifePercent)
+        {
+            if (dmgTimer <= 0)
             {
-                if (dmgTimer <= 0)
-                    {
-                        dmgPercent -= Time.deltaTime/2;
-                        LifeUpdate();
-                        print(dmgPercent);
+                dmgPercent -= Time.deltaTime/2;
+                LifeUpdate();
             } else
-                    {
-                        dmgTimer -= Time.deltaTime*2;
-                         print(dmgTimer);
-                    }
+            {
+                dmgTimer -= Time.deltaTime*2;
             }
+        }
     }
 
     void LifeUpdate()

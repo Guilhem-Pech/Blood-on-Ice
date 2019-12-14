@@ -165,7 +165,7 @@ MonoBehaviour:
     m_ActionId: 3c9b685f-3b50-4a44-a85c-fc8b3a0801c7
     m_ActionName: PlayersControls/Attack2[/Mouse/rightButton]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: GamePads
   m_DefaultActionMap: PlayersControls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -208,6 +208,7 @@ MonoBehaviour:
   - {fileID: 8511842458949017012, guid: 69fab897dcba08d46b10ec6aed8efd93, type: 3}
   - {fileID: 8511842458949017012, guid: 2503ef8ea8711934d8d7cc682cb7ee50, type: 3}
   - {fileID: 8511842458949017012, guid: f8f6adea880093444a1ce0582eb97028, type: 3}
+  lifeBar: {fileID: 0}
 --- !u!114 &-4779228874300833149
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,6 +19,9 @@ public class PlayerHealthSystem : MonoBehaviour
 
     [SerializeField] private GameObject[] bloodPrebabs;
 
+
+    public LifeBar lifeBar;
+    
     public void Awake()
     {
         this.currentHealth = this.getMaxHealth();
@@ -57,6 +60,7 @@ public class PlayerHealthSystem : MonoBehaviour
         }
 
         currentHealth -= damage;
+        lifeBar.lifePercent = currentHealth / (float) maxHealth;
         if(currentHealth <= 0)
         {
             this.getKilled();

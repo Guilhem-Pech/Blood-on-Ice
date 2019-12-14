@@ -28,10 +28,16 @@ namespace States
         {
             List<GameObject> plyList = new List<GameObject>(_players);
             if (plyList[0] == player)
+            {
                 _animator.SetInteger(Players2Win, _animator.GetInteger(Players2Win) + 1 );
+                plyList[1].GetComponent<PlayerHealthSystem>().lifeBar.roundCounter = _animator.GetInteger(Players2Win);
+            }
             else
+            {
                 _animator.SetInteger(Players1Wins, _animator.GetInteger(Players1Wins) + 1);
-            
+                plyList[1].GetComponent<PlayerHealthSystem>().lifeBar.roundCounter = _animator.GetInteger(Players1Wins);
+            }
+
             _animator.SetTrigger(EndRound);
         }
     }

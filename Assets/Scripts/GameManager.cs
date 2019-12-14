@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     public GameObject projectorPrefab;
     public Transform playerGreenSpawnPos;
     public Transform playerOrangeSpawnPos;
-
+    public GameObject[] lifeBars;
 
     public int GetNbRound()
     {
@@ -82,8 +82,13 @@ public class GameManager : MonoBehaviour
             return;
         }
         targetGroup.AddMember(playerObject.transform,1f,1.4f);
+        lifeBars[_playerCount % 2].SetActive(true);
+        playerObject.GetComponent<PlayerHealthSystem>().lifeBar = lifeBars[_playerCount % 2].GetComponent<LifeBar>();
         ++_playerCount;
     }
+    
+    
+    
     
     public void RemovePlayer(GameObject playerObject)
     {

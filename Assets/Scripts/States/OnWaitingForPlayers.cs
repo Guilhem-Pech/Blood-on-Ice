@@ -12,9 +12,10 @@ namespace States
         private GameObject _canvasTitle;
         private int _nbPlayer = 0;
         private static readonly int NbPlayer = Animator.StringToHash("NbPlayer");
-
+        private bool _start = false;
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
+            _start = false;
             _animator = animator;
             _playerEvent = GameManager.GetInstance().GetPlayerAddedEvent();
             _playerEvent.AddListener(OnPlayerAdded);
@@ -22,7 +23,7 @@ namespace States
             _canvasTitle.SetActive(true);
         }
 
-        private bool _start = false;
+       
         private void OnPlayerAdded(GameObject player)
         {
             ++_nbPlayer;

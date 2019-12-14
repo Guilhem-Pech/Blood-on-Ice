@@ -30,13 +30,16 @@ public class PlayerAttackSystem : MonoBehaviour
         this.animator = this.GetComponentInChildren<Animator>();
     }
 
-
+    private Animator GetAnimator()
+    {
+        return GetComponentInChildren<Animator>();
+    }
     /// <summary>
     /// Trigger the front attack of the player
     /// </summary>
     public void FrontAttack()
     {
-        animator.SetTrigger("HighAttack");
+        GetAnimator().SetTrigger("HighAttack");
         this.GetComponent<Rigidbody2D>().AddForce((this.GetComponent<Rigidbody2D>().velocity.normalized)*5, ForceMode2D.Impulse);
     }
 
@@ -45,7 +48,7 @@ public class PlayerAttackSystem : MonoBehaviour
     /// </summary>
     public void AOEAttack()
     {
-        animator.SetTrigger("LowAttack");
+        GetAnimator().SetTrigger("LowAttack");
         int layerMask = 1 << 9;
         Collider2D[] players = null;
         players = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), radius, layerMask);

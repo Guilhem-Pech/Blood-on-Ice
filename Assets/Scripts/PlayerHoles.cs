@@ -42,7 +42,8 @@ public class PlayerHoles : MonoBehaviour
     {
         if (vPos.Count < 4) return;
         int findIndex = FindIndex(pos, vPos);
-        
+        if (findIndex < 0)
+            return;
         vPos.RemoveRange(0,findIndex);
         vPos[vPos.Count - 1] = vPos[0];
         if (AreaIrregularPolygon(vPos) < 1 )

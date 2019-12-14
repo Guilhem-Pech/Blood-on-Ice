@@ -76,7 +76,6 @@ public class PlayerAttackSystem : MonoBehaviour
     /// <param name="collision"></param>
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(actualVelocity + this.gameObject.ToString());
         try
         {
             if (!(this.actualVelocity > velocityTrigger)) return;

@@ -61,6 +61,10 @@ MonoBehaviour:
     type: 3}
   playerOrangeSpawnPos: {fileID: 8231246578549113292, guid: f8921a43d004bd14baaa854ef8c7bc08,
     type: 3}
+  lifeBars:
+  - {fileID: 0}
+  - {fileID: 0}
+  canvasTitle: {fileID: 0}
   playersAnimator:
   - {fileID: 22100000, guid: 607ea63ed086d6341b7822bfe46b1f4a, type: 2}
   - {fileID: 22100000, guid: a882f3a76c11ca84aad67b5ba533e56f, type: 2}

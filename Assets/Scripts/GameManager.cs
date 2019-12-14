@@ -34,7 +34,8 @@ public class GameManager : MonoBehaviour
     public Transform playerGreenSpawnPos;
     public Transform playerOrangeSpawnPos;
     public GameObject[] lifeBars;
-
+    public GameObject canvasTitle;
+    
     public int GetNbRound()
     {
         return Math.Abs(nbRound);

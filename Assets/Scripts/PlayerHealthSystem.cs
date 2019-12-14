@@ -8,6 +8,7 @@ using UnityEngine;
 public class PlayerHealthSystem : MonoBehaviour
 {
     private bool dead;
+
     /// <summary>
     /// The player current amount of health
     /// </summary>

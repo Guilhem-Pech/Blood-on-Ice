@@ -37,6 +37,9 @@ public class PlayerAttackSystem : MonoBehaviour
     public void FrontAttack()
     {
         animator.SetTrigger("HighAttack");
+        AkSoundEngine.PostEvent("Dash_Attack", this.gameObject);
+        AkSoundEngine.PostEvent("Attack_High", this.gameObject);
+        AkSoundEngine.PostEvent("Voice_Attack", this.gameObject);
         this.GetComponent<Rigidbody2D>().AddForce((this.GetComponent<Rigidbody2D>().velocity.normalized)*5, ForceMode2D.Impulse);
     }
 
@@ -46,6 +49,8 @@ public class PlayerAttackSystem : MonoBehaviour
     public void AOEAttack()
     {
         animator.SetTrigger("LowAttack");
+        AkSoundEngine.PostEvent("Attack_Low", this.gameObject);
+        AkSoundEngine.PostEvent("Voice_Attack", this.gameObject);
         int layerMask = 1 << 9;
         Collider2D[] players = null;
         players = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), radius, layerMask);
@@ -65,6 +70,7 @@ public class PlayerAttackSystem : MonoBehaviour
             _directionToPush = direction;
             _playerToPush.GetComponent<Rigidbody2D>().AddForce(forceOfKnockback * 0.03f * _directionToPush, ForceMode2D.Impulse);
             _playerToPush.GetComponent<PlayerHealthSystem>().takeDamage(10);
+            AkSoundEngine.PostEvent("Punchs", this.gameObject);
             pushed = true;
         }
     }
@@ -76,12 +82,15 @@ public class PlayerAttackSystem : MonoBehaviour
     /// <param name="collision"></param>
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(actualVelocity + this.gameObject.ToString());
+        AkSoundEngine.PostEvent("Players_Collision", this.gameObject);
         try
         {
             if (!(this.actualVelocity > velocityTrigger)) return;
             if (collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>() != null)
+            {
                 collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>().takeDamage(10);
+                AkSoundEngine.PostEvent("Fit_Kick_Choc", this.gameObject);
+            }
         }
         catch (NullReferenceException e)
         {}

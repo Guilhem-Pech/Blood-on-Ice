@@ -76,7 +76,6 @@ public class PlayerHealthSystem : MonoBehaviour
     public int getKilled()
     {
         //Kill the player here
-        GameManager.GetInstance().GetPlayerKilledEvent().Invoke(gameObject);
         GetComponentInChildren<Animator>().SetTrigger("youDie");
         return Mathf.Abs(this.currentHealth);
         
@@ -92,7 +91,7 @@ public class PlayerHealthSystem : MonoBehaviour
         {
             if (GetComponentInChildren<Animator>().IsInTransition(0))
             {
-                Destroy(this.gameObject);
+                GameManager.GetInstance().GetPlayerKilledEvent().Invoke(gameObject);
             }
         }
         

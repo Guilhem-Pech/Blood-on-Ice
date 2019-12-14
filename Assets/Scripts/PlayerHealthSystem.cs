@@ -66,6 +66,7 @@ public class PlayerHealthSystem : MonoBehaviour
         }
 
         currentHealth -= damage;
+        AkSoundEngine.PostEvent("Voice_Damage", this.gameObject);
         lifeBar.lifePercent = currentHealth / (float) maxHealth;
         if(currentHealth <= 0)
         {
@@ -83,6 +84,8 @@ public class PlayerHealthSystem : MonoBehaviour
     {
         //Kill the player here
         GetComponentInChildren<Animator>().SetTrigger("youDie");
+        AkSoundEngine.PostEvent("Player_Death_Voice", this.gameObject);
+        AkSoundEngine.PostEvent("Player_Death_Fall", this.gameObject);
         return Mathf.Abs(this.currentHealth);
         
     }

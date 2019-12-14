@@ -47,6 +47,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetGroup: {fileID: 0}
+  introPrefab: {fileID: 0}
+  playerGreenPrefab: {fileID: 8403087194661472053, guid: 323a53559708ccf409acdc2eb2053a46,
+    type: 3}
+  playerOrangePrefab: {fileID: 7008469195816025659, guid: 9e6d0efaf4306264e8a50379ac0d3967,
+    type: 3}
+  projectorPrefab: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
+    type: 3}
+  playerGreenSpawnPos: {fileID: 7293057676574644044, guid: 68a475d68c852434b97972317295632f,
+    type: 3}
+  playerOrangeSpawnPos: {fileID: 8231246578549113292, guid: f8921a43d004bd14baaa854ef8c7bc08,
+    type: 3}
   playersAnimator:
   - {fileID: 22100000, guid: 607ea63ed086d6341b7822bfe46b1f4a, type: 2}
   - {fileID: 22100000, guid: a882f3a76c11ca84aad67b5ba533e56f, type: 2}

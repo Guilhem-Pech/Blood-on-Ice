@@ -84,16 +84,17 @@ public class PlayerHealthSystem : MonoBehaviour
 
     void Update()
     {
-        if (GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName(""))
+        if (GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("PlayerOrange_Death"))
         {
             this.dead = true;
         }
         if (dead)
         {
-            if (GetComponentInChildren<Animator>().IsInTransition(0))
+            if (GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("PlayerOrange_Idle"))
             {
                 GameManager.GetInstance().GetPlayerKilledEvent().Invoke(gameObject);
             }
+
         }
         
     }

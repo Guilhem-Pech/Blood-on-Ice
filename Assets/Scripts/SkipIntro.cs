@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
 
 public class SkipIntro : MonoBehaviour
 {
@@ -9,11 +8,19 @@ public class SkipIntro : MonoBehaviour
 
     void Update()
     {
+        if (Intro.activeInHierarchy == false)
+        {
+            if (Input.GetKeyDown("k"))
+            {
+                Intro.SetActive(true);
+            }
+        }
+
         if (Intro.activeInHierarchy == true)
         {
             if (Input.GetKeyDown("l"))
             {
-                Intro.SetActive(false);
+                Destroy(Intro);
             }
         }
     }

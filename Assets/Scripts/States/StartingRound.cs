@@ -10,14 +10,12 @@ namespace States
 
         private HashSet<GameObject> _players;
         private HashSet<GameObject> _playersWaiting;
-        private static readonly int RoundNumber = Animator.StringToHash("RoundNumber");
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
             _playersWaiting = GameManager.GetInstance().GetPlayersWaiting();
             _players = GameManager.GetInstance().GetPlayers();
-            animator.SetInteger(RoundNumber,animator.GetInteger(RoundNumber) + 1);
             foreach (GameObject gameObject in _playersWaiting)
             {
                 Destroy(gameObject);

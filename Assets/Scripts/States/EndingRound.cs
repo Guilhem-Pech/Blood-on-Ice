@@ -11,7 +11,8 @@ namespace States
         private HashSet<GameObject> _players;
         private HashSet<GameObject> _playersWaiting;
         private static readonly int StartRound = Animator.StringToHash("StartRound");
-        private static readonly int RoundNumber = Animator.StringToHash("RoundNumber");
+        private static readonly int Player1Wins = Animator.StringToHash("Player1Wins");
+        private static readonly int Player2Wins = Animator.StringToHash("Player2Wins");
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
@@ -26,7 +27,11 @@ namespace States
             }
             _players.Clear();
 
-            animator.SetTrigger(animator.GetInteger(RoundNumber) <= GameManager.GetInstance().GetNbRound() - 1 ? StartRound : EndGame);
+            
+            if(animator.GetInteger(Player1Wins) > GameManager.GetInstance().GetNbRound() - 1 ||  animator.GetInteger(Player2Wins) > GameManager.GetInstance().GetNbRound() - 1)
+                animator.SetTrigger(EndGame);
+            else
+                animator.SetTrigger(StartRound);
         }
 
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo,

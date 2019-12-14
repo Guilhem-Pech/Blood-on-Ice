@@ -30,7 +30,10 @@ public class PlayerAttackSystem : MonoBehaviour
         this.animator = this.GetComponentInChildren<Animator>();
     }
 
-
+    private Animator GetAnimator()
+    {
+        return GetComponentInChildren<Animator>();
+    }
     /// <summary>
     /// Trigger the front attack of the player
     /// </summary>

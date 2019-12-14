@@ -47,9 +47,6 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _attackSystem = GetComponent<PlayerAttackSystem>();
         _playerInput = GetComponent<PlayerInput>();
-
-        _playerInput.actions.FindActionMap("PlayersControls").FindAction("Attack1").started += OnAttack1;
-        _playerInput.actions.FindActionMap("PlayersControls").FindAction("Attack2").started += OnAttack2;
     }
 
     public void OnMovements(InputAction.CallbackContext context)
@@ -91,11 +88,13 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack1(InputAction.CallbackContext context)
     {
-        _attackSystem.AOEAttack();
+        if(context.started)
+            _attackSystem.AOEAttack();
     }
 
     public void OnAttack2(InputAction.CallbackContext context)
     {
-        _attackSystem.FrontAttack();
+        if(context.started)
+            _attackSystem.FrontAttack();
     }
 }

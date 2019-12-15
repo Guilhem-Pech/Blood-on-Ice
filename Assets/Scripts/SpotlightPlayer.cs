@@ -27,6 +27,10 @@ public class SpotlightPlayer : MonoBehaviour
         projectorLightRuntime.transform.position = Vector2.SmoothDamp(projectorLightRuntime.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
     }
 
+    public GameObject GetProjectorRuntime()
+    {
+        return projectorLightRuntime;
+    }
     private void OnDisable()
     {
         if(projectorLightRuntime != null)

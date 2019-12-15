@@ -23,7 +23,6 @@ namespace States
             {
                 Destroy(gameObject);
             }
-            _playersWaiting.Clear();
             animator.SetTrigger(StartRound);
         }
 

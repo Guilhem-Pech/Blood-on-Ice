@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -113,7 +111,7 @@ public class GameManager : MonoBehaviour
     {
         GameObject projector = Instantiate(projectorPrefab);
         
-        GameObject player = _playerCount % 2 == 0 ? 
+        GameObject player = _playerCount % 2 != 0 ? 
             Instantiate(playerGreenPrefab,playerGreenSpawnPos.position,playerGreenSpawnPos.rotation) 
             : Instantiate(playerOrangePrefab,playerOrangeSpawnPos.position,playerOrangeSpawnPos.rotation);
         

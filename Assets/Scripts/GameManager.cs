@@ -78,14 +78,12 @@ public class GameManager : MonoBehaviour
             return;
         }
         targetGroup.AddMember(playerObject.GetComponent<PlayerController>().GetHeadTransform(),1f,2f);
-        lifeBars[_playerCount % 2].SetActive(true);
-        playerObject.GetComponent<PlayerHealthSystem>().lifeBar = lifeBars[_playerCount % 2].GetComponent<LifeBar>();
+        playerObject.GetComponent<PlayerData>().SetPlayerLifeBar(lifeBars[_playerCount % 2]); 
+        
         ++_playerCount;
     }
-    
-    
-    
-    
+
+
     public void RemovePlayer(GameObject playerObject)
     {
         _playerSet.Remove(playerObject);

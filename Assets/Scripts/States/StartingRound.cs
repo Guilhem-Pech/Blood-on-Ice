@@ -31,6 +31,7 @@ namespace States
             {
                 ply.GetComponent<PlayerData>().ActivateAll();
                 GameManager.GetInstance().SpawnProjector(ply);
+                ply.GetComponent<PlayerData>().GetPlayerLifeBar().SetActive(true);
             }
         }
 

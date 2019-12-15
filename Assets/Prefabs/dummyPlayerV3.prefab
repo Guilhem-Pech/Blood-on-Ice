@@ -325,6 +325,7 @@ MonoBehaviour:
   playerController: {fileID: 8464394681402879426}
   playerAttackSystem: {fileID: -4779228874300833149}
   playerHealthSystem: {fileID: 4042334471189514619}
+  playerSpotlightPlayer: {fileID: 2241496655630705726}
 --- !u!1 &7008469195930362979
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,6 +25,7 @@ public class PlayerHealthSystem : MonoBehaviour
 
     private void OnEnable()
     {
+        lifeBar = GetComponent<PlayerData>().GetPlayerLifeBar().GetComponent<LifeBar>();
         currentHealth = getMaxHealth();
         dead = false;
         lifeBar.lifePercent = 1.0f;

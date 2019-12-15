@@ -21,6 +21,7 @@ namespace States
             foreach (GameObject ply in _players)
             {
                 ply.GetComponent<PlayerData>().DeactivateAll();
+                ply.GetComponent<PlayerData>().GetPlayerLifeBar().SetActive(false);
             }
             
             if(animator.GetInteger(Player1Wins) > GameManager.GetInstance().GetNbRound() - 1 ||  animator.GetInteger(Player2Wins) > GameManager.GetInstance().GetNbRound() - 1)

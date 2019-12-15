@@ -8,8 +8,19 @@ public class PlayerData : MonoBehaviour
     [SerializeField] private PlayerController playerController;
     [SerializeField] private PlayerAttackSystem playerAttackSystem;
     [SerializeField] private PlayerHealthSystem playerHealthSystem;
+    [SerializeField] private SpotlightPlayer playerSpotlightPlayer;
+    
+    private GameObject playerLifebar;
 
-
+    public GameObject GetPlayerLifeBar()
+    {
+        return playerLifebar;
+    }
+    
+    public void SetPlayerLifeBar(GameObject lifebar)
+    {
+        playerLifebar = lifebar;
+    }
 
     public PlayerController GetPlayerController()
     {
@@ -24,10 +35,18 @@ public class PlayerData : MonoBehaviour
     {
         return playerHealthSystem;
     }
+
+    public SpotlightPlayer getSpotlightPlayer()
+    {
+        return playerSpotlightPlayer;
+    }
+    
     public GameObject GetPlayerSpriteGameObject()
     {
         return playerSprite;
     }
+    
+    
 
     public void DeactivateAll()
     {
@@ -35,6 +54,7 @@ public class PlayerData : MonoBehaviour
         GetPlayerController().enabled = false;
         GetPlayerHealthSystem().enabled = false;
         GetPlayerAttackSystem().enabled = false;
+        getSpotlightPlayer().enabled = false;
     }
     
     public void ActivateAll()
@@ -43,5 +63,6 @@ public class PlayerData : MonoBehaviour
         GetPlayerController().enabled = true;
         GetPlayerHealthSystem().enabled = true;
         GetPlayerAttackSystem().enabled = true;
+        getSpotlightPlayer().enabled = true;
     }
 }

@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
-        trailPrefab.GetComponent<TrailRenderer>().Clear();
+        trailPrefab.GetComponent<TrailRenderer>()?.Clear();
         trailPrefab.SetActive(false);
     }
 

@@ -27,12 +27,14 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private Collider2D trailCollider;
 
-    
+  
     [SerializeField] private Transform headPos;
     
     private Animator _animator;
     private static readonly int IsWalking = Animator.StringToHash("isWalking");
 
+
+   
     public Transform GetHeadTransform()
     {
         return headPos;
@@ -54,6 +56,17 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _attackSystem = GetComponent<PlayerAttackSystem>();
         _playerInput = GetComponent<PlayerInput>();
+    }
+
+    private void OnEnable()
+    {
+        trailPrefab.GetComponent<TrailRenderer>()?.Clear();
+        // trailPrefab.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        trailPrefab.GetComponent<TrailRenderer>()?.Clear();
     }
 
     public void OnMovements(InputAction.CallbackContext context)

@@ -26,6 +26,12 @@ namespace States
                 _victoryScreen.GetComponent<Animator>().SetInteger(VictoriousPlayer,2);
                 AkSoundEngine.PostEvent("Voice_Player_2_Wins", animator.gameObject);
             }
+            
+            foreach (GameObject ply in GameManager.GetInstance().GetPlayers())
+            {
+                Destroy(ply);
+            }
+            GameManager.GetInstance().GetPlayers().Clear();
         }
 
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo,

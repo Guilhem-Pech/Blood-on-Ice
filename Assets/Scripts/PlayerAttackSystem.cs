@@ -91,6 +91,7 @@ public class PlayerAttackSystem : MonoBehaviour
         if (player !=null)
         {
             _playerToPush = player.transform.parent.gameObject;
+            StartCoroutine(StartVibrate(0.1f));
             Vector2 direction = new Vector2((player.transform.parent.position.x - transform.position.x), (player.transform.parent.position.y - transform.position.y));
             direction = direction.normalized;
             _directionToPush = direction;
@@ -102,6 +103,12 @@ public class PlayerAttackSystem : MonoBehaviour
         AOECountdown = AOECooldown;
     }
 
+
+    private IEnumerator StartVibrate(float time)
+    {
+        yield return new WaitForSeconds(time);
+        GetComponent<GamepadVibrate>()?.Vibrate(0.4f,0.4f,0.15f);
+    }
 
     /// <summary>
     /// Triggered when two entities collide with each other
@@ -116,6 +123,7 @@ public class PlayerAttackSystem : MonoBehaviour
             if (collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>() != null)
             {
                 collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>().takeDamage(10);
+                StartCoroutine(StartVibrate(0.05f));
                 AkSoundEngine.PostEvent("Fit_Kick_Choc", this.gameObject);
             }
         }

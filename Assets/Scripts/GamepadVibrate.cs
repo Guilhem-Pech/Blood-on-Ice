@@ -28,10 +28,10 @@ public class GamepadVibrate : MonoBehaviour
     /// <summary>
     /// Set the vibration of the gamepad
     /// </summary>
-    /// <param name="rightMotor"> Speed of the low-frequency (left) motor. Normalized [0..1] value
+    /// <param name="leftMotor"> Speed of the low-frequency (left) motor. Normalized [0..1] value
     /// with 1 indicating maximum speed and 0 indicating the motor is turned off. Will automatically
     /// be clamped into range.</param>
-    /// <param name="leftMotor">Speed of the high-frequency (right) motor. Normalized [0..1] value
+    /// <param name="rightMotor">Speed of the high-frequency (right) motor. Normalized [0..1] value
     /// with 1 indicating maximum speed and 0 indicating the motor is turned off. Will automatically
     /// be clamped into range.</param>
     public void Vibrate(float leftMotor, float rightMotor)
@@ -42,12 +42,13 @@ public class GamepadVibrate : MonoBehaviour
     /// <summary>
     /// Set the vibration of the gamepad for a specified time
     /// </summary>
-    /// <param name="rightMotor"> Speed of the low-frequency (left) motor. Normalized [0..1] value
+    /// <param name="leftMotor"> Speed of the low-frequency (left) motor. Normalized [0..1] value
     /// with 1 indicating maximum speed and 0 indicating the motor is turned off. Will automatically
     /// be clamped into range.</param>
-    /// <param name="leftMotor">Speed of the high-frequency (right) motor. Normalized [0..1] value
+    /// <param name="rightMotor">Speed of the high-frequency (right) motor. Normalized [0..1] value
     /// with 1 indicating maximum speed and 0 indicating the motor is turned off. Will automatically
     /// be clamped into range.</param>
+    /// <param name="duration"> The time of the vibration</param>
     public void Vibrate(float leftMotor, float rightMotor, float duration)
     {
         this.Vibrate(leftMotor,rightMotor);

@@ -63,7 +63,6 @@ public class PlayerHealthSystem : MonoBehaviour
             GameObject blood = Instantiate(bloodPrebabs[Random.Range(0, 4)], (t = transform).position, t.rotation);
             Destroy(blood, 4f);
         }
-        
         currentHealth -= damage;
         AkSoundEngine.PostEvent("Voice_Damage", this.gameObject);
         lifeBar.lifePercent = currentHealth / (float) maxHealth;

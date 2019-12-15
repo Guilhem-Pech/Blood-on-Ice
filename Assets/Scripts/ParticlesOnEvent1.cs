@@ -16,7 +16,6 @@ public class ParticlesOnEvent1 : MonoBehaviour
     public void OnEvent1()
     {
         particules.Play();
-        Debug.Log("KRSSSHHH!!!");
         //Son
     }
 }

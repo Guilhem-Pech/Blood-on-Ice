@@ -30,7 +30,7 @@ namespace States
             foreach (GameObject ply in _players)
             {
                 ply.GetComponent<PlayerData>().ActivateAll();
-                
+                GameManager.GetInstance().SpawnProjector(ply);
             }
         }
 

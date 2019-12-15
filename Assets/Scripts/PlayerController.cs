@@ -60,7 +60,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
+        trailPrefab.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
         trailPrefab.GetComponent<TrailRenderer>().Clear();
+        trailPrefab.SetActive(false);
     }
 
     public void OnMovements(InputAction.CallbackContext context)

@@ -13,7 +13,6 @@ public class PlayerEvent : UnityEvent<GameObject>
 public class GameManager : MonoBehaviour
 {
     private readonly HashSet<GameObject> _playerSet = new HashSet<GameObject>();
-    private readonly HashSet<GameObject> _playersWaiting = new HashSet<GameObject>();
     [SerializeField]
     private int nbRound = 3;
     private static GameManager _instance;
@@ -24,10 +23,6 @@ public class GameManager : MonoBehaviour
     
     private PlayerEvent _playerAddEvent = new PlayerEvent ();
     private PlayerEvent _playerKilledEvent = new PlayerEvent();
-    
-    public GameObject playerWaitingPrefab;
-    public GameObject playerGreenPrefab;
-    public GameObject playerOrangePrefab;
     public GameObject projectorPrefab;
     public Transform playerGreenSpawnPos;
     public Transform playerOrangeSpawnPos;
@@ -51,10 +46,7 @@ public class GameManager : MonoBehaviour
     {
         return playersAnimator;
     }
-    public HashSet<GameObject> GetPlayersWaiting()
-    {
-        return _playersWaiting;
-    }
+
     private void Start()
     {
         
@@ -107,22 +99,13 @@ public class GameManager : MonoBehaviour
 
     public void InputPlayerJoinEvent(PlayerInput playerInput)
     {
-        _playersWaiting.Add(playerInput.gameObject);
         _playerAddEvent.Invoke(playerInput.gameObject);
     }
     
-    public void SpawnPlayer()
+    public void SpawnProjector(GameObject player)
     {
         GameObject projector = Instantiate(projectorPrefab);
-        
-        GameObject player = _playerCount % 2 != 0 ? 
-            Instantiate(playerGreenPrefab,playerGreenSpawnPos.position,playerGreenSpawnPos.rotation) 
-            : Instantiate(playerOrangePrefab,playerOrangeSpawnPos.position,playerOrangeSpawnPos.rotation);
-        
-        RegisterPlayer(player);
         player.GetComponent<SpotlightPlayer>().SetProjectorRuntime(projector);
-        
-
     }
     
     private void Awake()
@@ -133,12 +116,5 @@ public class GameManager : MonoBehaviour
             return;
         }
         _instance = this;
-    }
-
-
-    public void SpawnPlayerWaiting()
-    {
-        GameObject wPly = Instantiate(playerWaitingPrefab);
-        _playersWaiting.Add(wPly);
     }
 }

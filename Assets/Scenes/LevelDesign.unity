@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1896,13 +1896,13 @@ MonoBehaviour:
   m_margin: {x: 5.3592906, y: 1.8226066, z: 5.326612, w: 2.8308306}
   m_textInfo:
     textComponent: {fileID: 394326648}
-    characterCount: 76
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 12
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -4595,7 +4595,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1452389637}
-  - component: {fileID: 1452389638}
   m_Layer: 0
   m_Name: "D\xE9cor"
   m_TagString: Untagged
@@ -4619,19 +4618,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1452389638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452389636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 864406ae4ff44b34b83ef98ecde713a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Intro: {fileID: 1427081468}
 --- !u!4 &1545824403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4818768023038070042, guid: e5110df6d9be0164592a61dadc6a0624,
@@ -4772,13 +4758,13 @@ MonoBehaviour:
   m_margin: {x: 5.3592906, y: 0, z: 5.326612, w: 4.3840337}
   m_textInfo:
     textComponent: {fileID: 1546567609}
-    characterCount: 157
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 30
-    wordCount: 29
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 4
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -5344,13 +5330,13 @@ MonoBehaviour:
   m_margin: {x: 5.3592906, y: 0, z: 5.326612, w: 4.6184607}
   m_textInfo:
     textComponent: {fileID: 1654949930}
-    characterCount: 39
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 7
-    wordCount: 7
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -6589,13 +6575,13 @@ MonoBehaviour:
   m_margin: {x: 5.3592906, y: 0, z: 5.326612, w: 4.572319}
   m_textInfo:
     textComponent: {fileID: 2041686573}
-    characterCount: 74
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 14
-    wordCount: 15
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0

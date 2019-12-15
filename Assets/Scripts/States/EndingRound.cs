@@ -16,8 +16,11 @@ namespace States
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
+            
             _players = GameManager.GetInstance().GetPlayers();
-
+            
+            GameManager.GetInstance().OnEndingRoundEvent().Invoke();
+            
             foreach (GameObject ply in _players)
             {
                 ply.GetComponent<PlayerData>().DeactivateAll();

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Experimental.U2D;
 using UnityEngine.U2D;
 
@@ -15,18 +16,24 @@ public class Hole : MonoBehaviour
     private Collider2D _collider2D;
     public GameObject vortexPrefab;
     private GameObject _vortex;
-
+   
     private void Start()
     {
         Vector3 pos = AvgVector(vertexPos);
         pos.z = 5;
         _vortex = Instantiate(vortexPrefab, pos, vortexPrefab.transform.rotation);
-        
+        GameManager.GetInstance().OnEndingRoundEvent().AddListener(OnEndRound);
         _spriteShape = GetComponent<SpriteShapeController>();
         Destroy(gameObject,destructionTime);
         StartCoroutine(StartTrigger(delayActivation));
     }
 
+    private void OnEndRound()
+    {
+        StopAllCoroutines();
+        Destroy(gameObject);
+    }
+    
     private IEnumerator StartTrigger(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -34,7 +41,7 @@ public class Hole : MonoBehaviour
     }
 
     private void OnDestroy()
-    {
+    { GameManager.GetInstance().OnEndingRoundEvent().RemoveListener(OnEndRound);
        Destroy(_vortex);
        AkSoundEngine.PostEvent("Geyser_Stop", gameObject);
     }

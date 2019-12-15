@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] lifeBars;
     public GameObject canvasTitle;
     public GameObject victoryScreen;
+    private UnityEvent EndRound = new UnityEvent();
+    
     
     public int GetNbRound()
     {
@@ -47,6 +49,12 @@ public class GameManager : MonoBehaviour
         return playersAnimator;
     }
 
+    public UnityEvent OnEndingRoundEvent()
+    {
+        return EndRound;
+    }
+    
+    
     private void Start()
     {
         

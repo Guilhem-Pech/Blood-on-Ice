@@ -24,12 +24,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject trailPrefab;
     [SerializeField] Vector3 trailOffset = Vector2.zero;
-
+    
     [SerializeField] private Collider2D trailCollider;
+
+    
+    [SerializeField] private Transform headPos;
     
     private Animator _animator;
     private static readonly int IsWalking = Animator.StringToHash("isWalking");
 
+    public Transform GetHeadTransform()
+    {
+        return headPos;
+    }
     public int GetPlayerIndex()
     {
         return _playerInput.playerIndex;

@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Trying to register a Player who's already registered !",this);
             return;
         }
-        targetGroup.AddMember(playerObject.transform,1f,1.4f);
+        targetGroup.AddMember(playerObject.GetComponent<PlayerController>().GetHeadTransform(),1f,2f);
         lifeBars[_playerCount % 2].SetActive(true);
         playerObject.GetComponent<PlayerHealthSystem>().lifeBar = lifeBars[_playerCount % 2].GetComponent<LifeBar>();
         ++_playerCount;

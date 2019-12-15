@@ -18,21 +18,26 @@ public class Echap : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                Crédits.SetActive(true);
+                if (Crédits.activeInHierarchy == (false))
+                {
+                    Crédits.SetActive(true);
+                }
+
+                else
+                {
+                    Crédits.SetActive(false);
+                }
             }
         }
 
-        if (Crédits.activeInHierarchy == true)
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                Application.Quit();
-            }
-        }
-
-        if (Crédits.activeInHierarchy == false)
+        else
         {
             Crédits.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && Crédits.activeInHierarchy == (true))
+        {
+            Application.Quit();
         }
     }
 }

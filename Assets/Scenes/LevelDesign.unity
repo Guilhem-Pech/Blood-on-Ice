@@ -4273,6 +4273,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1002704122483685982}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1200851119 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1002704122046108783, guid: 815daecd47d68004db27e0ac6a30634f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1002704122483685982}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200851118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845b97d854d0a514585044746e5618f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1200851120
 Animator:
   serializedVersion: 3
@@ -8196,6 +8208,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4818768023038070045, guid: e5110df6d9be0164592a61dadc6a0624,
+        type: 3}
+      propertyPath: m_PlayerJoinedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1200851119}
+    - target: {fileID: 4818768023038070045, guid: e5110df6d9be0164592a61dadc6a0624,
+        type: 3}
+      propertyPath: m_PlayerJoinedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InputPlayerJoinEvent
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5110df6d9be0164592a61dadc6a0624, type: 3}

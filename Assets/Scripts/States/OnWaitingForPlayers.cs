@@ -55,7 +55,6 @@ namespace States
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             PlayerInputManager.instance.joinBehavior = PlayerJoinBehavior.JoinPlayersManually;
-            AkSoundEngine.PostEvent("Stop_Music_Menu_And_Cinematic", animator.gameObject);
             _playerEvent.RemoveListener(OnPlayerAdded);
             _canvasTitle.SetActive(false);
         }

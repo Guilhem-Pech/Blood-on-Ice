@@ -29,5 +29,10 @@ public class Echap : MonoBehaviour
                 Application.Quit();
             }
         }
+
+        if (Crédits.activeInHierarchy == false)
+        {
+            Crédits.SetActive(false);
+        }
     }
 }

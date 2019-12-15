@@ -54,7 +54,8 @@ public class Hole : MonoBehaviour
         
         
        Rigidbody2D rigidbody2Body = other.gameObject.GetComponentInParent<Rigidbody2D>();
-       StartCoroutine(RepulsePlayer(rigidbody2Body, rigidbody2Body.velocity * -0.7f));
+        other.gameObject.GetComponentInParent<PlayerHealthSystem>().takeDamage(5);
+        StartCoroutine(RepulsePlayer(rigidbody2Body, rigidbody2Body.velocity * -0.7f));
        
        //rigidbody2Body.AddForce(rigidbody2Body.velocity * -1.5f,ForceMode2D.Impulse);
     }

@@ -1,0 +1,811 @@
+fileFormatVersion: 2
+guid: 3320f33503e67e94dbe0fc853417a277
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6141933810775500834
+    second: SpriteOrange_Death_0
+  - first:
+      213: 1612092085436241932
+    second: SpriteOrange_Death_1
+  - first:
+      213: 2572789423376827054
+    second: SpriteOrange_Death_2
+  - first:
+      213: 3019133927358108664
+    second: SpriteOrange_Death_3
+  - first:
+      213: 1181213581178902444
+    second: SpriteOrange_Death_4
+  - first:
+      213: 1735374552510092462
+    second: SpriteOrange_Death_5
+  - first:
+      213: 7573123230206629890
+    second: SpriteOrange_Death_6
+  - first:
+      213: -1187519621175216844
+    second: SpriteOrange_Death_7
+  - first:
+      213: -4553922104884220387
+    second: SpriteOrange_Death_8
+  - first:
+      213: -5322084343157692929
+    second: SpriteOrange_Death_9
+  - first:
+      213: -6510691642730796267
+    second: SpriteOrange_Death_10
+  - first:
+      213: 712853898456861619
+    second: SpriteOrange_Death_11
+  - first:
+      213: -2363955832595667715
+    second: SpriteOrange_Death_12
+  - first:
+      213: 67462663132254716
+    second: SpriteOrange_Death_13
+  - first:
+      213: -1381414030633773536
+    second: SpriteOrange_Death_14
+  - first:
+      213: 7674696601546525458
+    second: SpriteOrange_Death_15
+  - first:
+      213: -1303889437374658955
+    second: SpriteOrange_Death_16
+  - first:
+      213: -6473278458529631625
+    second: SpriteOrange_Death_17
+  - first:
+      213: -2125148005265352286
+    second: SpriteOrange_Death_18
+  - first:
+      213: 4872935441535324989
+    second: SpriteOrange_Death_19
+  - first:
+      213: -2063812319119399145
+    second: SpriteOrange_Death_20
+  - first:
+      213: 969130930285805861
+    second: SpriteOrange_Death_21
+  - first:
+      213: -1022063338128721164
+    second: SpriteOrange_Death_22
+  - first:
+      213: -6028650190518030040
+    second: SpriteOrange_Death_23
+  - first:
+      213: 7827982211440712897
+    second: SpriteOrange_Death_24
+  - first:
+      213: -2939835946655338418
+    second: SpriteOrange_Death_25
+  - first:
+      213: 4435489366275273656
+    second: SpriteOrange_Death_26
+  - first:
+      213: -842832450783939951
+    second: SpriteOrange_Death_27
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteOrange_Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 825
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20719037fb32f344a9c8fefbc0fd8130
+      internalID: 6141933810775500834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 825
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf2baf6dc2e0d54eafb7e302a34fa50
+      internalID: 1612092085436241932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 825
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fdfb82b0491bb4188f8844dc24eccf
+      internalID: 2572789423376827054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 825
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6611d0c6d49be8a4481c10a123f27f43
+      internalID: 3019133927358108664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 825
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52871c8195ef8d94e8ac02980412b2a5
+      internalID: 1181213581178902444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 825
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c24a2fdddde2a74888e99bc9796f062
+      internalID: 1735374552510092462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 825
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2623556f25b866409d0e34edd7ac1c5
+      internalID: 7573123230206629890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 825
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929163713ad3cde43af859994005687a
+      internalID: -1187519621175216844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 825
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822450c3e2e0d274cbb33d41a9aa67de
+      internalID: -4553922104884220387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 825
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cca81c3f7f49e439db12fca5635001
+      internalID: -5322084343157692929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 626
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0a12d43b5d97443bddd9a7a5aa6e5f
+      internalID: -6510691642730796267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 626
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a0dc9b9a7d71149a069c7583d987f7
+      internalID: 712853898456861619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 626
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef6f4b15133ed04a90538877331a1c4
+      internalID: -2363955832595667715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 626
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd45aad75232ac45b20b89ca2c16034
+      internalID: 67462663132254716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_14
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 626
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f9eadfb699ea848988f9fa3f2edab8
+      internalID: -1381414030633773536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_15
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 626
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1b4766733300f4383584a4bb1e54b9
+      internalID: 7674696601546525458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 626
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aec3519bba653e47b9a1b1c4116900c
+      internalID: -1303889437374658955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_17
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 626
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742110d22bb27a54283ad20d61d54013
+      internalID: -6473278458529631625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_18
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 626
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16927439c65078d40b96aa3c1e78958a
+      internalID: -2125148005265352286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_19
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 626
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943f5d2b01ffe2d4aaed0e4e5134e047
+      internalID: 4872935441535324989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 427
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca4fdd18f3f0414ab76ee6b6530adaa
+      internalID: -2063812319119399145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 427
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2af3a446714c6d4988a5ac979d2a556
+      internalID: 969130930285805861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 427
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6b3e6bf38f2eb4192422db9147d8b2
+      internalID: -1022063338128721164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 427
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafb46b9100803a43960fb062146a480
+      internalID: -6028650190518030040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_24
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 427
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581c6409eb90e0d4788e6effa81f7563
+      internalID: 7827982211440712897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 427
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a419eefdcef543c439ebabb06c8d90de
+      internalID: -2939835946655338418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 427
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fe4ea009653d74ba11a80419484208
+      internalID: 4435489366275273656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteOrange_Death_27
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 427
+        width: 200
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c05a0a61a73154696452a1f09c55be
+      internalID: -842832450783939951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 336010fd59ad58b46814e1e921bff7e5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

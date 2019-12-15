@@ -4,7 +4,6 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 namespace DefaultNamespace
 {
-    [ExecuteAlways]
     public class FreeformLight : MonoBehaviour
     {
         private Light2D _light2D;
@@ -21,6 +20,18 @@ namespace DefaultNamespace
             _light2D = GetComponent<Light2D>();
             anchor1 = GameManager.GetInstance().spotLightAnchor1;
             anchor2 = GameManager.GetInstance().spotLightAnchor2;
+        }
+
+        private void OnEnable()
+        {
+            try
+            {
+                AkSoundEngine.PostEvent("Spotlight_on", gameObject);
+            }
+            catch
+            {
+                // ignored
+            }
         }
 
         private void Update()

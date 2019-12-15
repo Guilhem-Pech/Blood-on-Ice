@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 [ExecuteAlways]
@@ -8,11 +10,9 @@ public class SpotlightPlayer : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
     private float smoothTime = 0.1F;
-    [SerializeField]
-    private GameObject projectorLightRuntime;
+    [SerializeField] [NotNull] private GameObject projectorLightRuntime;
     [SerializeField]
     private Vector3 projectorOffset = Vector3.zero;
-    [SerializeField]
     private Vector2 _projectorVelocity = Vector2.zero;
 
     private void Start()
@@ -21,14 +21,36 @@ public class SpotlightPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         Vector3 position = transform.position;
         projectorLightRuntime.transform.position = Vector2.SmoothDamp(projectorLightRuntime.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
     }
 
+    public GameObject GetProjectorRuntime()
+    {
+        return projectorLightRuntime;
+    }
+    private void OnDisable()
+    {
+        if(projectorLightRuntime != null)
+            projectorLightRuntime.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        if(projectorLightRuntime != null)
+            projectorLightRuntime.SetActive(true);
+    }
+
     private void OnDestroy()
     {
-        Destroy(projectorLightRuntime);
+        if(projectorLightRuntime != null)
+            Destroy(projectorLightRuntime);
+    }
+
+    public void SetProjectorRuntime(GameObject projector)
+    {
+        projectorLightRuntime = projector;
     }
 }

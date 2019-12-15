@@ -1,0 +1,694 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc420baa9b5a9ae4baa24baaff588972, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 22aad9c882285344b2b11abe8992f614
+    GuidInternal: 
+    m_lastTime: -8586251932733433761
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 74b5c4dfc1992341b7cc0ea4531dff80
+    GuidInternal: 
+    m_lastTime: -8586251932750825946
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: d5e5753a2329da41ad765ca003fd718e
+    GuidInternal: 
+    m_lastTime: -8586251932733613571
+    List:
+    - name: NanoProjet
+      guid: a17bdb324bffd14bab12d03be6366983
+      id: 3045981741
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NanoProjet
+        ObjectType: 7
+      Path: Default Work Unit\NanoProjet
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 8a2a687da3f77c4f8f95326d88d3a924
+    GuidInternal: 
+    m_lastTime: -8586251932751035734
+    List:
+    - name: Ambience
+      guid: 6028ad0ad6eb1f4786fdbe057e6c5b40
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Attack_High
+      guid: 1fd253a648ca424f9799cc1bcb5bd668
+      id: 1734322172
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Attacks
+        ObjectType: 4
+      - ElementName: Attack_High
+        ObjectType: 3
+      Path: Default Work Unit\Attacks\Attack_High
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Attack_Low
+      guid: 6f206ed41bd77440af1394f901c38fa8
+      id: 3349596862
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Attacks
+        ObjectType: 4
+      - ElementName: Attack_Low
+        ObjectType: 3
+      Path: Default Work Unit\Attacks\Attack_Low
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Break_Ice_When_Character_Are_Ready
+      guid: efecc607cc20fb4c9d977b9e63a786ef
+      id: 1820204126
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Break_Ice_When_Character_Are_Ready
+        ObjectType: 3
+      Path: Default Work Unit\UI\Break_Ice_When_Character_Are_Ready
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dash_Attack
+      guid: 2c9e1437850f6d43bf55827ab38b6b84
+      id: 622818416
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Dash_Attack
+        ObjectType: 3
+      Path: Default Work Unit\Character\Dash_Attack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Edge_Bump
+      guid: ff2954e239eaa44e8028a07f62d983d4
+      id: 2553873
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Edge_Bump
+        ObjectType: 3
+      Path: Default Work Unit\Environment\Edge_Bump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fit_Kick_Choc
+      guid: ff4e844fe261504698bc0e2e32e0fd54
+      id: 868143001
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks_Attacks
+        ObjectType: 4
+      - ElementName: Fit_Kick_Choc
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks_Attacks\Fit_Kick_Choc
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Gap_Crunch
+      guid: 8a622200955f364b8c31762e0aa65fa5
+      id: 94004485
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Gap_Crunch
+        ObjectType: 3
+      Path: Default Work Unit\Environment\Gap_Crunch
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Geyser_Start
+      guid: 580aee5f60cb0e4390d701143683b698
+      id: 2353751109
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Geyser_Start
+        ObjectType: 3
+      Path: Default Work Unit\Environment\Geyser_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Geyser_Stop
+      guid: d8a9ff0a6183884289250e73a746e8e9
+      id: 891207143
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Geyser_Stop
+        ObjectType: 3
+      Path: Default Work Unit\Environment\Geyser_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ice_Break_Gap
+      guid: 61f37b3c35651a4a815821fb0da6f501
+      id: 3126391515
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Ice_Break_Gap
+        ObjectType: 3
+      Path: Default Work Unit\Environment\Ice_Break_Gap
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ice_Skates_Slide_Player_1
+      guid: c0efee744cf6b642a64025e08eb4ccab
+      id: 1465771378
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Ice_Skates_Slide_Player_1
+        ObjectType: 3
+      Path: Default Work Unit\UI\Ice_Skates_Slide_Player_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ice_Skates_Slide_Player_2
+      guid: eac5dcff30bbf04195134af50ee7996c
+      id: 1465771377
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Ice_Skates_Slide_Player_2
+        ObjectType: 3
+      Path: Default Work Unit\UI\Ice_Skates_Slide_Player_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_End
+      guid: 9321af86c0a84242944031f8ea69625e
+      id: 2227419164
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Musics
+        ObjectType: 4
+      - ElementName: Music_End
+        ObjectType: 3
+      Path: Default Work Unit\Musics\Music_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Deplacement_01
+      guid: fcd503ee6c9f674c9195adf63fae2078
+      id: 3145578314
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Deplacements
+        ObjectType: 4
+      - ElementName: Play_Deplacement_01
+        ObjectType: 3
+      Path: Default Work Unit\Character\Deplacements\Play_Deplacement_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Deplacement_02
+      guid: c966887ca9a68247ad946f7f75bd9e3e
+      id: 3145578313
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Deplacements
+        ObjectType: 4
+      - ElementName: Play_Deplacement_02
+        ObjectType: 3
+      Path: Default Work Unit\Character\Deplacements\Play_Deplacement_02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music
+      guid: 6f7efea937d8be40b58c289310c1b8b0
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Musics
+        ObjectType: 4
+      - ElementName: Play_Music
+        ObjectType: 3
+      Path: Default Work Unit\Musics\Play_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Menu_And_Cinematic
+      guid: ecb81b23578cfa43b7eadb345a0ef85a
+      id: 1822637563
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Musics
+        ObjectType: 4
+      - ElementName: Play_Music_Menu_And_Cinematic
+        ObjectType: 3
+      Path: Default Work Unit\Musics\Play_Music_Menu_And_Cinematic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Death_Fall
+      guid: 40a9fb1611586347bc487a8bc9200cf4
+      id: 1631631307
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Player_Death_Fall
+        ObjectType: 3
+      Path: Default Work Unit\Character\Player_Death_Fall
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Death_Voice
+      guid: 3980649feb254845bd013a4fff046e9d
+      id: 3506070086
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Attack_Voice
+        ObjectType: 4
+      - ElementName: Player_Death_Voice
+        ObjectType: 3
+      Path: Default Work Unit\Attack_Voice\Player_Death_Voice
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Players_Collision
+      guid: 583df411791f244c8eec90bef0fb6767
+      id: 1518705232
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Players_Collision
+        ObjectType: 3
+      Path: Default Work Unit\Character\Players_Collision
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Punchs
+      guid: 51487d0d4cceef4cab1393e99f12665a
+      id: 3991701042
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks_Attacks
+        ObjectType: 4
+      - ElementName: Punchs
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks_Attacks\Punchs
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Spotlight_on
+      guid: 46cec1117573504685468e4df27a2730
+      id: 2290831937
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Spotlight_on
+        ObjectType: 3
+      Path: Default Work Unit\Environment\Spotlight_on
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Ambiant_Voice
+      guid: 2cfff669aedab348bfecec1d39d58ad8
+      id: 80692271
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Ambiant_Voice
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Ambiant_Voice
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Deplacement_01
+      guid: 3023d3242ac97040a9f2aaf5030ec4c3
+      id: 59341068
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Deplacements
+        ObjectType: 4
+      - ElementName: Stop_Deplacement_01
+        ObjectType: 3
+      Path: Default Work Unit\Character\Deplacements\Stop_Deplacement_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Deplacement_02
+      guid: 32f1f99a6fb43649992cb04bf1a235fc
+      id: 59341071
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Deplacements
+        ObjectType: 4
+      - ElementName: Stop_Deplacement_02
+        ObjectType: 3
+      Path: Default Work Unit\Character\Deplacements\Stop_Deplacement_02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Music_Menu_And_Cinematic
+      guid: 06487f67cd1eb44d9f5125155afc931b
+      id: 3346520329
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Musics
+        ObjectType: 4
+      - ElementName: Stop_Music_Menu_And_Cinematic
+        ObjectType: 3
+      Path: Default Work Unit\Musics\Stop_Music_Menu_And_Cinematic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Transition_Break_Ice_And_Wind
+      guid: e67a7b08d1a91e4eb42fa3b95ae4b61e
+      id: 1543691903
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Transition_Break_Ice_And_Wind
+        ObjectType: 3
+      Path: Default Work Unit\UI\Transition_Break_Ice_And_Wind
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Action_Button
+      guid: b4f46ce28e866b428c2c7cc4636a7ce7
+      id: 698935911
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI_Action_Button
+        ObjectType: 3
+      Path: Default Work Unit\UI_Action_Button
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Attack
+      guid: 2b0e788d87b84a4f951ddb5ab4616943
+      id: 97310432
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Attack_Voice
+        ObjectType: 4
+      - ElementName: Voice_Attack
+        ObjectType: 3
+      Path: Default Work Unit\Attack_Voice\Voice_Attack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Damage
+      guid: b6972109f705334da4bb93062b3670d6
+      id: 2203153607
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Attack_Voice
+        ObjectType: 4
+      - ElementName: Voice_Damage
+        ObjectType: 3
+      Path: Default Work Unit\Attack_Voice\Voice_Damage
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Fight
+      guid: ef1f2d1de902584881f2d7fbc216758d
+      id: 2224959990
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Fight
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Fight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Player_1_Wins
+      guid: 2480cc63048594468864e755cd2b1b2b
+      id: 555004839
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Player_1_Wins
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Player_1_Wins
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Player_2_Wins
+      guid: 3d8e8f2e7cdb70448a5516929177ac9c
+      id: 934231090
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Player_2_Wins
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Player_2_Wins
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Round_1
+      guid: 363c8ed50a00d1428d1bd098ef94fb37
+      id: 1399799472
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Round_1
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Round_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Round_2
+      guid: f91ab4c328c632458ec4d829415064eb
+      id: 1399799475
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Round_2
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Round_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Round_3
+      guid: 2d34c64ac1bd414cb8f08510ec9b607a
+      id: 1399799474
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Round_3
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Round_3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice_Win
+      guid: 111d5007514d83418366038ae016fbeb
+      id: 552777022
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Voice_Win
+        ObjectType: 3
+      Path: Default Work Unit\Voices\Voice_Win
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 692f8ac3d0aefc428093bf9a821f6ff3
+    GuidInternal: 
+    m_lastTime: -8586251932751055714
+    List:
+    - name: RTPC_PlayersDistancce
+      guid: ab1921dc79449f4986617c0b205cb09a
+      id: 1199014345
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPC_PlayersDistancce
+        ObjectType: 13
+      Path: Default Work Unit\RTPC_PlayersDistancce
+    - name: RTPC_Timer
+      guid: c33e1dbff55dd2438f56adfeca8b8c33
+      id: 2286992438
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPC_Timer
+        ObjectType: 13
+      Path: Default Work Unit\RTPC_Timer
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c8697e2ed467284ba0ef79e0ba80b002
+    GuidInternal: 
+    m_lastTime: -8586251932733523668
+    List:
+    - name: Music
+      guid: 7db00a54dba0784caa39ce623cd607e9
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 9
+      Path: Default Work Unit\Music
+      values:
+      - name: Fire_Combat
+        guid: 8d691c27f53df34b8d89b1b8fc82715c
+        id: 948314252
+        PathAndIcons:
+        - ElementName: Fire_Combat
+          ObjectType: 8
+      - name: Introduction
+        guid: 5a7e870f2410a64e9ab946f3b2748808
+        id: 1034344105
+        PathAndIcons:
+        - ElementName: Introduction
+          ObjectType: 8
+      - name: None
+        guid: adb8bab6eff82b4496bf6f0ed20130de
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c066f6b829a1514e8b39018b5d7d18a1
+    GuidInternal: 
+    m_lastTime: -8586251932733473720
+    List:
+    - name: Switch_Music
+      guid: ecc3bddfc2921d49939e1bb498f047fc
+      id: 2963455281
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Switch_Music
+        ObjectType: 11
+      Path: Default Work Unit\Switch_Music
+      values:
+      - name: End_Combat
+        guid: b54fa8ce389d6d46ae2a31c27ca77dc6
+        id: 4195088783
+        PathAndIcons:
+        - ElementName: End_Combat
+          ObjectType: 10
+      - name: Start_Combat
+        guid: a4046c51756f1a4bb9817b6ceb7a66be
+        id: 1658298262
+        PathAndIcons:
+        - ElementName: Start_Combat
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 69b8ae5067247945b1bbef1fdbc87da1
+    GuidInternal: 
+    m_lastTime: -8586251932733453740
+    List: []
+  ExpandedItems:
+  - /Session Wwise - Nano Projet 1
+  - /Session Wwise - Nano Projet 1/Events
+  - /Session Wwise - Nano Projet 1/Events/Default Work Unit
+  - /Session Wwise - Nano Projet 1/Events/Default Work Unit/Musics
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

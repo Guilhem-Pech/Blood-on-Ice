@@ -1,9 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 
 public class PlayerHealthSystem : MonoBehaviour
 {
+    private bool dead;
     /// <summary>
     /// The player current amount of health
     /// </summary>
@@ -13,9 +17,18 @@ public class PlayerHealthSystem : MonoBehaviour
     /// </summary>
     [SerializeField]    private int maxHealth;
 
-    public void Awake()
+    [SerializeField] private GameObject[] bloodPrebabs;
+
+
+    public LifeBar lifeBar;
+    
+
+    private void OnEnable()
     {
-        this.currentHealth = this.getMaxHealth();
+        lifeBar = GetComponent<PlayerData>().GetPlayerLifeBar().GetComponent<LifeBar>();
+        currentHealth = getMaxHealth();
+        dead = false;
+        lifeBar.lifePercent = 1.0f;
     }
 
     /// <summary>
@@ -42,12 +55,21 @@ public class PlayerHealthSystem : MonoBehaviour
     /// <param name="damage">The amount of health to remove of the player</param>
     public void takeDamage(int damage)
     {
-        
+        if (Random.Range(0, 3) > 0)
+        {
+            Transform t;
+            GameObject blood = Instantiate(bloodPrebabs[Random.Range(0, 4)], (t = transform).position, t.rotation);
+            Destroy(blood, 4f);
+        }
         currentHealth -= damage;
+        AkSoundEngine.PostEvent("Voice_Damage", this.gameObject);
+        lifeBar.lifePercent = currentHealth / (float) maxHealth;
         if(currentHealth <= 0)
         {
             this.getKilled();
+            return;
         }
+        GetComponentInChildren<Animator>().SetTrigger("takeDamage");
     }
 
     /// <summary>
@@ -57,7 +79,27 @@ public class PlayerHealthSystem : MonoBehaviour
     public int getKilled()
     {
         //Kill the player here
-        this.gameObject.SetActive(false);
+        GetComponentInChildren<Animator>().SetTrigger("youDie");
+        AkSoundEngine.PostEvent("Player_Death_Voice", this.gameObject);
+        AkSoundEngine.PostEvent("Player_Death_Fall", this.gameObject);
         return Mathf.Abs(this.currentHealth);
+        
+    }
+
+    void Update()
+    {
+        if (GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("PlayerOrange_Death"))
+        {
+            this.dead = true;
+        }
+        if (dead)
+        {
+            if (GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("PlayerOrange_Idle"))
+            {
+                GameManager.GetInstance().GetPlayerKilledEvent().Invoke(gameObject);
+            }
+
+        }
+        
     }
 }

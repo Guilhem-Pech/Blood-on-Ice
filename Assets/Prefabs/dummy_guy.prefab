@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1779287683
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: af38dd5663d258642b2040c761f33191, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -197,18 +197,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 5
-  smoothTime: 0.1
-  projectorLight: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
-    type: 3}
-  projectorOffset: {x: 0, y: -0.34, z: 0}
+  _rigidbody2D: {fileID: 0}
   spriteRenderer: {fileID: 312176950425514724}
   trailPrefab: {fileID: 4616875079839427704, guid: 5abea99496ca2dd4d88787496643a0ba,
     type: 3}
+  trailOffset: {x: 0, y: 0, z: 0}
   trailCollider: {fileID: 5757552219904358539, guid: 8e339a4e20aa80b45853bd661351f043,
     type: 3}
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &6786907845331993728
 MonoBehaviour:
   m_ObjectHideFlags: 0

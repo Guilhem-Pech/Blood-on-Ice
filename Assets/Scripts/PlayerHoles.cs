@@ -42,12 +42,15 @@ public class PlayerHoles : MonoBehaviour
     {
         if (vPos.Count < 4) return;
         int findIndex = FindIndex(pos, vPos);
-        
+        if (findIndex < 0)
+            return;
         vPos.RemoveRange(0,findIndex);
         vPos[vPos.Count - 1] = vPos[0];
+        if (AreaIrregularPolygon(vPos) < 1 )
+            return;
         
         GameObject hole = Instantiate(holePrefab, Vector3.zero, Quaternion.identity);
-        
+        hole.GetComponent<Hole>().vertexPos = vPos;
         SpriteShapeController spriteShapeController = hole.GetComponent<SpriteShapeController>();
         Spline spline = spriteShapeController.spline;
         for (int i = 0; i < vPos.Count - 1; ++i)
@@ -85,6 +88,25 @@ public class PlayerHoles : MonoBehaviour
         yield return new WaitForSeconds(second);
         _trailRenderer.enabled = true;
         
+    }
+    
+    
+    float AreaIrregularPolygon(IList<Vector3> list){
+        float temp = 0;
+        int i = 0 ;
+        for(; i < list.Count ; i++){
+            if(i != list.Count - 1){
+                float mulA = list[i].x * list[i+1].y;
+                float mulB = list[i+1].x * list[i].y;
+                temp = temp + ( mulA - mulB );
+            }else{
+                float mulA = list[i].x * list[0].y;
+                float mulB = list[0].x * list[i].y;
+                temp = temp + ( mulA - mulB );
+            }
+        }
+        temp *= 0.5f;
+        return Mathf.Abs(temp);
     }
     
     

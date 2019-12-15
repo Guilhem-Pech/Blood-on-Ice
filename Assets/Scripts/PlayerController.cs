@@ -13,29 +13,42 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float force = 1;
     
-    
     private bool _facingRight = false;
     private Vector2 _inputDir;
     [SerializeField]
     private Rigidbody2D _rigidbody2D;
     private PlayerAttackSystem _attackSystem;
     private PlayerInput _playerInput;
+    [SerializeField]
     private SpriteRenderer spriteRenderer;
     [SerializeField]
     private GameObject trailPrefab;
     [SerializeField] Vector3 trailOffset = Vector2.zero;
-
+    
     [SerializeField] private Collider2D trailCollider;
+
+  
+    [SerializeField] private Transform headPos;
     
     private Animator _animator;
     private static readonly int IsWalking = Animator.StringToHash("isWalking");
 
+
+   
+    public Transform GetHeadTransform()
+    {
+        return headPos;
+    }
+    public int GetPlayerIndex()
+    {
+        return _playerInput.playerIndex;
+    }
+    
     private void Start()
     {
         _animator = GetComponentInChildren<Animator>();
         _playerInput = GetComponent<PlayerInput>();
         spriteRenderer.enabled = true;
-        GameManager.GetInstance().RegisterPlayer(gameObject);
         gameObject.layer = 9;
         Vector3 position = transform.position;
         trailPrefab = Instantiate(trailPrefab, position, quaternion.identity);
@@ -43,9 +56,17 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _attackSystem = GetComponent<PlayerAttackSystem>();
         _playerInput = GetComponent<PlayerInput>();
+    }
 
-        _playerInput.actions.FindActionMap("PlayersControls").FindAction("Attack1").started += OnAttack1;
-        _playerInput.actions.FindActionMap("PlayersControls").FindAction("Attack2").started += OnAttack2;
+    private void OnEnable()
+    {
+        trailPrefab.GetComponent<TrailRenderer>()?.Clear();
+        // trailPrefab.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        trailPrefab.GetComponent<TrailRenderer>()?.Clear();
     }
 
     public void OnMovements(InputAction.CallbackContext context)
@@ -82,16 +103,18 @@ public class PlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
-        GameManager.GetInstance().RemovePlayer(gameObject);
+        //GameManager.GetInstance().RemovePlayer(gameObject);
     }
 
     public void OnAttack1(InputAction.CallbackContext context)
     {
-        _attackSystem.AOEAttack();
+        if(context.started)
+            _attackSystem.AOEAttack();
     }
 
     public void OnAttack2(InputAction.CallbackContext context)
     {
-        _attackSystem.FrontAttack();
+        if(context.started)
+            _attackSystem.FrontAttack();
     }
 }

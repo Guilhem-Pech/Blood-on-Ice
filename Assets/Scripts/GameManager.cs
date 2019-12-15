@@ -1,31 +1,64 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using Cinemachine;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
+
+
+[System.Serializable]
+public class PlayerEvent : UnityEvent<GameObject>
+{}
 
 public class GameManager : MonoBehaviour
 {
-    private HashSet<GameObject> _playerSet = new HashSet<GameObject>();
+    private readonly HashSet<GameObject> _playerSet = new HashSet<GameObject>();
+    [SerializeField]
+    private int nbRound = 3;
     private static GameManager _instance;
     public CinemachineTargetGroup targetGroup;
     private Animator _animator;
-    private static readonly int StartRound = Animator.StringToHash("StartRound");
     private int _playerCount = 0;
+    public GameObject introPrefab;
+    
+    private PlayerEvent _playerAddEvent = new PlayerEvent ();
+    private PlayerEvent _playerKilledEvent = new PlayerEvent();
+    public GameObject projectorPrefab;
+    public Transform playerGreenSpawnPos;
+    public Transform playerOrangeSpawnPos;
+    public GameObject[] lifeBars;
+    public GameObject canvasTitle;
+    public GameObject victoryScreen;
+    private UnityEvent EndRound = new UnityEvent();
+    
+    
+    public int GetNbRound()
+    {
+        return Math.Abs(nbRound);
+    }
     
     [SerializeField]
     private List<AnimatorOverrideController> playersAnimator;
     
-    public Transform spotLightAnchor1;
+    public Transform spotLightAnchor1;    
     public Transform spotLightAnchor2;
     private static readonly int NbPlayers = Animator.StringToHash("nbPlayers");
 
+    public List<AnimatorOverrideController> GetPlayersAnimator()
+    {
+        return playersAnimator;
+    }
+
+    public UnityEvent OnEndingRoundEvent()
+    {
+        return EndRound;
+    }
+    
+    
     private void Start()
     {
         
         _animator = GetComponent<Animator>();
-        _animator.SetTrigger(StartRound);
         if (playersAnimator.Count < 0)
             Debug.LogError("Players' Animator not set in the Game Manager", this);
     }
@@ -35,6 +68,16 @@ public class GameManager : MonoBehaviour
         return _instance; 
     }
 
+    public PlayerEvent GetPlayerAddedEvent()
+    {
+        return _playerAddEvent;
+    }
+
+    public PlayerEvent GetPlayerKilledEvent()
+    {
+        return _playerKilledEvent; 
+    }
+    
     public void RegisterPlayer(GameObject playerObject)
     {
         if(!_playerSet.Add(playerObject))
@@ -42,11 +85,12 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Trying to register a Player who's already registered !",this);
             return;
         }
-        targetGroup.AddMember(playerObject.transform,1f,1.4f);
-        playerObject.GetComponentInChildren<Animator>().runtimeAnimatorController = playersAnimator[_playerCount % playersAnimator.Count];
+        targetGroup.AddMember(playerObject.GetComponent<PlayerController>().GetHeadTransform(),1f,2f);
+        playerObject.GetComponent<PlayerData>().SetPlayerLifeBar(lifeBars[_playerCount % 2]); 
+        
         ++_playerCount;
-        GetComponent<Animator>().SetInteger(NbPlayers,_playerCount);
     }
+
 
     public void RemovePlayer(GameObject playerObject)
     {
@@ -57,7 +101,18 @@ public class GameManager : MonoBehaviour
     {
         return _playerSet;
     }
+
+
+    public void InputPlayerJoinEvent(PlayerInput playerInput)
+    {
+        _playerAddEvent.Invoke(playerInput.gameObject);
+    }
     
+    public void SpawnProjector(GameObject player)
+    {
+        GameObject projector = Instantiate(projectorPrefab);
+        player.GetComponent<SpotlightPlayer>().SetProjectorRuntime(projector);
+    }
     
     private void Awake()
     {
@@ -68,7 +123,4 @@ public class GameManager : MonoBehaviour
         }
         _instance = this;
     }
-    
-    
-    
 }

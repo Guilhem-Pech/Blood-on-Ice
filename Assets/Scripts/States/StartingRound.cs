@@ -14,6 +14,8 @@ namespace States
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
+            
+
             AkSoundEngine.PostEvent("Voice_Fight", animator.gameObject);
             _playersWaiting = GameManager.GetInstance().GetPlayersWaiting();
             _players = GameManager.GetInstance().GetPlayers();

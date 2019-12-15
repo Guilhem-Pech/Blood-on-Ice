@@ -37,6 +37,7 @@ namespace States
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
+            AkSoundEngine.PostEvent("Music_End", animator.gameObject);
             _players.Clear();
             for (int i = 0; i < 2; i++)
             {

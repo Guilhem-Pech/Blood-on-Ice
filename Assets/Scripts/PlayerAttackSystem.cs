@@ -101,7 +101,7 @@ public class PlayerAttackSystem : MonoBehaviour
             direction = direction.normalized;
             _directionToPush = direction;
             _playerToPush.GetComponent<Rigidbody2D>().AddForce(forceOfKnockback * 0.03f * _directionToPush, ForceMode2D.Impulse);
-            _playerToPush.GetComponent<PlayerHealthSystem>().takeDamage(10);
+            _playerToPush.GetComponent<PlayerHealthSystem>().takeDamage(13);
             AkSoundEngine.PostEvent("Punchs", this.gameObject);
             pushed = true;
         }
@@ -127,7 +127,7 @@ public class PlayerAttackSystem : MonoBehaviour
             if (!(this.actualVelocity > velocityTrigger)) return;
             if (collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>() != null)
             {
-                collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>().takeDamage(10);
+                collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>().takeDamage(7);
                 StartCoroutine(StartVibrate(0.05f));
                 AkSoundEngine.PostEvent("Fit_Kick_Choc", this.gameObject);
             }

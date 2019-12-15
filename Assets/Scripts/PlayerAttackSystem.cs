@@ -44,6 +44,11 @@ public class PlayerAttackSystem : MonoBehaviour
         AOECountdown = AOECooldown;
     }
 
+    private void OnEnable()
+    {
+        this.animator = this.GetComponentInChildren<Animator>();
+    }
+
     private Animator GetAnimator()
     {
         return GetComponentInChildren<Animator>();

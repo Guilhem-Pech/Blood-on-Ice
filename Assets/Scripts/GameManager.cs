@@ -46,7 +46,11 @@ public class GameManager : MonoBehaviour
     public Transform spotLightAnchor1;    
     public Transform spotLightAnchor2;
     private static readonly int NbPlayers = Animator.StringToHash("nbPlayers");
-    
+
+    public List<AnimatorOverrideController> GetPlayersAnimator()
+    {
+        return playersAnimator;
+    }
     public HashSet<GameObject> GetPlayersWaiting()
     {
         return _playersWaiting;

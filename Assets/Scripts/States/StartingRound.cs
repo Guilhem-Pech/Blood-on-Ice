@@ -9,29 +9,28 @@ namespace States
         private static readonly int StartRound = Animator.StringToHash("StartRound");
 
         private HashSet<GameObject> _players;
-        private HashSet<GameObject> _playersWaiting;
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
-            
-
-            AkSoundEngine.PostEvent("Voice_Fight", animator.gameObject);
-            _playersWaiting = GameManager.GetInstance().GetPlayersWaiting();
             _players = GameManager.GetInstance().GetPlayers();
-            foreach (GameObject gameObject in _playersWaiting)
-            {
-                Destroy(gameObject);
-            }
+            List<GameObject> players = new List<GameObject>(GameManager.GetInstance().GetPlayers());
+            
+            AkSoundEngine.PostEvent("Voice_Fight", animator.gameObject);
+            
+            players[0].transform.SetPositionAndRotation(GameManager.GetInstance().playerGreenSpawnPos.transform.position, Quaternion.identity);
+            players[1].transform.SetPositionAndRotation(GameManager.GetInstance().playerOrangeSpawnPos.transform.position, Quaternion.identity);
+            
             animator.SetTrigger(StartRound);
         }
 
 
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            for (int i = 0; i < 2; i++)
+            foreach (GameObject ply in _players)
             {
-                GameManager.GetInstance().SpawnPlayer();
+                ply.GetComponent<PlayerData>().ActivateAll();
+                
             }
         }
 

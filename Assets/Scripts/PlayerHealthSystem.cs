@@ -22,14 +22,11 @@ public class PlayerHealthSystem : MonoBehaviour
 
     public LifeBar lifeBar;
     
-    public void Awake()
-    {
-        this.currentHealth = this.getMaxHealth();
-        this.dead = false;
-    }
 
-    private void Start()
+    private void OnEnable()
     {
+        currentHealth = getMaxHealth();
+        dead = false;
         lifeBar.lifePercent = 1.0f;
     }
 

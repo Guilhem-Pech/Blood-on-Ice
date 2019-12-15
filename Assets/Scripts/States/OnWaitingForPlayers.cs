@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,6 +16,7 @@ namespace States
         private bool _start = false;
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
+            _nbPlayer = 0;
             _start = false;
             _animator = animator;
             _playerEvent = GameManager.GetInstance().GetPlayerAddedEvent();
@@ -28,16 +30,18 @@ namespace States
         private void OnPlayerAdded(GameObject player)
         {
             ++_nbPlayer;
-             AkSoundEngine.PostEvent("Ice_Skates_Slide_Player_"+_nbPlayer, _animator.gameObject);
+            AkSoundEngine.PostEvent("Ice_Skates_Slide_Player_"+_nbPlayer, _animator.gameObject);
             _canvasTitle.GetComponent<Animator>().SetInteger(NbPlayer,_nbPlayer);
-            if (GameManager.GetInstance().GetPlayersWaiting().Count < 2) return;
+            player.GetComponent<PlayerData>().GetPlayerSpriteGameObject().GetComponent<Animator>().runtimeAnimatorController = GameManager.GetInstance().GetPlayersAnimator()[_nbPlayer - 1];
+            GameManager.GetInstance().RegisterPlayer(player);
+           if (_nbPlayer < 2) return;
             _start = true;
             AkSoundEngine.PostEvent("Break_Ice_When_Character_are_Ready", _animator.gameObject);
 
         }
 
         private bool _pass = true;
-        private float _timeStart = 2;
+        private float _timeStart = 0.9f;
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             if(!_start)

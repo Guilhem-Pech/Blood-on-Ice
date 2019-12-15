@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace States
 {
@@ -37,6 +38,8 @@ namespace States
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
         {
+            AkSoundEngine.StopAll();
+            SceneManager.LoadScene("LevelDesign");
         }
 
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo,

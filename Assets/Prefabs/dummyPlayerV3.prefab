@@ -277,9 +277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa8a70b16416014ab2b07510b571857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceOfKnockback: 100
-  velocityTrigger: 0
-  radius: 1
+  forceOfKnockback: 200
+  velocityTrigger: 5
+  radius: 1.25
   AOECooldown: 1
   DashCooldown: 1
 --- !u!114 &2241496655630705726

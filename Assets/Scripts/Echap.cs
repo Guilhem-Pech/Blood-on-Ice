@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Echap : MonoBehaviour
 {
+    public GameObject Intro;
+    public GameObject Crédits;
+
     void Start()
     {
         Cursor.visible = false;
@@ -11,9 +14,20 @@ public class Echap : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Intro.activeInHierarchy == true)
         {
-            Application.Quit();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Crédits.SetActive(true);
+            }
+        }
+
+        if (Crédits.activeInHierarchy == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
         }
     }
 }

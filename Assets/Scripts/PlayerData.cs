@@ -36,7 +36,7 @@ public class PlayerData : MonoBehaviour
         return playerHealthSystem;
     }
 
-    public SpotlightPlayer getSpotlightPlayer()
+    public SpotlightPlayer GetSpotlightPlayer()
     {
         return playerSpotlightPlayer;
     }
@@ -54,7 +54,7 @@ public class PlayerData : MonoBehaviour
         GetPlayerController().enabled = false;
         GetPlayerHealthSystem().enabled = false;
         GetPlayerAttackSystem().enabled = false;
-        getSpotlightPlayer().enabled = false;
+        GetSpotlightPlayer().enabled = false;
     }
     
     public void ActivateAll()
@@ -63,6 +63,6 @@ public class PlayerData : MonoBehaviour
         GetPlayerController().enabled = true;
         GetPlayerHealthSystem().enabled = true;
         GetPlayerAttackSystem().enabled = true;
-        getSpotlightPlayer().enabled = true;
+        GetSpotlightPlayer().enabled = true;
     }
 }

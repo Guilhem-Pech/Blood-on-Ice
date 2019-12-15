@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 22aad9c882285344b2b11abe8992f614
     GuidInternal: 
-    m_lastTime: -8586255493871090408
+    m_lastTime: -8586251932733433761
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 74b5c4dfc1992341b7cc0ea4531dff80
     GuidInternal: 
-    m_lastTime: -8586252572980440151
+    m_lastTime: -8586251932750825946
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d5e5753a2329da41ad765ca003fd718e
     GuidInternal: 
-    m_lastTime: -8586255493871430372
+    m_lastTime: -8586251932733613571
     List:
     - name: NanoProjet
       guid: a17bdb324bffd14bab12d03be6366983
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8a2a687da3f77c4f8f95326d88d3a924
     GuidInternal: 
-    m_lastTime: -8586252572980519936
+    m_lastTime: -8586251932751035734
     List:
     - name: Ambience
       guid: 6028ad0ad6eb1f4786fdbe057e6c5b40
@@ -588,7 +588,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 692f8ac3d0aefc428093bf9a821f6ff3
     GuidInternal: 
-    m_lastTime: -8586255493876666512
+    m_lastTime: -8586251932751055714
     List:
     - name: RTPC_PlayersDistancce
       guid: ab1921dc79449f4986617c0b205cb09a
@@ -613,7 +613,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: c8697e2ed467284ba0ef79e0ba80b002
     GuidInternal: 
-    m_lastTime: -8586255493871190145
+    m_lastTime: -8586251932733523668
     List:
     - name: Music
       guid: 7db00a54dba0784caa39ce623cd607e9
@@ -651,7 +651,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: c066f6b829a1514e8b39018b5d7d18a1
     GuidInternal: 
-    m_lastTime: -8586255493871140283
+    m_lastTime: -8586251932733473720
     List:
     - name: Switch_Music
       guid: ecc3bddfc2921d49939e1bb498f047fc
@@ -683,13 +683,12 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 69b8ae5067247945b1bbef1fdbc87da1
     GuidInternal: 
-    m_lastTime: -8586255493871130304
+    m_lastTime: -8586251932733453740
     List: []
   ExpandedItems:
   - /Session Wwise - Nano Projet 1
   - /Session Wwise - Nano Projet 1/Events
   - /Session Wwise - Nano Projet 1/Events/Default Work Unit
-  - /Session Wwise - Nano Projet 1/Events/Default Work Unit/UI
-  - /Session Wwise - Nano Projet 1/Events/Default Work Unit/Voices
+  - /Session Wwise - Nano Projet 1/Events/Default Work Unit/Musics
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -1,0 +1,162 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2553873	Edge_Bump			\Default Work Unit\Environment\Edge_Bump	
+	59341068	Stop_Deplacement_01			\Default Work Unit\Character\Deplacements\Stop_Deplacement_01	
+	59341071	Stop_Deplacement_02			\Default Work Unit\Character\Deplacements\Stop_Deplacement_02	
+	80692271	Stop_Ambiant_Voice			\Default Work Unit\Stop_Ambiant_Voice	
+	85412153	Ambience			\Default Work Unit\Ambience	
+	94004485	Gap_Crunch			\Default Work Unit\Environment\Gap_Crunch	
+	97310432	Voice_Attack			\Default Work Unit\Attack_Voice\Voice_Attack	
+	552777022	Voice_Win			\Default Work Unit\Voices\Voice_Win	
+	555004839	Voice_Player_1_Wins			\Default Work Unit\Voices\Voice_Player_1_Wins	
+	622818416	Dash_Attack			\Default Work Unit\Character\Dash_Attack	
+	698935911	UI_Action_Button			\Default Work Unit\UI_Action_Button	
+	868143001	Fit_Kick_Choc			\Default Work Unit\Feedbacks_Attacks\Fit_Kick_Choc	
+	891207143	Geyser_Stop			\Default Work Unit\Environment\Geyser_Stop	
+	934231090	Voice_Player_2_Wins			\Default Work Unit\Voices\Voice_Player_2_Wins	
+	1399799472	Voice_Round_1			\Default Work Unit\Voices\Voice_Round_1	
+	1399799474	Voice_Round_3			\Default Work Unit\Voices\Voice_Round_3	
+	1399799475	Voice_Round_2			\Default Work Unit\Voices\Voice_Round_2	
+	1465771377	Ice_Skates_Slide_Player_2			\Default Work Unit\UI\Ice_Skates_Slide_Player_2	
+	1465771378	Ice_Skates_Slide_Player_1			\Default Work Unit\UI\Ice_Skates_Slide_Player_1	
+	1518705232	Players_Collision			\Default Work Unit\Character\Players_Collision	
+	1543691903	Transition_Break_Ice_And_Wind			\Default Work Unit\UI\Transition_Break_Ice_And_Wind	
+	1631631307	Player_Death_Fall			\Default Work Unit\Character\Player_Death_Fall	
+	1734322172	Attack_High			\Default Work Unit\Attacks\Attack_High	
+	1820204126	Break_Ice_When_Character_Are_Ready			\Default Work Unit\UI\Break_Ice_When_Character_Are_Ready	
+	1822637563	Play_Music_Menu_And_Cinematic			\Default Work Unit\Musics\Play_Music_Menu_And_Cinematic	
+	2203153607	Voice_Damage			\Default Work Unit\Attack_Voice\Voice_Damage	
+	2224959990	Voice_Fight			\Default Work Unit\Voices\Voice_Fight	
+	2227419164	Music_End			\Default Work Unit\Musics\Music_End	
+	2290831937	Spotlight_on			\Default Work Unit\Environment\Spotlight_on	
+	2353751109	Geyser_Start			\Default Work Unit\Environment\Geyser_Start	
+	2932040671	Play_Music			\Default Work Unit\Musics\Play_Music	
+	3126391515	Ice_Break_Gap			\Default Work Unit\Environment\Ice_Break_Gap	
+	3145578313	Play_Deplacement_02			\Default Work Unit\Character\Deplacements\Play_Deplacement_02	
+	3145578314	Play_Deplacement_01			\Default Work Unit\Character\Deplacements\Play_Deplacement_01	
+	3346520329	Stop_Music_Menu_And_Cinematic			\Default Work Unit\Musics\Stop_Music_Menu_And_Cinematic	
+	3349596862	Attack_Low			\Default Work Unit\Attacks\Attack_Low	
+	3506070086	Player_Death_Voice			\Default Work Unit\Attack_Voice\Player_Death_Voice	
+	3991701042	Punchs			\Default Work Unit\Feedbacks_Attacks\Punchs	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2963455281	Switch_Music			\Default Work Unit\Switch_Music	
+
+Switch	ID	Name	Switch Group			Notes
+	1658298262	Start_Combat	Switch_Music			
+	4195088783	End_Combat	Switch_Music			
+
+Effect plug-ins	ID	Name	Type				Notes
+	506891147	Plate_Small	Wwise RoomVerb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3909051	Attaque_High_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attaque_High_with_effects_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Fit_Kicks\Attaque_High_01		110396
+	13720595	You_Win_04	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\You_Win_04_49718417.wem		\Actor-Mixer Hierarchy\Voices\Win\You_Win\You_Win_04		27076
+	78828263	Combat_rapproché_phase_2_first	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_rapproché_phase_2_first_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_rapproché_phase_2_first\Combat_rapproché_phase_2_first		239914
+	82834189	Players_Collision_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Players_Collision_01_49718417.wem		\Actor-Mixer Hierarchy\Character\Players_Collision\Players_Collision_01		7090
+	84799927	You_Win_03	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\You_Win_03_49718417.wem		\Actor-Mixer Hierarchy\Voices\Win\You_Win\You_Win_03		22421
+	102697347	Fight_05	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Fight_05_49718417.wem		\Actor-Mixer Hierarchy\Voices\Fight\Fight_05		17325
+	109809174	Combat_rapproché_phase_1_loop_1	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_rapproché_phase_1_loop_1_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_rapproché_phase_1_loop_1\Combat_rapproché_phase_1_loop_1		169986
+	115791293	Player_Death_Shout_Mieux	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Player_Death_Shout_Mieux_49718417.wem		\Actor-Mixer Hierarchy\Character\Player_Death_Voice\Player_Death_Shout_Mieux		24196
+	123303757	Combat_rapproché_phase_1_loop_4	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_rapproché_phase_1_loop_4_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_rapproché_phase_1_loop_4\Combat_rapproché_phase_1_loop_4		216408
+	138315423	Spotlight Stadium - Reverb_Good	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Spotlight Stadium - Reverb_Good_10C4C929.wem		\Actor-Mixer Hierarchy\Environment\Spotlight_on\Spotlight Stadium - Reverb_Good		297024
+	143143403	Combat_à_distance_loop_1	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_à_distance_loop_1_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_à_distance_loop_1\Combat_à_distance_loop_1		220670
+	145174912	Fight_07	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Fight_07_49718417.wem		\Actor-Mixer Hierarchy\Voices\Fight\Fight_07		20112
+	148665168	Bump_1_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Bump_1_01_10C4C929.wem		\Actor-Mixer Hierarchy\UI\Action_Button\Bump_1_01		308956
+	151395274	Ice_Skates_Slide_Player_1	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Ice_Skates_Slide_Player_1_49718417.wem		\Actor-Mixer Hierarchy\UI\Selection_Player\Ice_Skates_Slide_Player_1\Ice_Skates_Slide_Player_1		12280
+	162119535	Player_Death_Fall	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Player_Death_Fall_49718417.wem		\Actor-Mixer Hierarchy\Character\Moves\Player_Voice_Fall\Player_Death_Fall		18812
+	164458111	Players_Collision_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Players_Collision_02_49718417.wem		\Actor-Mixer Hierarchy\Character\Players_Collision\Players_Collision_02		6980
+	173810729	You_Win_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\You_Win_01_49718417.wem		\Actor-Mixer Hierarchy\Voices\Win\You_Win\You_Win_01		16196
+	179461049	Attaque_Low_v2	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attaque_Low_v2_EE770F1F.wem		\Actor-Mixer Hierarchy\Character\Attacks\Punch_Crooked_Fit_Attack\Attaque_Low_v2		6343
+	196186534	Round_03_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Round_03_01_49718417.wem		\Actor-Mixer Hierarchy\Voices\Round_3\Round_03_01		34533
+	200382848	Combat_à_distance	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_à_distance_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_à_distance\Combat_à_distance		247636
+	201508571	Geyser_submarine_bass_05	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Geyser_submarine_bass_05_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Submarine_Geyser_Bass\Geyser_submarine_bass_05		33815
+	204463774	Damage_Voice_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Damage_Voice_01_49718417.wem		\Actor-Mixer Hierarchy\Character\Player_Damage_Voices\Damage_Voice_01		9399
+	224630020	Attaque_High_04	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attaque_High_without_effects_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Fit_Kicks\Attaque_High_04		110396
+	265539755	Damage_Voice_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Damage_Voice_02_49718417.wem		\Actor-Mixer Hierarchy\Character\Player_Damage_Voices\Damage_Voice_02		6692
+	267761467	Geyser_submarine_bass_07	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Geyser_submarine_bass_07_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Submarine_Geyser_Bass\Geyser_submarine_bass_07		39637
+	270630213	Attack_Voice_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attack_Voice_02_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Voices\Attack_Voice_02		8505
+	273631838	Fight_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Fight_01_49718417.wem		\Actor-Mixer Hierarchy\Voices\Fight\Fight_01		14242
+	280279196	Geyser_submarine_bass_03	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Geyser_submarine_bass_03_7EB7118F.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Submarine_Geyser_Bass\Geyser_submarine_bass_03		12245
+	301590609	Attack_Voice_04	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attack_Voice_04_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Voices\Attack_Voice_04		6869
+	305176929	Geyser_submarine_bass_04	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Geyser_submarine_bass_04_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Submarine_Geyser_Bass\Geyser_submarine_bass_04		20445
+	328853133	Attack_Voice_10	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attack_Voice_10_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Voices\Attack_Voice_10		13639
+	330565395	MACK Effect Reverse Cymbal	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\MACK Effect Reverse Cymbal_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\Transition\MACK Effect Reverse Cymbal		475046
+	331141681	Round_01_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Round_01_02_49718417.wem		\Actor-Mixer Hierarchy\Voices\Round_1\Round_01_02		36356
+	336080764	Player_Win_01_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Player_Win_01_02_49718417.wem		\Actor-Mixer Hierarchy\Voices\Player_01_Win\Player_Win_01_02		48773
+	347746767	You_Win_05	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\You_Win_05_49718417.wem		\Actor-Mixer Hierarchy\Voices\Win\You_Win\You_Win_05		31021
+	350248293	QP02 0247 Wind desert soft variable over flat lava bed	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\QP02 0247 Wind desert soft variable over flat lava bed_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\QP02 0247 Wind desert soft variable over flat lava bed		1005627
+	350953395	Fight_06	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Fight_06_49718417.wem		\Actor-Mixer Hierarchy\Voices\Fight\Fight_06		17240
+	372139905	Fight_03	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Fight_03_49718417.wem		\Actor-Mixer Hierarchy\Voices\Fight\Fight_03		18715
+	372219517	Bump_Edge_02_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Bump_Edge_02_02_49718417.wem		\Actor-Mixer Hierarchy\Environment\Map_Bump_Edge\Bump_Edge_02_02		4427
+	378319100	Attack_Voice_05	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attack_Voice_05_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Voices\Attack_Voice_05		8087
+	380969367	Attack_Voice_07	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attack_Voice_07_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Voices\Attack_Voice_07		11705
+	396717898	Attack_Voice_03	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attack_Voice_03_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Voices\Attack_Voice_03		7656
+	400744965	Attack_Voice_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attack_Voice_01_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Voices\Attack_Voice_01		7854
+	416765983	Punch_04	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Punch_04_49718417.wem		\Actor-Mixer Hierarchy\Character\Punchs\Punchs\Punch_04		7237
+	443502246	Geyser_26_sec_time_without_submarine_bass	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Geyser_26_sec_time_without_submarine_bass_A1F0CA96.wem		\Actor-Mixer Hierarchy\Environment\Geyser_Long\Geyser_26_sec_time_without_submarine_bass		386193
+	444561892	Round_01_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Round_01_01_49718417.wem		\Actor-Mixer Hierarchy\Voices\Round_1\Round_01_01		30244
+	456010608	Victory	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Victory_49718417.wem		\Actor-Mixer Hierarchy\Voices\Win\Victory\Victory		30488
+	458035480	Break_Ice_When_Character_Are_Ready	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Break_Ice_When_Character_Are_Ready_49718417.wem		\Actor-Mixer Hierarchy\UI\Selection_Player\Break_Ice_When_Character_Are_Ready\Break_Ice_When_Character_Are_Ready		24002
+	462122217	Damage_Voice_03	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Damage_Voice_03_49718417.wem		\Actor-Mixer Hierarchy\Character\Player_Damage_Voices\Damage_Voice_03		9322
+	464597353	Musique Menu	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Musique Menu_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\Music_Menu\Musique Menu\Musique Menu		2793458
+	468441478	Anim_partie_1	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Deplacement_01_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Moves\Deplacements\Anim_partie_1		302308
+	476205565	Musique Menu Loop	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Musique Menu Loop_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\Music_Menu\Musique Menu Loop\Musique Menu Loop		2656683
+	486513286	Combat_rapproché_phase_2_loop_1	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_rapproché_phase_2_loop_1_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_rapproché_phase_2_loop_1\Combat_rapproché_phase_2_loop_1		353085
+	501515682	Geyser_submarine_bass_09	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Geyser_submarine_bass_09_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Submarine_Geyser_Bass\Geyser_submarine_bass_09		39046
+	506201386	Combat_rapproché_phase_1_loop_2_(variation_1)	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_rapproché_phase_1_loop_2_(variation_1)_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_rapproché_phase_1_loop_2_(variation_1)\Combat_rapproché_phase_1_loop_2_(variation_1)		176053
+	511341876	craquements_glace_déplacement	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\craquements_glace_déplacement_B587EF35.wem		\Actor-Mixer Hierarchy\Environment\Ambience\craquements_glace_déplacement		839348
+	522096347	Round_02_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Round_02_02_49718417.wem		\Actor-Mixer Hierarchy\Voices\Round_2\Round_02_02		35635
+	528769453	Reverb_Ambiant_voice_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Reverb_Ambiant_voice_02_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Ambiant_Thinking_Voice\Reverb_Ambiant_voice_02		462122
+	530780565	Punch_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Punch_02_49718417.wem		\Actor-Mixer Hierarchy\Character\Punchs\Punchs\Punch_02		7166
+	539152739	Introduction	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Introduction_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Introduction\Introduction		218774
+	543607430	Geyser_submarine_bass_06	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Geyser_submarine_bass_06_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Submarine_Geyser_Bass\Geyser_submarine_bass_06		38337
+	569674290	Fight_04	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Fight_04_49718417.wem		\Actor-Mixer Hierarchy\Voices\Fight\Fight_04		18150
+	585835700	Ice_Skates_Slide_Player_2	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Ice_Skates_Slide_Player_2_49718417.wem		\Actor-Mixer Hierarchy\UI\Selection_Player\Ice_Skates_Slide_Player_2\Ice_Skates_Slide_Player_2		11066
+	586364047	Anim_partie_2	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Deplacement_02_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Moves\Deplacements\Anim_partie_2		403356
+	589493190	Ice_Break_Gap	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Ice_Break_Gap_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ice_Break_Gap\Ice_Break_Gap		61608
+	595057892	Combat_rapproché_phase_2_break	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_rapproché_phase_2_break_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_rapproché_phase_2_break\Combat_rapproché_phase_2_break		232913
+	608048041	Bump_1_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Bump_1_02_10C4C929.wem		\Actor-Mixer Hierarchy\UI\Action_Button\Bump_1_02		306360
+	608648981	Up Air Fit Choc_v2	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Up Air Fit Choc_v2_49718417.wem		\Actor-Mixer Hierarchy\Character\Punchs\Fit_Kick_Choc\Up Air Fit Choc_v2		14596
+	614414801	Geyser_submarine_bass_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Geyser_submarine_bass_01_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Submarine_Geyser_Bass\Geyser_submarine_bass_01		12082
+	622675338	Round_02_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Round_02_01_49718417.wem		\Actor-Mixer Hierarchy\Voices\Round_2\Round_02_01		33044
+	640149767	Bump_2_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Bump_2_01_10C4C929.wem		\Actor-Mixer Hierarchy\UI\Action_Button\Bump_2_01		308008
+	643783111	Round_03_03	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Round_03_03_49718417.wem		\Actor-Mixer Hierarchy\Voices\Round_3\Round_03_03		33550
+	648173630	Attaque_High_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attaque_High_with_effects_mix_XlN_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Fit_Kicks\Attaque_High_02		110396
+	664124855	Attack_Voice_08	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attack_Voice_08_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Voices\Attack_Voice_08		10749
+	670769583	Attaque_Low_Woosh	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attaque_Low_Woosh_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Crooked_Fit\Attaque_Low_Woosh		7374
+	676877655	Fin du combat	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Fin du combat_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[08] Combat_End\Fin du combat\Fin du combat		107163
+	690520363	You_Win_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\You_Win_02_49718417.wem		\Actor-Mixer Hierarchy\Voices\Win\You_Win\You_Win_02		25634
+	691731338	Fight_08	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Fight_08_49718417.wem		\Actor-Mixer Hierarchy\Voices\Fight\Fight_08		19074
+	704867072	You_Win_06	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\You_Win_06_49718417.wem		\Actor-Mixer Hierarchy\Voices\Win\You_Win\You_Win_06		36714
+	705106200	Combat_augmentation_de_la_tension	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_augmentation_de_la_tension_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_augmentation_de_la_tension\Combat_augmentation_de_la_tension		307584
+	730343019	Round_02_03	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Round_02_03_49718417.wem		\Actor-Mixer Hierarchy\Voices\Round_2\Round_02_03		34652
+	748805332	Attaque_High_03	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attaque_High_with_three_effects_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Fit_Kicks\Attaque_High_03		110396
+	789589213	Round_02_04	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Round_02_04_49718417.wem		\Actor-Mixer Hierarchy\Voices\Round_2\Round_02_04		35460
+	791925064	Player_Win_02_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Player_Win_02_01_49718417.wem		\Actor-Mixer Hierarchy\Voices\Player_02_Win\Player_Win_02_01		42622
+	805632663	Reverb_Ambiant_voice_03	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Reverb_Ambiant_voice_03_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Ambiant_Thinking_Voice\Reverb_Ambiant_voice_03		484620
+	822797860	vent_léger_d_hiver_glace	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\vent_léger_d_hiver_glace_B587EF35.wem		\Actor-Mixer Hierarchy\Environment\Ambience\vent_léger_d_hiver_glace		850982
+	826111828	Combat_rapproché_phase_1_loop_3	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_rapproché_phase_1_loop_3_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_rapproché_phase_1_loop_3\Combat_rapproché_phase_1_loop_3		215988
+	830740313	Punch_03	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Punch_03_49718417.wem		\Actor-Mixer Hierarchy\Character\Punchs\Punchs\Punch_03		7208
+	831152742	Combat_augmentation_de_la_tension_loop_1	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_augmentation_de_la_tension_loop_1_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_augmentation_de_la_tension_loop_1\Combat_augmentation_de_la_tension_loop_1		463357
+	842274295	Punch_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Punch_01_49718417.wem		\Actor-Mixer Hierarchy\Character\Punchs\Punchs\Punch_01		7232
+	877075399	Geyser_submarine_bass_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Geyser_submarine_bass_02_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Submarine_Geyser_Bass\Geyser_submarine_bass_02		12341
+	886075525	Pre_Geyser_Crunch_Gap	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Pre_Geyser_Crunch_Gap_49718417.wem		\Actor-Mixer Hierarchy\Environment\Pre_Geyser_Crunch_Gap\Pre_Geyser_Crunch_Gap		158302
+	890481524	Shimmering Orbs	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Shimmering Orbs_B587EF35.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Shimmering Orbs		1075154
+	891896373	Fight_09	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Fight_09_49718417.wem		\Actor-Mixer Hierarchy\Voices\Fight\Fight_09		21781
+	911067331	Damage_Voice_04	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Damage_Voice_04_49718417.wem		\Actor-Mixer Hierarchy\Character\Player_Damage_Voices\Damage_Voice_04		10578
+	932630553	Reverb_Ambiant_voice_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Reverb_Ambiant_voice_01_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Ambiant_Thinking_Voice\Reverb_Ambiant_voice_01		730937
+	934327290	Damage_Voice_05	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Damage_Voice_05_49718417.wem		\Actor-Mixer Hierarchy\Character\Player_Damage_Voices\Damage_Voice_05		12194
+	936689622	Fight_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Fight_02_49718417.wem		\Actor-Mixer Hierarchy\Voices\Fight\Fight_02		18303
+	938373526	ambiance_lac_glacé_hiver	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\ambiance_lac_glacé_hiver_B587EF35.wem		\Actor-Mixer Hierarchy\Environment\Ambience\ambiance_lac_glacé_hiver		879363
+	948566616	Attack_Voice_06	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attack_Voice_06_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Voices\Attack_Voice_06		9931
+	949208279	Round_03_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Round_03_02_49718417.wem		\Actor-Mixer Hierarchy\Voices\Round_3\Round_03_02		22407
+	949324675	Player_Win_01_01	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Player_Win_01_01_49718417.wem		\Actor-Mixer Hierarchy\Voices\Player_01_Win\Player_Win_01_01		44200
+	956742225	Transition_Break_Ice_And_Wind	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Transition_Break_Ice_And_Wind_49718417.wem		\Actor-Mixer Hierarchy\UI\Selection_Player\Transition_Break_Ice_And_Wind\Transition_Break_Ice_And_Wind		33439
+	958299482	Combat_rapproché_phase_2_loop_2	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Combat_rapproché_phase_2_loop_2_B587EF35.wem		\Interactive Music Hierarchy\Interactive_Music\Music\[01] Introduction\Combat_rapproché_phase_2_loop_2\Combat_rapproché_phase_2_loop_2		365792
+	963379408	Attaque_High_05	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attaque_High_without_effects_mix_XlN_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Fit_Kicks\Attaque_High_05		110396
+	976650837	Geyser_submarine_bass_08	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Geyser_submarine_bass_08_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Submarine_Geyser_Bass\Geyser_submarine_bass_08		39070
+	985446483	Bump_2_02	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Bump_2_02_10C4C929.wem		\Actor-Mixer Hierarchy\UI\Action_Button\Bump_2_02		308008
+	1037076125	Dash Sound_Grave	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Dash Sound_10C4C929.wem		\Actor-Mixer Hierarchy\Character\Moves\Dash_Depalacement\Dash Sound_Grave		266304
+	1040918658	Reverb_Ambiant_voice_04	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Reverb_Ambiant_voice_04_49718417.wem		\Actor-Mixer Hierarchy\Environment\Ambience\Ambiant_Thinking_Voice\Reverb_Ambiant_voice_04		743556
+	1059300231	Attack_Voice_09	C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\SFX\Attack_Voice_09_49718417.wem		\Actor-Mixer Hierarchy\Character\Attacks\Attack_Voices\Attack_Voice_09		11650
+

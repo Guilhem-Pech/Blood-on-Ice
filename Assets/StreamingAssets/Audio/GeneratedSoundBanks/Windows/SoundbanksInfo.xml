@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Propriétaire\Desktop\Session Wwise - Nano Projet 1\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3045981741" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\NanoProjet</ObjectPath>
+			<ShortName>NanoProjet</ShortName>
+			<Path>NanoProjet.bnk</Path>
+			<IncludedEvents>
+				<Event Id="85412153" Name="Ambience" ObjectPath="\Events\Default Work Unit\Ambience" DurationType="Infinite"/>
+				<Event Id="1734322172" Name="Attack_High" ObjectPath="\Events\Default Work Unit\Attacks\Attack_High" DurationType="OneShot" DurationMin="0.574646" DurationMax="0.574646"/>
+				<Event Id="3349596862" Name="Attack_Low" ObjectPath="\Events\Default Work Unit\Attacks\Attack_Low" DurationType="OneShot" DurationMin="1.003500" DurationMax="1.003500"/>
+				<Event Id="1820204126" Name="Break_Ice_When_Character_Are_Ready" ObjectPath="\Events\Default Work Unit\UI\Break_Ice_When_Character_Are_Ready" DurationType="OneShot" DurationMin="1.554896" DurationMax="1.554896"/>
+				<Event Id="622818416" Name="Dash_Attack" ObjectPath="\Events\Default Work Unit\Character\Dash_Attack" DurationType="OneShot" DurationMin="1.386667" DurationMax="1.386667"/>
+				<Event Id="2553873" Name="Edge_Bump" ObjectPath="\Events\Default Work Unit\Environment\Edge_Bump" DurationType="OneShot" DurationMin="0.475792" DurationMax="0.475792"/>
+				<Event Id="868143001" Name="Fit_Kick_Choc" ObjectPath="\Events\Default Work Unit\Feedbacks_Attacks\Fit_Kick_Choc" DurationType="OneShot" DurationMin="1.166771" DurationMax="1.166771"/>
+				<Event Id="94004485" Name="Gap_Crunch" ObjectPath="\Events\Default Work Unit\Environment\Gap_Crunch" DurationType="OneShot" DurationMin="7.876167" DurationMax="7.876167"/>
+				<Event Id="2353751109" Name="Geyser_Start" ObjectPath="\Events\Default Work Unit\Environment\Geyser_Start" DurationType="OneShot" DurationMin="15.504017" DurationMax="24.611092"/>
+				<Event Id="891207143" Name="Geyser_Stop" ObjectPath="\Events\Default Work Unit\Environment\Geyser_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3126391515" Name="Ice_Break_Gap" ObjectPath="\Events\Default Work Unit\Environment\Ice_Break_Gap" DurationType="OneShot" DurationMin="4.194625" DurationMax="4.194625"/>
+				<Event Id="1465771378" Name="Ice_Skates_Slide_Player_1" ObjectPath="\Events\Default Work Unit\UI\Ice_Skates_Slide_Player_1" DurationType="OneShot" DurationMin="1.015604" DurationMax="1.015604"/>
+				<Event Id="1465771377" Name="Ice_Skates_Slide_Player_2" ObjectPath="\Events\Default Work Unit\UI\Ice_Skates_Slide_Player_2" DurationType="OneShot" DurationMin="1.394292" DurationMax="1.394292"/>
+				<Event Id="2227419164" Name="Music_End" ObjectPath="\Events\Default Work Unit\Musics\Music_End" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3145578314" Name="Play_Deplacement_01" ObjectPath="\Events\Default Work Unit\Character\Deplacements\Play_Deplacement_01" DurationType="OneShot" DurationMin="1.574188" DurationMax="1.574188"/>
+				<Event Id="3145578313" Name="Play_Deplacement_02" ObjectPath="\Events\Default Work Unit\Character\Deplacements\Play_Deplacement_02" DurationType="OneShot" DurationMin="2.100479" DurationMax="2.100479"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Musics\Play_Music" DurationType="Infinite"/>
+				<Event Id="1822637563" Name="Play_Music_Menu_And_Cinematic" ObjectPath="\Events\Default Work Unit\Musics\Play_Music_Menu_And_Cinematic" DurationType="Infinite"/>
+				<Event Id="1631631307" Name="Player_Death_Fall" ObjectPath="\Events\Default Work Unit\Character\Player_Death_Fall" DurationType="OneShot" DurationMin="1.233562" DurationMax="1.233562"/>
+				<Event Id="3506070086" Name="Player_Death_Voice" ObjectPath="\Events\Default Work Unit\Attack_Voice\Player_Death_Voice" DurationType="OneShot" DurationMin="1.843187" DurationMax="1.843187"/>
+				<Event Id="1518705232" Name="Players_Collision" ObjectPath="\Events\Default Work Unit\Character\Players_Collision" DurationType="OneShot" DurationMin="0.787500" DurationMax="0.883939"/>
+				<Event Id="3991701042" Name="Punchs" ObjectPath="\Events\Default Work Unit\Feedbacks_Attacks\Punchs" DurationType="OneShot" DurationMin="0.492667" DurationMax="0.492667"/>
+				<Event Id="2290831937" Name="Spotlight_on" ObjectPath="\Events\Default Work Unit\Environment\Spotlight_on" DurationType="OneShot" DurationMin="3.093333" DurationMax="3.093333"/>
+				<Event Id="80692271" Name="Stop_Ambiant_Voice" ObjectPath="\Events\Default Work Unit\Stop_Ambiant_Voice" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="59341068" Name="Stop_Deplacement_01" ObjectPath="\Events\Default Work Unit\Character\Deplacements\Stop_Deplacement_01" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="59341071" Name="Stop_Deplacement_02" ObjectPath="\Events\Default Work Unit\Character\Deplacements\Stop_Deplacement_02" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3346520329" Name="Stop_Music_Menu_And_Cinematic" ObjectPath="\Events\Default Work Unit\Musics\Stop_Music_Menu_And_Cinematic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1543691903" Name="Transition_Break_Ice_And_Wind" ObjectPath="\Events\Default Work Unit\UI\Transition_Break_Ice_And_Wind" DurationType="OneShot" DurationMin="2.209771" DurationMax="2.209771"/>
+				<Event Id="698935911" Name="UI_Action_Button" ObjectPath="\Events\Default Work Unit\UI_Action_Button" DurationType="OneShot" DurationMin="1.595292" DurationMax="1.608812"/>
+				<Event Id="97310432" Name="Voice_Attack" ObjectPath="\Events\Default Work Unit\Attack_Voice\Voice_Attack" DurationType="OneShot" DurationMin="0.909375" DurationMax="1.662458"/>
+				<Event Id="2203153607" Name="Voice_Damage" ObjectPath="\Events\Default Work Unit\Attack_Voice\Voice_Damage" DurationType="OneShot" DurationMin="1.181229" DurationMax="1.620000"/>
+				<Event Id="2224959990" Name="Voice_Fight" ObjectPath="\Events\Default Work Unit\Voices\Voice_Fight" DurationType="OneShot" DurationMin="1.003771" DurationMax="1.576458"/>
+				<Event Id="555004839" Name="Voice_Player_1_Wins" ObjectPath="\Events\Default Work Unit\Voices\Voice_Player_1_Wins" DurationType="OneShot" DurationMin="3.307750" DurationMax="4.011521"/>
+				<Event Id="934231090" Name="Voice_Player_2_Wins" ObjectPath="\Events\Default Work Unit\Voices\Voice_Player_2_Wins" DurationType="OneShot" DurationMin="4.432646" DurationMax="4.432646"/>
+				<Event Id="1399799472" Name="Voice_Round_1" ObjectPath="\Events\Default Work Unit\Voices\Voice_Round_1" DurationType="OneShot" DurationMin="2.377438" DurationMax="2.813313"/>
+				<Event Id="1399799475" Name="Voice_Round_2" ObjectPath="\Events\Default Work Unit\Voices\Voice_Round_2" DurationType="OneShot" DurationMin="2.593437" DurationMax="2.900208"/>
+				<Event Id="1399799474" Name="Voice_Round_3" ObjectPath="\Events\Default Work Unit\Voices\Voice_Round_3" DurationType="OneShot" DurationMin="1.882146" DurationMax="2.900208"/>
+				<Event Id="552777022" Name="Voice_Win" ObjectPath="\Events\Default Work Unit\Voices\Voice_Win" DurationType="OneShot" DurationMin="1.188729" DurationMax="2.966583"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="3909051" Language="SFX">
+					<ShortName>Attaque_High_with_effects.wav</ShortName>
+					<Path>SFX\Attaque_High_with_effects_10C4C929.wem</Path>
+				</File>
+				<File Id="13720595" Language="SFX">
+					<ShortName>You_Win_04.wav</ShortName>
+					<Path>SFX\You_Win_04_49718417.wem</Path>
+				</File>
+				<File Id="78828263" Language="SFX">
+					<ShortName>Combat_rapproché_phase_2_first.wav</ShortName>
+					<Path>SFX\Combat_rapproché_phase_2_first_B587EF35.wem</Path>
+				</File>
+				<File Id="82834189" Language="SFX">
+					<ShortName>Players_Collision_01.wav</ShortName>
+					<Path>SFX\Players_Collision_01_49718417.wem</Path>
+				</File>
+				<File Id="84799927" Language="SFX">
+					<ShortName>You_Win_03.wav</ShortName>
+					<Path>SFX\You_Win_03_49718417.wem</Path>
+				</File>
+				<File Id="102697347" Language="SFX">
+					<ShortName>Fight_05.wav</ShortName>
+					<Path>SFX\Fight_05_49718417.wem</Path>
+				</File>
+				<File Id="109809174" Language="SFX">
+					<ShortName>Combat_rapproché_phase_1_loop_1.wav</ShortName>
+					<Path>SFX\Combat_rapproché_phase_1_loop_1_B587EF35.wem</Path>
+				</File>
+				<File Id="115791293" Language="SFX">
+					<ShortName>Player_Death_Shout_Mieux.wav</ShortName>
+					<Path>SFX\Player_Death_Shout_Mieux_49718417.wem</Path>
+				</File>
+				<File Id="123303757" Language="SFX">
+					<ShortName>Combat_rapproché_phase_1_loop_4.wav</ShortName>
+					<Path>SFX\Combat_rapproché_phase_1_loop_4_B587EF35.wem</Path>
+				</File>
+				<File Id="138315423" Language="SFX">
+					<ShortName>Spotlight Stadium - Reverb_Good.wav</ShortName>
+					<Path>SFX\Spotlight Stadium - Reverb_Good_10C4C929.wem</Path>
+				</File>
+				<File Id="143143403" Language="SFX">
+					<ShortName>Combat_à_distance_loop_1.wav</ShortName>
+					<Path>SFX\Combat_à_distance_loop_1_B587EF35.wem</Path>
+				</File>
+				<File Id="145174912" Language="SFX">
+					<ShortName>Fight_07.wav</ShortName>
+					<Path>SFX\Fight_07_49718417.wem</Path>
+				</File>
+				<File Id="148665168" Language="SFX">
+					<ShortName>Bump_1_01.wav</ShortName>
+					<Path>SFX\Bump_1_01_10C4C929.wem</Path>
+				</File>
+				<File Id="151395274" Language="SFX">
+					<ShortName>Ice_Skates_Slide_Player_1.wav</ShortName>
+					<Path>SFX\Ice_Skates_Slide_Player_1_49718417.wem</Path>
+				</File>
+				<File Id="162119535" Language="SFX">
+					<ShortName>Player_Death_Fall.wav</ShortName>
+					<Path>SFX\Player_Death_Fall_49718417.wem</Path>
+				</File>
+				<File Id="164458111" Language="SFX">
+					<ShortName>Players_Collision_02.wav</ShortName>
+					<Path>SFX\Players_Collision_02_49718417.wem</Path>
+				</File>
+				<File Id="173810729" Language="SFX">
+					<ShortName>You_Win_01.wav</ShortName>
+					<Path>SFX\You_Win_01_49718417.wem</Path>
+				</File>
+				<File Id="179461049" Language="SFX">
+					<ShortName>Attaque_Low_v2.wav</ShortName>
+					<Path>SFX\Attaque_Low_v2_EE770F1F.wem</Path>
+				</File>
+				<File Id="196186534" Language="SFX">
+					<ShortName>Round_03_01.wav</ShortName>
+					<Path>SFX\Round_03_01_49718417.wem</Path>
+				</File>
+				<File Id="200382848" Language="SFX">
+					<ShortName>Combat_à_distance.wav</ShortName>
+					<Path>SFX\Combat_à_distance_B587EF35.wem</Path>
+				</File>
+				<File Id="201508571" Language="SFX">
+					<ShortName>Geyser_submarine_bass_05.wav</ShortName>
+					<Path>SFX\Geyser_submarine_bass_05_49718417.wem</Path>
+				</File>
+				<File Id="204463774" Language="SFX">
+					<ShortName>Damage_Voice_01.wav</ShortName>
+					<Path>SFX\Damage_Voice_01_49718417.wem</Path>
+				</File>
+				<File Id="224630020" Language="SFX">
+					<ShortName>Attaque_High_without_effects.wav</ShortName>
+					<Path>SFX\Attaque_High_without_effects_10C4C929.wem</Path>
+				</File>
+				<File Id="265539755" Language="SFX">
+					<ShortName>Damage_Voice_02.wav</ShortName>
+					<Path>SFX\Damage_Voice_02_49718417.wem</Path>
+				</File>
+				<File Id="267761467" Language="SFX">
+					<ShortName>Geyser_submarine_bass_07.wav</ShortName>
+					<Path>SFX\Geyser_submarine_bass_07_49718417.wem</Path>
+				</File>
+				<File Id="270630213" Language="SFX">
+					<ShortName>Attack_Voice_02.wav</ShortName>
+					<Path>SFX\Attack_Voice_02_49718417.wem</Path>
+				</File>
+				<File Id="273631838" Language="SFX">
+					<ShortName>Fight_01.wav</ShortName>
+					<Path>SFX\Fight_01_49718417.wem</Path>
+				</File>
+				<File Id="280279196" Language="SFX">
+					<ShortName>Geyser_submarine_bass_03.wav</ShortName>
+					<Path>SFX\Geyser_submarine_bass_03_7EB7118F.wem</Path>
+				</File>
+				<File Id="301590609" Language="SFX">
+					<ShortName>Attack_Voice_04.wav</ShortName>
+					<Path>SFX\Attack_Voice_04_49718417.wem</Path>
+				</File>
+				<File Id="305176929" Language="SFX">
+					<ShortName>Geyser_submarine_bass_04.wav</ShortName>
+					<Path>SFX\Geyser_submarine_bass_04_49718417.wem</Path>
+				</File>
+				<File Id="328853133" Language="SFX">
+					<ShortName>Attack_Voice_10.wav</ShortName>
+					<Path>SFX\Attack_Voice_10_49718417.wem</Path>
+				</File>
+				<File Id="330565395" Language="SFX">
+					<ShortName>MACK Effect Reverse Cymbal.wav</ShortName>
+					<Path>SFX\MACK Effect Reverse Cymbal_B587EF35.wem</Path>
+				</File>
+				<File Id="331141681" Language="SFX">
+					<ShortName>Round_01_02.wav</ShortName>
+					<Path>SFX\Round_01_02_49718417.wem</Path>
+				</File>
+				<File Id="336080764" Language="SFX">
+					<ShortName>Player_Win_01_02.wav</ShortName>
+					<Path>SFX\Player_Win_01_02_49718417.wem</Path>
+				</File>
+				<File Id="347746767" Language="SFX">
+					<ShortName>You_Win_05.wav</ShortName>
+					<Path>SFX\You_Win_05_49718417.wem</Path>
+				</File>
+				<File Id="350248293" Language="SFX">
+					<ShortName>QP02 0247 Wind desert soft variable over flat lava bed.wav</ShortName>
+					<Path>SFX\QP02 0247 Wind desert soft variable over flat lava bed_49718417.wem</Path>
+				</File>
+				<File Id="350953395" Language="SFX">
+					<ShortName>Fight_06.wav</ShortName>
+					<Path>SFX\Fight_06_49718417.wem</Path>
+				</File>
+				<File Id="372139905" Language="SFX">
+					<ShortName>Fight_03.wav</ShortName>
+					<Path>SFX\Fight_03_49718417.wem</Path>
+				</File>
+				<File Id="372219517" Language="SFX">
+					<ShortName>Bump_Edge_02_02.wav</ShortName>
+					<Path>SFX\Bump_Edge_02_02_49718417.wem</Path>
+				</File>
+				<File Id="378319100" Language="SFX">
+					<ShortName>Attack_Voice_05.wav</ShortName>
+					<Path>SFX\Attack_Voice_05_49718417.wem</Path>
+				</File>
+				<File Id="380969367" Language="SFX">
+					<ShortName>Attack_Voice_07.wav</ShortName>
+					<Path>SFX\Attack_Voice_07_49718417.wem</Path>
+				</File>
+				<File Id="396717898" Language="SFX">
+					<ShortName>Attack_Voice_03.wav</ShortName>
+					<Path>SFX\Attack_Voice_03_49718417.wem</Path>
+				</File>
+				<File Id="400744965" Language="SFX">
+					<ShortName>Attack_Voice_01.wav</ShortName>
+					<Path>SFX\Attack_Voice_01_49718417.wem</Path>
+				</File>
+				<File Id="416765983" Language="SFX">
+					<ShortName>Punch_04.wav</ShortName>
+					<Path>SFX\Punch_04_49718417.wem</Path>
+				</File>
+				<File Id="443502246" Language="SFX">
+					<ShortName>Geyser_26_sec_time_without_submarine_bass.wav</ShortName>
+					<Path>SFX\Geyser_26_sec_time_without_submarine_bass_A1F0CA96.wem</Path>
+				</File>
+				<File Id="444561892" Language="SFX">
+					<ShortName>Round_01_01.wav</ShortName>
+					<Path>SFX\Round_01_01_49718417.wem</Path>
+				</File>
+				<File Id="456010608" Language="SFX">
+					<ShortName>Victory.wav</ShortName>
+					<Path>SFX\Victory_49718417.wem</Path>
+				</File>
+				<File Id="458035480" Language="SFX">
+					<ShortName>Break_Ice_When_Character_Are_Ready.wav</ShortName>
+					<Path>SFX\Break_Ice_When_Character_Are_Ready_49718417.wem</Path>
+				</File>
+				<File Id="462122217" Language="SFX">
+					<ShortName>Damage_Voice_03.wav</ShortName>
+					<Path>SFX\Damage_Voice_03_49718417.wem</Path>
+				</File>
+				<File Id="464597353" Language="SFX">
+					<ShortName>Musique Menu.wav</ShortName>
+					<Path>SFX\Musique Menu_B587EF35.wem</Path>
+				</File>
+				<File Id="468441478" Language="SFX">
+					<ShortName>Deplacement_01.wav</ShortName>
+					<Path>SFX\Deplacement_01_10C4C929.wem</Path>
+				</File>
+				<File Id="476205565" Language="SFX">
+					<ShortName>Musique Menu Loop.wav</ShortName>
+					<Path>SFX\Musique Menu Loop_B587EF35.wem</Path>
+				</File>
+				<File Id="486513286" Language="SFX">
+					<ShortName>Combat_rapproché_phase_2_loop_1.wav</ShortName>
+					<Path>SFX\Combat_rapproché_phase_2_loop_1_B587EF35.wem</Path>
+				</File>
+				<File Id="501515682" Language="SFX">
+					<ShortName>Geyser_submarine_bass_09.wav</ShortName>
+					<Path>SFX\Geyser_submarine_bass_09_49718417.wem</Path>
+				</File>
+				<File Id="506201386" Language="SFX">
+					<ShortName>Combat_rapproché_phase_1_loop_2_(variation_1).wav</ShortName>
+					<Path>SFX\Combat_rapproché_phase_1_loop_2_(variation_1)_B587EF35.wem</Path>
+				</File>
+				<File Id="511341876" Language="SFX">
+					<ShortName>craquements_glace_déplacement.wav</ShortName>
+					<Path>SFX\craquements_glace_déplacement_B587EF35.wem</Path>
+				</File>
+				<File Id="522096347" Language="SFX">
+					<ShortName>Round_02_02.wav</ShortName>
+					<Path>SFX\Round_02_02_49718417.wem</Path>
+				</File>
+				<File Id="528769453" Language="SFX">
+					<ShortName>Reverb_Ambiant_voice_02.wav</ShortName>
+					<Path>SFX\Reverb_Ambiant_voice_02_49718417.wem</Path>
+				</File>
+				<File Id="530780565" Language="SFX">
+					<ShortName>Punch_02.wav</ShortName>
+					<Path>SFX\Punch_02_49718417.wem</Path>
+				</File>
+				<File Id="539152739" Language="SFX">
+					<ShortName>Introduction.wav</ShortName>
+					<Path>SFX\Introduction_B587EF35.wem</Path>
+				</File>
+				<File Id="543607430" Language="SFX">
+					<ShortName>Geyser_submarine_bass_06.wav</ShortName>
+					<Path>SFX\Geyser_submarine_bass_06_49718417.wem</Path>
+				</File>
+				<File Id="569674290" Language="SFX">
+					<ShortName>Fight_04.wav</ShortName>
+					<Path>SFX\Fight_04_49718417.wem</Path>
+				</File>
+				<File Id="585835700" Language="SFX">
+					<ShortName>Ice_Skates_Slide_Player_2.wav</ShortName>
+					<Path>SFX\Ice_Skates_Slide_Player_2_49718417.wem</Path>
+				</File>
+				<File Id="586364047" Language="SFX">
+					<ShortName>Deplacement_02.wav</ShortName>
+					<Path>SFX\Deplacement_02_10C4C929.wem</Path>
+				</File>
+				<File Id="589493190" Language="SFX">
+					<ShortName>Ice_Break_Gap.wav</ShortName>
+					<Path>SFX\Ice_Break_Gap_49718417.wem</Path>
+				</File>
+				<File Id="595057892" Language="SFX">
+					<ShortName>Combat_rapproché_phase_2_break.wav</ShortName>
+					<Path>SFX\Combat_rapproché_phase_2_break_B587EF35.wem</Path>
+				</File>
+				<File Id="608048041" Language="SFX">
+					<ShortName>Bump_1_02.wav</ShortName>
+					<Path>SFX\Bump_1_02_10C4C929.wem</Path>
+				</File>
+				<File Id="608648981" Language="SFX">
+					<ShortName>Up Air Fit Choc_v2.wav</ShortName>
+					<Path>SFX\Up Air Fit Choc_v2_49718417.wem</Path>
+				</File>
+				<File Id="614414801" Language="SFX">
+					<ShortName>Geyser_submarine_bass_01.wav</ShortName>
+					<Path>SFX\Geyser_submarine_bass_01_49718417.wem</Path>
+				</File>
+				<File Id="622675338" Language="SFX">
+					<ShortName>Round_02_01.wav</ShortName>
+					<Path>SFX\Round_02_01_49718417.wem</Path>
+				</File>
+				<File Id="640149767" Language="SFX">
+					<ShortName>Bump_2_01.wav</ShortName>
+					<Path>SFX\Bump_2_01_10C4C929.wem</Path>
+				</File>
+				<File Id="643783111" Language="SFX">
+					<ShortName>Round_03_03.wav</ShortName>
+					<Path>SFX\Round_03_03_49718417.wem</Path>
+				</File>
+				<File Id="648173630" Language="SFX">
+					<ShortName>Attaque_High_with_effects_mix_XlN.wav</ShortName>
+					<Path>SFX\Attaque_High_with_effects_mix_XlN_10C4C929.wem</Path>
+				</File>
+				<File Id="664124855" Language="SFX">
+					<ShortName>Attack_Voice_08.wav</ShortName>
+					<Path>SFX\Attack_Voice_08_49718417.wem</Path>
+				</File>
+				<File Id="670769583" Language="SFX">
+					<ShortName>Attaque_Low_Woosh.wav</ShortName>
+					<Path>SFX\Attaque_Low_Woosh_49718417.wem</Path>
+				</File>
+				<File Id="676877655" Language="SFX">
+					<ShortName>Fin du combat.wav</ShortName>
+					<Path>SFX\Fin du combat_B587EF35.wem</Path>
+				</File>
+				<File Id="690520363" Language="SFX">
+					<ShortName>You_Win_02.wav</ShortName>
+					<Path>SFX\You_Win_02_49718417.wem</Path>
+				</File>
+				<File Id="691731338" Language="SFX">
+					<ShortName>Fight_08.wav</ShortName>
+					<Path>SFX\Fight_08_49718417.wem</Path>
+				</File>
+				<File Id="704867072" Language="SFX">
+					<ShortName>You_Win_06.wav</ShortName>
+					<Path>SFX\You_Win_06_49718417.wem</Path>
+				</File>
+				<File Id="705106200" Language="SFX">
+					<ShortName>Combat_augmentation_de_la_tension.wav</ShortName>
+					<Path>SFX\Combat_augmentation_de_la_tension_B587EF35.wem</Path>
+				</File>
+				<File Id="730343019" Language="SFX">
+					<ShortName>Round_02_03.wav</ShortName>
+					<Path>SFX\Round_02_03_49718417.wem</Path>
+				</File>
+				<File Id="748805332" Language="SFX">
+					<ShortName>Attaque_High_with_three_effects.wav</ShortName>
+					<Path>SFX\Attaque_High_with_three_effects_10C4C929.wem</Path>
+				</File>
+				<File Id="789589213" Language="SFX">
+					<ShortName>Round_02_04.wav</ShortName>
+					<Path>SFX\Round_02_04_49718417.wem</Path>
+				</File>
+				<File Id="791925064" Language="SFX">
+					<ShortName>Player_Win_02_01.wav</ShortName>
+					<Path>SFX\Player_Win_02_01_49718417.wem</Path>
+				</File>
+				<File Id="805632663" Language="SFX">
+					<ShortName>Reverb_Ambiant_voice_03.wav</ShortName>
+					<Path>SFX\Reverb_Ambiant_voice_03_49718417.wem</Path>
+				</File>
+				<File Id="822797860" Language="SFX">
+					<ShortName>vent_léger_d_hiver_glace.wav</ShortName>
+					<Path>SFX\vent_léger_d_hiver_glace_B587EF35.wem</Path>
+				</File>
+				<File Id="826111828" Language="SFX">
+					<ShortName>Combat_rapproché_phase_1_loop_3.wav</ShortName>
+					<Path>SFX\Combat_rapproché_phase_1_loop_3_B587EF35.wem</Path>
+				</File>
+				<File Id="830740313" Language="SFX">
+					<ShortName>Punch_03.wav</ShortName>
+					<Path>SFX\Punch_03_49718417.wem</Path>
+				</File>
+				<File Id="831152742" Language="SFX">
+					<ShortName>Combat_augmentation_de_la_tension_loop_1.wav</ShortName>
+					<Path>SFX\Combat_augmentation_de_la_tension_loop_1_B587EF35.wem</Path>
+				</File>
+				<File Id="842274295" Language="SFX">
+					<ShortName>Punch_01.wav</ShortName>
+					<Path>SFX\Punch_01_49718417.wem</Path>
+				</File>
+				<File Id="877075399" Language="SFX">
+					<ShortName>Geyser_submarine_bass_02.wav</ShortName>
+					<Path>SFX\Geyser_submarine_bass_02_49718417.wem</Path>
+				</File>
+				<File Id="886075525" Language="SFX">
+					<ShortName>Pre_Geyser_Crunch_Gap.wav</ShortName>
+					<Path>SFX\Pre_Geyser_Crunch_Gap_49718417.wem</Path>
+				</File>
+				<File Id="890481524" Language="SFX">
+					<ShortName>Shimmering Orbs.wav</ShortName>
+					<Path>SFX\Shimmering Orbs_B587EF35.wem</Path>
+				</File>
+				<File Id="891896373" Language="SFX">
+					<ShortName>Fight_09.wav</ShortName>
+					<Path>SFX\Fight_09_49718417.wem</Path>
+				</File>
+				<File Id="911067331" Language="SFX">
+					<ShortName>Damage_Voice_04.wav</ShortName>
+					<Path>SFX\Damage_Voice_04_49718417.wem</Path>
+				</File>
+				<File Id="932630553" Language="SFX">
+					<ShortName>Reverb_Ambiant_voice_01.wav</ShortName>
+					<Path>SFX\Reverb_Ambiant_voice_01_49718417.wem</Path>
+				</File>
+				<File Id="934327290" Language="SFX">
+					<ShortName>Damage_Voice_05.wav</ShortName>
+					<Path>SFX\Damage_Voice_05_49718417.wem</Path>
+				</File>
+				<File Id="936689622" Language="SFX">
+					<ShortName>Fight_02.wav</ShortName>
+					<Path>SFX\Fight_02_49718417.wem</Path>
+				</File>
+				<File Id="938373526" Language="SFX">
+					<ShortName>ambiance_lac_glacé_hiver.wav</ShortName>
+					<Path>SFX\ambiance_lac_glacé_hiver_B587EF35.wem</Path>
+				</File>
+				<File Id="948566616" Language="SFX">
+					<ShortName>Attack_Voice_06.wav</ShortName>
+					<Path>SFX\Attack_Voice_06_49718417.wem</Path>
+				</File>
+				<File Id="949208279" Language="SFX">
+					<ShortName>Round_03_02.wav</ShortName>
+					<Path>SFX\Round_03_02_49718417.wem</Path>
+				</File>
+				<File Id="949324675" Language="SFX">
+					<ShortName>Player_Win_01_01.wav</ShortName>
+					<Path>SFX\Player_Win_01_01_49718417.wem</Path>
+				</File>
+				<File Id="956742225" Language="SFX">
+					<ShortName>Transition_Break_Ice_And_Wind.wav</ShortName>
+					<Path>SFX\Transition_Break_Ice_And_Wind_49718417.wem</Path>
+				</File>
+				<File Id="958299482" Language="SFX">
+					<ShortName>Combat_rapproché_phase_2_loop_2.wav</ShortName>
+					<Path>SFX\Combat_rapproché_phase_2_loop_2_B587EF35.wem</Path>
+				</File>
+				<File Id="963379408" Language="SFX">
+					<ShortName>Attaque_High_without_effects_mix_XlN.wav</ShortName>
+					<Path>SFX\Attaque_High_without_effects_mix_XlN_10C4C929.wem</Path>
+				</File>
+				<File Id="976650837" Language="SFX">
+					<ShortName>Geyser_submarine_bass_08.wav</ShortName>
+					<Path>SFX\Geyser_submarine_bass_08_49718417.wem</Path>
+				</File>
+				<File Id="985446483" Language="SFX">
+					<ShortName>Bump_2_02.wav</ShortName>
+					<Path>SFX\Bump_2_02_10C4C929.wem</Path>
+				</File>
+				<File Id="1037076125" Language="SFX">
+					<ShortName>Dash Sound.wav</ShortName>
+					<Path>SFX\Dash Sound_10C4C929.wem</Path>
+				</File>
+				<File Id="1040918658" Language="SFX">
+					<ShortName>Reverb_Ambiant_voice_04.wav</ShortName>
+					<Path>SFX\Reverb_Ambiant_voice_04_49718417.wem</Path>
+				</File>
+				<File Id="1059300231" Language="SFX">
+					<ShortName>Attack_Voice_09.wav</ShortName>
+					<Path>SFX\Attack_Voice_09_49718417.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -59,7 +59,7 @@ namespace States
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             PlayerInputManager.instance.joinBehavior = PlayerJoinBehavior.JoinPlayersManually;
-            _playerEvent.RemoveListener(OnPlayerAdded);
+            _playerEvent?.RemoveListener(OnPlayerAdded);
             _canvasTitle.SetActive(false);
         }
     }

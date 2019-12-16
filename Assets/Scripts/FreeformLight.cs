@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
@@ -22,6 +22,8 @@ public class FreeformLight : MonoBehaviour
 
     private void OnEnable()
     {
+        anchor1 = GameManager.GetInstance().spotLightAnchor1;
+        anchor2 = GameManager.GetInstance().spotLightAnchor2;
         try
         {
             AkSoundEngine.PostEvent("Spotlight_on", gameObject);

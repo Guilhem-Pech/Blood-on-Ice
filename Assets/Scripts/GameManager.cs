@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
     public GameObject canvasTitle;
     public GameObject victoryScreen;
     private UnityEvent EndRound = new UnityEvent();
-    
+    public Material trailGreen;
+    public Material trailOrange;
     
     public int GetNbRound()
     {

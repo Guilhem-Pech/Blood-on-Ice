@@ -51,12 +51,6 @@ MonoBehaviour:
   nbRound: 2
   targetGroup: {fileID: 0}
   introPrefab: {fileID: 0}
-  playerWaitingPrefab: {fileID: 37715706866710600, guid: ae8a7142900253a419816faf83ed5ef5,
-    type: 3}
-  playerGreenPrefab: {fileID: 8403087194661472053, guid: 323a53559708ccf409acdc2eb2053a46,
-    type: 3}
-  playerOrangePrefab: {fileID: 7008469195816025659, guid: 9e6d0efaf4306264e8a50379ac0d3967,
-    type: 3}
   projectorPrefab: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
     type: 3}
   playerGreenSpawnPos: {fileID: 7293057676574644044, guid: 68a475d68c852434b97972317295632f,
@@ -68,6 +62,8 @@ MonoBehaviour:
   - {fileID: 0}
   canvasTitle: {fileID: 0}
   victoryScreen: {fileID: 0}
+  trailGreen: {fileID: 2100000, guid: 5e43962a0114cce41a505f52969eb465, type: 2}
+  trailOrange: {fileID: 2100000, guid: d4860bd2d3131954690574d109346fe7, type: 2}
   playersAnimator:
   - {fileID: 22100000, guid: 607ea63ed086d6341b7822bfe46b1f4a, type: 2}
   - {fileID: 22100000, guid: a882f3a76c11ca84aad67b5ba533e56f, type: 2}
@@ -104,6 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52effbe5d75daf4e8c0c279d83442ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Intro: {fileID: 0}
+  "Cr\xE9dits": {fileID: 0}
 --- !u!114 &359917201103262671
 MonoBehaviour:
   m_ObjectHideFlags: 0

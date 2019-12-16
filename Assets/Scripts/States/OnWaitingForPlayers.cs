@@ -32,7 +32,7 @@ namespace States
             ++_nbPlayer;
             AkSoundEngine.PostEvent("Ice_Skates_Slide_Player_"+_nbPlayer, _animator.gameObject);
             _canvasTitle.GetComponent<Animator>().SetInteger(NbPlayer,_nbPlayer);
-            player.GetComponent<PlayerData>().GetPlayerSpriteGameObject().GetComponent<Animator>().runtimeAnimatorController = GameManager.GetInstance().GetPlayersAnimator()[_nbPlayer - 1];
+            player.GetComponent<PlayerData>().SetPlayerColor(_nbPlayer == 1 ? PlayerColor.Green : PlayerColor.Orange);
             GameManager.GetInstance().RegisterPlayer(player);
            if (_nbPlayer < 2) return;
             _start = true;

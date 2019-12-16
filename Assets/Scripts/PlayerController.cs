@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     [SerializeField]
     private GameObject trailPrefab;
+
+    private GameObject _trailRuntime;
     [SerializeField] Vector3 trailOffset = Vector2.zero;
     
     [SerializeField] private Collider2D trailCollider;
@@ -50,9 +52,7 @@ public class PlayerController : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
         spriteRenderer.enabled = true;
         gameObject.layer = 9;
-        Vector3 position = transform.position;
-        trailPrefab = Instantiate(trailPrefab, position, quaternion.identity);
-        trailPrefab.GetComponent<PlayerHoles>().playerCollider2D = trailCollider;
+        
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _attackSystem = GetComponent<PlayerAttackSystem>();
         _playerInput = GetComponent<PlayerInput>();
@@ -60,20 +60,29 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        trailPrefab.GetComponent<TrailRenderer>()?.Clear();
+        Vector3 position = transform.position;
+        _trailRuntime = Instantiate(trailPrefab, position, quaternion.identity);
+        _trailRuntime.GetComponent<PlayerHoles>().playerCollider2D = trailCollider;
+        _trailRuntime.GetComponent<TrailRenderer>()?.Clear();
+        _trailRuntime.GetComponent<TrailRenderer>().material = GetComponent<PlayerData>().GetTrailMaterial();
         // trailPrefab.SetActive(true);
     }
 
     private void OnDisable()
     {
-        trailPrefab.GetComponent<TrailRenderer>()?.Clear();
+        Destroy(_trailRuntime);
     }
 
     public void OnMovements(InputAction.CallbackContext context)
     {
         _inputDir = context.ReadValue<Vector2>();
     }
-    
+
+    public TrailRenderer GetTrailRenderer()
+    {
+        if (_trailRuntime != null) return _trailRuntime.GetComponent<TrailRenderer>();
+        return trailPrefab.GetComponent<TrailRenderer>();
+    }
     void Flip ()
     {
         _facingRight = !_facingRight;
@@ -86,7 +95,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 position = transform.position;
 
-        trailPrefab.transform.SetPositionAndRotation(position + trailOffset,transform.rotation);
+        _trailRuntime.transform.SetPositionAndRotation(position + trailOffset,transform.rotation);
         
         _animator.SetBool(IsWalking, _rigidbody2D.velocity.sqrMagnitude > 0.5f);
     }

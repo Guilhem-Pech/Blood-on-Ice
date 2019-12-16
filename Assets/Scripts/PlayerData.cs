@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerColor {Green,Orange}
 public class PlayerData : MonoBehaviour
 {
     [SerializeField] private GameObject playerSprite;
@@ -9,6 +10,8 @@ public class PlayerData : MonoBehaviour
     [SerializeField] private PlayerAttackSystem playerAttackSystem;
     [SerializeField] private PlayerHealthSystem playerHealthSystem;
     [SerializeField] private SpotlightPlayer playerSpotlightPlayer;
+    [SerializeField] private Material trailMaterial;
+    [SerializeField] private PlayerColor _playerColor;
     
     private GameObject playerLifebar;
 
@@ -45,8 +48,34 @@ public class PlayerData : MonoBehaviour
     {
         return playerSprite;
     }
-    
-    
+
+    public PlayerColor GetPlayerColor()
+    {
+        return _playerColor;
+    }
+
+    public void SetPlayerColor(PlayerColor playerColor)
+    {
+        _playerColor = playerColor;
+        if (playerColor == PlayerColor.Green)
+        {
+            GetPlayerSpriteGameObject().GetComponent<Animator>().runtimeAnimatorController =
+                GameManager.GetInstance().GetPlayersAnimator()[0];
+            trailMaterial = GameManager.GetInstance().trailGreen;
+        }
+        else
+        {
+            GetPlayerSpriteGameObject().GetComponent<Animator>().runtimeAnimatorController =
+                GameManager.GetInstance().GetPlayersAnimator()[1];
+            trailMaterial = GameManager.GetInstance().trailOrange;
+        }
+        GetPlayerController().GetTrailRenderer().material = trailMaterial;
+    }
+
+    public Material GetTrailMaterial()
+    {
+        return trailMaterial;
+    }
 
     public void DeactivateAll()
     {

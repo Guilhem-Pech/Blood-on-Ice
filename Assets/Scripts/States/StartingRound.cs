@@ -9,6 +9,7 @@ namespace States
         private static readonly int StartRound = Animator.StringToHash("StartRound");
 
         private HashSet<GameObject> _players;
+        private static readonly int YouNotDedAnymore = Animator.StringToHash("youNotDedAnymore");
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
             int layerIndex)
@@ -20,7 +21,6 @@ namespace States
             
             players[0].transform.SetPositionAndRotation(GameManager.GetInstance().playerGreenSpawnPos.transform.position, Quaternion.identity);
             players[1].transform.SetPositionAndRotation(GameManager.GetInstance().playerOrangeSpawnPos.transform.position, Quaternion.identity);
-            
             animator.SetTrigger(StartRound);
         }
 
@@ -32,6 +32,7 @@ namespace States
                 ply.GetComponent<PlayerData>().ActivateAll();
                 GameManager.GetInstance().SpawnProjector(ply);
                 ply.GetComponent<PlayerData>().GetPlayerLifeBar().SetActive(true);
+                //ply.GetComponentInChildren<Animator>().ResetTrigger(YouNotDedAnymore);
             }
         }
 

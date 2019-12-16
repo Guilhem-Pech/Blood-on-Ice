@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
-
-[ExecuteAlways]
 public class SpotlightPlayer : MonoBehaviour
 {
     // Start is called before the first frame update

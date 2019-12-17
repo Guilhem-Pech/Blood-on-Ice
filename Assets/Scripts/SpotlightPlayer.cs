@@ -2,13 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using Spotlight;
 using UnityEngine;
 public class SpotlightPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]
     private float smoothTime = 0.1F;
-    [SerializeField] [NotNull] private GameObject projectorLightRuntime;
+    [SerializeField] [NotNull] private SpotlightSystem spotlightSystem;
     [SerializeField]
     private Vector3 projectorOffset = Vector3.zero;
     private Vector2 _projectorVelocity = Vector2.zero;
@@ -21,34 +22,36 @@ public class SpotlightPlayer : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if(!spotlightSystem) return;
         Vector3 position = transform.position;
-        projectorLightRuntime.transform.position = Vector2.SmoothDamp(projectorLightRuntime.transform.position, position + projectorOffset, ref _projectorVelocity, smoothTime);
+        spotlightSystem.SetLightBasePos(Vector2.SmoothDamp(spotlightSystem.GetPostition(),
+            position + projectorOffset, ref _projectorVelocity, smoothTime));
     }
 
     public GameObject GetProjectorRuntime()
     {
-        return projectorLightRuntime;
+        return spotlightSystem.gameObject;
     }
     private void OnDisable()
     {
-        if(projectorLightRuntime != null)
-            projectorLightRuntime.SetActive(false);
+        if(spotlightSystem != null)
+            spotlightSystem.gameObject.SetActive(false);
     }
 
     private void OnEnable()
     {
-        if(projectorLightRuntime != null)
-            projectorLightRuntime.SetActive(true);
+        if(spotlightSystem != null)
+            spotlightSystem.gameObject.SetActive(true);
     }
 
     private void OnDestroy()
     {
-        if(projectorLightRuntime != null)
-            Destroy(projectorLightRuntime);
+        if(spotlightSystem != null)
+            Destroy(spotlightSystem.gameObject);
     }
 
-    public void SetProjectorRuntime(GameObject projector)
+    public void SetProjectorRuntime(SpotlightSystem projector)
     {
-        projectorLightRuntime = projector;
+        spotlightSystem = projector;
     }
 }

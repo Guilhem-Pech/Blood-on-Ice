@@ -295,8 +295,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothTime: 0.1
-  projectorLightRuntime: {fileID: 0}
-  projectorOffset: {x: 0, y: 0, z: 0}
+  spotlightSystem: {fileID: 0}
+  projectorOffset: {x: 0, y: 0.29, z: 0}
 --- !u!114 &2347178129663133180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,6 +326,8 @@ MonoBehaviour:
   playerAttackSystem: {fileID: -4779228874300833149}
   playerHealthSystem: {fileID: 4042334471189514619}
   playerSpotlightPlayer: {fileID: 2241496655630705726}
+  trailMaterial: {fileID: 0}
+  _playerColor: 0
 --- !u!1 &7008469195930362979
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Cinemachine;
+using Spotlight;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -112,7 +113,7 @@ public class GameManager : MonoBehaviour
     public void SpawnProjector(GameObject player)
     {
         GameObject projector = Instantiate(projectorPrefab);
-        player.GetComponent<SpotlightPlayer>().SetProjectorRuntime(projector);
+        player.GetComponent<SpotlightPlayer>().SetProjectorRuntime(projector.GetComponent<SpotlightSystem>());
     }
     
     private void Awake()

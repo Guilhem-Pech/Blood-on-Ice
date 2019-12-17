@@ -51,7 +51,7 @@ MonoBehaviour:
   nbRound: 2
   targetGroup: {fileID: 0}
   introPrefab: {fileID: 0}
-  projectorPrefab: {fileID: 4815047321896482984, guid: 1ff185171b36e1948ae7715609afe362,
+  projectorPrefab: {fileID: 3131947600481831274, guid: 4b9c038bca157134d826878221368557,
     type: 3}
   playerGreenSpawnPos: {fileID: 7293057676574644044, guid: 68a475d68c852434b97972317295632f,
     type: 3}

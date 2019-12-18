@@ -5,23 +5,23 @@ using UnityEngine;
 public class SkipIntro : MonoBehaviour
 {
     public GameObject Intro;
+    public GameObject CameraIntro;
+    public GameObject Eclairage;
+
+    public float introskip = 0;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
 
     void Update()
     {
-        if (Intro.activeInHierarchy == false)
+        if (Intro.activeInHierarchy == false && introskip == 0)
         {
-            if (Input.GetKeyDown("k"))
-            {
-                Intro.SetActive(true);
-            }
-        }
-
-        if (Intro.activeInHierarchy == true)
-        {
-            if (Input.GetKeyDown("l"))
-            {
-                Destroy(Intro);
-            }
+            Destroy(CameraIntro);
+            Eclairage.SetActive(true);
+            ++introskip;
         }
     }
 }

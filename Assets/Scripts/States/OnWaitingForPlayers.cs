@@ -9,6 +9,7 @@ namespace States
     {
         private Animator _animator;
         private static readonly int StartRound = Animator.StringToHash("StartRound");
+        private static readonly int IntroSkipped = Animator.StringToHash("IntroSkipped");
         private PlayerEvent _playerEvent;
         private GameObject _canvasTitle;
         private int _nbPlayer = 0;
@@ -26,7 +27,6 @@ namespace States
             AkSoundEngine.PostEvent("Play_Music_Menu_And_Cinematic", animator.gameObject);
         }
 
-       
         private void OnPlayerAdded(GameObject player)
         {
             ++_nbPlayer;
@@ -51,8 +51,18 @@ namespace States
             _canvasTitle.GetComponent<Animator>().SetInteger(NbPlayer,_nbPlayer + 1);
             if (!(_timeStart <= 0f || !_pass)) return;
             _pass = true;
-            _animator.SetTrigger(StartRound);
-           
+
+            if (GameObject.Find("Skip").GetComponent<SkipIntro>().introskip == 0)
+            {
+                _animator.SetTrigger(StartRound);
+            }
+
+            else
+            {
+                AkSoundEngine.StopAll();
+                _animator.SetTrigger(IntroSkipped);
+            }
+
         }
 
 

@@ -6,23 +6,23 @@ using UnityEngine.Serialization;
 public class SkipIntro : MonoBehaviour
 {
     [FormerlySerializedAs("Intro")] public GameObject intro;
+    [FormerlySerializedAs("CameraIntro")] public GameObject cameraIntro;
+    [FormerlySerializedAs("Eclairage")] public GameObject eclairage;
+
+    public float introskip = 0;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
 
     void Update()
     {
-        if (intro.activeInHierarchy == false)
+        if (intro.activeInHierarchy == false && introskip == 0)
         {
-            if (Input.GetKeyDown("k"))
-            {
-                intro.SetActive(true);
-            }
-        }
-
-        if (intro.activeInHierarchy == true)
-        {
-            if (Input.GetKeyDown("l"))
-            {
-                Destroy(intro);
-            }
+            Destroy(cameraIntro);
+            eclairage.SetActive(true);
+            ++introskip;
         }
     }
 }

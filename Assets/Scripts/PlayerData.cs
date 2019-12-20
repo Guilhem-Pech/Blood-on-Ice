@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public enum PlayerColor {Green,Orange}
 public class PlayerData : MonoBehaviour
@@ -11,18 +12,18 @@ public class PlayerData : MonoBehaviour
     [SerializeField] private PlayerHealthSystem playerHealthSystem;
     [SerializeField] private SpotlightPlayer playerSpotlightPlayer;
     [SerializeField] private Material trailMaterial;
-    [SerializeField] private PlayerColor _playerColor;
+    [FormerlySerializedAs("_playerColor")] [SerializeField] private PlayerColor playerColor;
     
-    private GameObject playerLifebar;
+    private GameObject _playerLifebar;
 
     public GameObject GetPlayerLifeBar()
     {
-        return playerLifebar;
+        return _playerLifebar;
     }
     
     public void SetPlayerLifeBar(GameObject lifebar)
     {
-        playerLifebar = lifebar;
+        _playerLifebar = lifebar;
     }
 
     public PlayerController GetPlayerController()
@@ -51,12 +52,12 @@ public class PlayerData : MonoBehaviour
 
     public PlayerColor GetPlayerColor()
     {
-        return _playerColor;
+        return playerColor;
     }
 
     public void SetPlayerColor(PlayerColor playerColor)
     {
-        _playerColor = playerColor;
+        this.playerColor = playerColor;
         if (playerColor == PlayerColor.Green)
         {
             GetPlayerSpriteGameObject().GetComponent<Animator>().runtimeAnimatorController =

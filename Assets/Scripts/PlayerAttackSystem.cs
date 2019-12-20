@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(PlayerHealthSystem))]
 public class PlayerAttackSystem : MonoBehaviour
@@ -18,35 +19,37 @@ public class PlayerAttackSystem : MonoBehaviour
     [Tooltip("Radius of the knockback attack.")]
     private float radius = 1;
 
+    [FormerlySerializedAs("AOECooldown")]
     [SerializeField]
     [Range(1, 5)]
     [Tooltip("Radius of the knockback attack.")]
-    private float AOECooldown = 1;
-    private float AOECountdown;
+    private float aoeCooldown = 1;
+    private float _aoeCountdown;
     
 
+    [FormerlySerializedAs("DashCooldown")]
     [SerializeField] [Range(1, 5)]
     [Tooltip("Radius of the knockback attack.")]
-    private float DashCooldown = 1;
-    private float DashCountdown;
+    private float dashCooldown = 1;
+    private float _dashCountdown;
 
     private GameObject _playerToPush;
     private Vector2 _directionToPush;
-    private bool pushed;
-    private float actualVelocity;
+    private bool _pushed;
+    private float _actualVelocity;
 
-    private Animator animator;
+    private Animator _animator;
 
     void Awake()
     {
-        this.animator = this.GetComponentInChildren<Animator>();
-        DashCountdown = DashCooldown;
-        AOECountdown = AOECooldown;
+        this._animator = this.GetComponentInChildren<Animator>();
+        _dashCountdown = dashCooldown;
+        _aoeCountdown = aoeCooldown;
     }
 
     private void OnEnable()
     {
-        this.animator = this.GetComponentInChildren<Animator>();
+        this._animator = this.GetComponentInChildren<Animator>();
     }
 
     private Animator GetAnimator()
@@ -58,28 +61,28 @@ public class PlayerAttackSystem : MonoBehaviour
     /// </summary>
     public void FrontAttack()
     {
-        if (DashCountdown > 0)
+        if (_dashCountdown > 0)
         {
             return;
         }
-        animator.SetTrigger("HighAttack");
+        _animator.SetTrigger("HighAttack");
         AkSoundEngine.PostEvent("Dash_Attack", this.gameObject);
         AkSoundEngine.PostEvent("Attack_High", this.gameObject);
         AkSoundEngine.PostEvent("Voice_Attack", this.gameObject);
         this.GetComponent<Rigidbody2D>().AddForce((this.GetComponent<Rigidbody2D>().velocity.normalized)*5, ForceMode2D.Impulse);
-        DashCountdown = DashCooldown;
+        _dashCountdown = dashCooldown;
     }
 
     /// <summary>
     /// Trigger the knockback of the player
     /// </summary>
-    public void AOEAttack()
+    public void AoeAttack()
     {
-        if(AOECountdown > 0)
+        if(_aoeCountdown > 0)
         {
             return;
         }
-        animator.SetTrigger("LowAttack");
+        _animator.SetTrigger("LowAttack");
         AkSoundEngine.PostEvent("Attack_Low", this.gameObject);
         AkSoundEngine.PostEvent("Voice_Attack", this.gameObject);
         int layerMask = 1 << 9;
@@ -101,11 +104,11 @@ public class PlayerAttackSystem : MonoBehaviour
             direction = direction.normalized;
             _directionToPush = direction;
             _playerToPush.GetComponent<Rigidbody2D>().AddForce(forceOfKnockback * 0.03f * _directionToPush, ForceMode2D.Impulse);
-            _playerToPush.GetComponent<PlayerHealthSystem>().takeDamage(13);
+            _playerToPush.GetComponent<PlayerHealthSystem>().TakeDamage(13);
             AkSoundEngine.PostEvent("Punchs", this.gameObject);
-            pushed = true;
+            _pushed = true;
         }
-        AOECountdown = AOECooldown;
+        _aoeCountdown = aoeCooldown;
     }
 
 
@@ -124,10 +127,10 @@ public class PlayerAttackSystem : MonoBehaviour
         AkSoundEngine.PostEvent("Players_Collision", this.gameObject);
         try
         {
-            if (!(this.actualVelocity > velocityTrigger)) return;
+            if (!(this._actualVelocity > velocityTrigger)) return;
             if (collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>() != null)
             {
-                collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>().takeDamage(7);
+                collision.collider.gameObject.GetComponentInParent<PlayerHealthSystem>().TakeDamage(7);
                 StartCoroutine(StartVibrate(0.05f));
                 AkSoundEngine.PostEvent("Fit_Kick_Choc", this.gameObject);
             }
@@ -138,18 +141,18 @@ public class PlayerAttackSystem : MonoBehaviour
 
     void FixedUpdate()
     {
-        actualVelocity = this.GetComponent<Rigidbody2D>().velocity.magnitude;
+        _actualVelocity = this.GetComponent<Rigidbody2D>().velocity.magnitude;
     }
 
     void Update()
     {
-        if(AOECountdown > 0)
+        if(_aoeCountdown > 0)
         {
-            AOECountdown -= Time.deltaTime;
+            _aoeCountdown -= Time.deltaTime;
         }
-        if (DashCountdown > 0)
+        if (_dashCountdown > 0)
         {
-            DashCountdown -= Time.deltaTime;
+            _dashCountdown -= Time.deltaTime;
         }
     }
 }

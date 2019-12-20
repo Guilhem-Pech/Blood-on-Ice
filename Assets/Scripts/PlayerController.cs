@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
     
     private bool _facingRight = false;
     private Vector2 _inputDir;
-    [SerializeField]
-    private Rigidbody2D _rigidbody2D;
+    [FormerlySerializedAs("_rigidbody2D")] [SerializeField]
+    private Rigidbody2D rigidbody2D;
     private PlayerAttackSystem _attackSystem;
     private PlayerInput _playerInput;
     [SerializeField]
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         spriteRenderer.enabled = true;
         gameObject.layer = 9;
         
-        _rigidbody2D = GetComponent<Rigidbody2D>();
+        rigidbody2D = GetComponent<Rigidbody2D>();
         _attackSystem = GetComponent<PlayerAttackSystem>();
         _playerInput = GetComponent<PlayerInput>();
     }
@@ -97,15 +97,15 @@ public class PlayerController : MonoBehaviour
 
         _trailRuntime.transform.SetPositionAndRotation(position + trailOffset,transform.rotation);
         
-        _animator.SetBool(IsWalking, _rigidbody2D.velocity.sqrMagnitude > 0.5f);
+        _animator.SetBool(IsWalking, rigidbody2D.velocity.sqrMagnitude > 0.5f);
     }
 
     private void FixedUpdate()
     {
-        _rigidbody2D.AddForce(_inputDir * force);
-        if(_rigidbody2D.velocity.x > 0.1 && !_facingRight)
+        rigidbody2D.AddForce(_inputDir * force);
+        if(rigidbody2D.velocity.x > 0.1 && !_facingRight)
             Flip();
-        else if(_rigidbody2D.velocity.x  < - 0.1 && _facingRight)
+        else if(rigidbody2D.velocity.x  < - 0.1 && _facingRight)
             Flip();
         
     }
@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
     public void OnAttack1(InputAction.CallbackContext context)
     {
         if(context.started)
-            _attackSystem.AOEAttack();
+            _attackSystem.AoeAttack();
     }
 
     public void OnAttack2(InputAction.CallbackContext context)

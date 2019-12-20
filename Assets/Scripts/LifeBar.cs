@@ -8,69 +8,69 @@ public class LifeBar : MonoBehaviour
 
     public float lifePercent;
     public int roundCounter;
-    private float m_lifePercent;
-    private int m_roundCounter;
-    private float dmgPercent;
-    private float dmgTimer;
-    private Image hpBackground;
-    private Image dmgImg;
-    private Image dmgMask;
-    private Image lifeImg;
-    private Image lifeMask;
-    private Image snow1;
-    private Image snow2;
+    private float _mLifePercent;
+    private int _mRoundCounter;
+    private float _dmgPercent;
+    private float _dmgTimer;
+    private Image _hpBackground;
+    private Image _dmgImg;
+    private Image _dmgMask;
+    private Image _lifeImg;
+    private Image _lifeMask;
+    private Image _snow1;
+    private Image _snow2;
 
     void Start()
     {
         
-        hpBackground = transform.Find("BackCritical").GetComponent<Image>();
-        dmgImg = transform.Find("DmgBufferMask").Find("DmgBuffer").GetComponent<Image>();
-        dmgMask = transform.Find("DmgBufferMask").GetComponent<Image>();
-        lifeImg = transform.Find("LifeBarMask").Find("LifeBarColor").GetComponent<Image>();
-        lifeMask = transform.Find("LifeBarMask").GetComponent<Image>();
-        snow1 = transform.Find("SnowBack1").Find("SnowFlake1").GetComponent<Image>();
-        snow2 = transform.Find("SnowBack2").Find("SnowFlake2").GetComponent<Image>();
-        dmgTimer = 0;
+        _hpBackground = transform.Find("BackCritical").GetComponent<Image>();
+        _dmgImg = transform.Find("DmgBufferMask").Find("DmgBuffer").GetComponent<Image>();
+        _dmgMask = transform.Find("DmgBufferMask").GetComponent<Image>();
+        _lifeImg = transform.Find("LifeBarMask").Find("LifeBarColor").GetComponent<Image>();
+        _lifeMask = transform.Find("LifeBarMask").GetComponent<Image>();
+        _snow1 = transform.Find("SnowBack1").Find("SnowFlake1").GetComponent<Image>();
+        _snow2 = transform.Find("SnowBack2").Find("SnowFlake2").GetComponent<Image>();
+        _dmgTimer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (lifePercent != m_lifePercent)//&& OnVariableChange != null)
+        if (lifePercent != _mLifePercent)//&& OnVariableChange != null)
         {
-            dmgPercent = m_lifePercent;
+            _dmgPercent = _mLifePercent;
             LifeUpdate();
-            dmgTimer = 1;
-            m_lifePercent = lifePercent;
+            _dmgTimer = 1;
+            _mLifePercent = lifePercent;
             
         }
 
-        if (roundCounter != m_roundCounter)
+        if (roundCounter != _mRoundCounter)
         {
             RoundUpdate();
-            m_roundCounter = roundCounter;
+            _mRoundCounter = roundCounter;
         }
 
-        if (dmgPercent > lifePercent)
+        if (_dmgPercent > lifePercent)
         {
-            if (dmgTimer <= 0)
+            if (_dmgTimer <= 0)
             {
-                dmgPercent -= Time.deltaTime/2;
+                _dmgPercent -= Time.deltaTime/2;
                 LifeUpdate();
             } else
             {
-                dmgTimer -= Time.deltaTime*2;
+                _dmgTimer -= Time.deltaTime*2;
             }
         }
     }
 
     void LifeUpdate()
     {
-        hpBackground.color = new Color(hpBackground.color.r, hpBackground.color.g, hpBackground.color.b, (1 - lifePercent)/2);
-        lifeImg.GetComponent<RectTransform>().anchoredPosition = new Vector3((1 - lifePercent) * -1000, -180, 0);
-        lifeMask.GetComponent<RectTransform>().anchoredPosition = new Vector3((1 - lifePercent) * 1000, -200, 0);
-        dmgImg.GetComponent<RectTransform>().anchoredPosition = new Vector3((1 - dmgPercent) * -1000, -180, 0);
-        dmgMask.GetComponent<RectTransform>().anchoredPosition = new Vector3((1 - dmgPercent) * 1000, -200, 0);
+        _hpBackground.color = new Color(_hpBackground.color.r, _hpBackground.color.g, _hpBackground.color.b, (1 - lifePercent)/2);
+        _lifeImg.GetComponent<RectTransform>().anchoredPosition = new Vector3((1 - lifePercent) * -1000, -180, 0);
+        _lifeMask.GetComponent<RectTransform>().anchoredPosition = new Vector3((1 - lifePercent) * 1000, -200, 0);
+        _dmgImg.GetComponent<RectTransform>().anchoredPosition = new Vector3((1 - _dmgPercent) * -1000, -180, 0);
+        _dmgMask.GetComponent<RectTransform>().anchoredPosition = new Vector3((1 - _dmgPercent) * 1000, -200, 0);
     }
 
 
@@ -78,16 +78,16 @@ public class LifeBar : MonoBehaviour
     {
         if (roundCounter >= 1)
         {
-            snow1.color = new Color(lifeImg.color.r, lifeImg.color.g, lifeImg.color.b, 1f);
+            _snow1.color = new Color(_lifeImg.color.r, _lifeImg.color.g, _lifeImg.color.b, 1f);
         }
         if (roundCounter >= 2)
         {
-            snow2.color = new Color(lifeImg.color.r, lifeImg.color.g, lifeImg.color.b, 1f);
+            _snow2.color = new Color(_lifeImg.color.r, _lifeImg.color.g, _lifeImg.color.b, 1f);
         }
         if (roundCounter == 0)
         {
-            snow1.color = new Color(lifeImg.color.r, lifeImg.color.g, lifeImg.color.b, 0);
-            snow2.color = new Color(lifeImg.color.r, lifeImg.color.g, lifeImg.color.b, 0);
+            _snow1.color = new Color(_lifeImg.color.r, _lifeImg.color.g, _lifeImg.color.b, 0);
+            _snow2.color = new Color(_lifeImg.color.r, _lifeImg.color.g, _lifeImg.color.b, 0);
         }
     }
 }

@@ -6,16 +6,16 @@ public class ParticlesOnEvent : MonoBehaviour
 {
     
     [SerializeField] private GameObject particulesPrefab;
-    private ParticleSystem particules;
+    private ParticleSystem _particules;
 
     void Awake()
     {
-        particules = particulesPrefab.GetComponent<ParticleSystem>();
+        _particules = particulesPrefab.GetComponent<ParticleSystem>();
     }
 
     public void OnEvent()
     {
-        particules.Play();
+        _particules.Play();
         //Son
     }
 }

@@ -7,17 +7,17 @@ using Cinemachine;
 public class CameraManager : MonoBehaviour
 {
 
-    public static CameraManager Instance;
+    public static CameraManager instance;
     public CinemachineVirtualCamera vmCam;
 
-    private CinemachineBasicMultiChannelPerlin noiseSettings;
+    private CinemachineBasicMultiChannelPerlin _noiseSettings;
 
     // Start is called before the first frame update
     void Awake()
     {
-        if (!Instance)
+        if (!instance)
         {
-            Instance = this;
+            instance = this;
         }
         else
         {
@@ -27,13 +27,13 @@ public class CameraManager : MonoBehaviour
 
     private void Start()
     {
-        noiseSettings = vmCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        _noiseSettings = vmCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
     }
 
     public void Shake(float amplitutde, float frequency, float timeInSeconds)
     {
-        noiseSettings.m_AmplitudeGain = amplitutde;
-        noiseSettings.m_FrequencyGain = frequency;
+        _noiseSettings.m_AmplitudeGain = amplitutde;
+        _noiseSettings.m_FrequencyGain = frequency;
         StartCoroutine(StartScreenShake(timeInSeconds));
     }
 
@@ -46,8 +46,8 @@ public class CameraManager : MonoBehaviour
     IEnumerator StartScreenShake(float timeInSeconds)
     {
         yield return new WaitForSeconds(timeInSeconds);
-        noiseSettings.m_AmplitudeGain = 0;
-        noiseSettings.m_FrequencyGain = 0;
+        _noiseSettings.m_AmplitudeGain = 0;
+        _noiseSettings.m_FrequencyGain = 0;
     }
 
     IEnumerator StartVibrateController(float timeInSeconds)

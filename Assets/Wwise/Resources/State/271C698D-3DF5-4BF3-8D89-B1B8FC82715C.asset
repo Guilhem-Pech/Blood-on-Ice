@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9e98f99ac81a3498a3709e68a37296, type: 3}
+  m_Name: 271C698D-3DF5-4BF3-8D89-B1B8FC82715C
+  m_EditorClassIdentifier: 
+  objectName: Fire_Combat
+  id: 948314252
+  guid: 271C698D-3DF5-4BF3-8D89-B1B8FC82715C
+  WwiseStateGroupReference: {fileID: 11400000, guid: 85edb795f1d961b4b94cda7d72d42e6d,
+    type: 2}

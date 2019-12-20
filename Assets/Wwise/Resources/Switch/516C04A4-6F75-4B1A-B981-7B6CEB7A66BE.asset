@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4890ee65f9e811f4da7b86ecc1a0130e, type: 3}
+  m_Name: 516C04A4-6F75-4B1A-B981-7B6CEB7A66BE
+  m_EditorClassIdentifier: 
+  objectName: Start_Combat
+  id: 1658298262
+  guid: 516C04A4-6F75-4B1A-B981-7B6CEB7A66BE
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 4d95837c91700f3469936e2950cbcde9,
+    type: 2}

@@ -1,26 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class SkipIntro : MonoBehaviour
 {
-    public GameObject Intro;
+    [FormerlySerializedAs("Intro")] public GameObject intro;
 
     void Update()
     {
-        if (Intro.activeInHierarchy == false)
+        if (intro.activeInHierarchy == false)
         {
             if (Input.GetKeyDown("k"))
             {
-                Intro.SetActive(true);
+                intro.SetActive(true);
             }
         }
 
-        if (Intro.activeInHierarchy == true)
+        if (intro.activeInHierarchy == true)
         {
             if (Input.GetKeyDown("l"))
             {
-                Destroy(Intro);
+                Destroy(intro);
             }
         }
     }

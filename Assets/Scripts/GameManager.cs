@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] lifeBars;
     public GameObject canvasTitle;
     public GameObject victoryScreen;
-    private UnityEvent EndRound = new UnityEvent();
+    private UnityEvent _endRound = new UnityEvent();
     public Material trailGreen;
     public Material trailOrange;
     
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
 
     public UnityEvent OnEndingRoundEvent()
     {
-        return EndRound;
+        return _endRound;
     }
     
     

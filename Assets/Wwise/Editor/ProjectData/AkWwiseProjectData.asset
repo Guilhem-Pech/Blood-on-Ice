@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 74b5c4dfc1992341b7cc0ea4531dff80
     GuidInternal: 
-    m_lastTime: -8586251932750825946
+    m_lastTime: -8586250769284402551
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
@@ -689,6 +689,8 @@ MonoBehaviour:
   - /Session Wwise - Nano Projet 1
   - /Session Wwise - Nano Projet 1/Events
   - /Session Wwise - Nano Projet 1/Events/Default Work Unit
-  - /Session Wwise - Nano Projet 1/Events/Default Work Unit/Musics
+  - /Session Wwise - Nano Projet 1/Switches
+  - /Session Wwise - Nano Projet 1/Switches/Default Work Unit
+  - /Session Wwise - Nano Projet 1/Switches/Default Work Unit/Switch_Music
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

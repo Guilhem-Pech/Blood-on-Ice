@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class PlayerHealthSystem : MonoBehaviour
 {
-    private bool dead;
+    private bool _dead;
     /// <summary>
     /// The player current amount of health
     /// </summary>
@@ -26,8 +26,8 @@ public class PlayerHealthSystem : MonoBehaviour
     private void OnEnable()
     {
         lifeBar = GetComponent<PlayerData>().GetPlayerLifeBar().GetComponent<LifeBar>();
-        currentHealth = getMaxHealth();
-        dead = false;
+        currentHealth = GetMaxHealth();
+        _dead = false;
         lifeBar.lifePercent = 1.0f;
     }
 
@@ -35,7 +35,7 @@ public class PlayerHealthSystem : MonoBehaviour
     /// Returns the current health of a player
     /// </summary>
     /// <returns>The current health of a player</returns>
-    public int getCurrentHealth()
+    public int GetCurrentHealth()
     {
         return currentHealth;
     }
@@ -44,7 +44,7 @@ public class PlayerHealthSystem : MonoBehaviour
     /// Returns the maximum health of a player
     /// </summary>
     /// <returns>The maximum health of a player</returns>
-    public int getMaxHealth()
+    public int GetMaxHealth()
     {
         return maxHealth;
     }
@@ -53,7 +53,7 @@ public class PlayerHealthSystem : MonoBehaviour
     /// Decreases a player's health by [damage]
     /// </summary>
     /// <param name="damage">The amount of health to remove of the player</param>
-    public void takeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         if (Random.Range(0, 3) > 0)
         {
@@ -66,7 +66,7 @@ public class PlayerHealthSystem : MonoBehaviour
         lifeBar.lifePercent = currentHealth / (float) maxHealth;
         if(currentHealth <= 0)
         {
-            this.getKilled();
+            this.GetKilled();
             return;
         }
         GetComponentInChildren<Animator>().SetTrigger("takeDamage");
@@ -76,7 +76,7 @@ public class PlayerHealthSystem : MonoBehaviour
     /// Kills a player
     /// </summary>
     /// <returns>The overkill amount</returns>
-    public int getKilled()
+    public int GetKilled()
     {
         //Kill the player here
         GetComponentInChildren<Animator>().SetTrigger("youDie");
@@ -90,9 +90,9 @@ public class PlayerHealthSystem : MonoBehaviour
     {
         if (GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("PlayerOrange_Death"))
         {
-            this.dead = true;
+            this._dead = true;
         }
-        if (dead)
+        if (_dead)
         {
             if (GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("PlayerOrange_Idle"))
             {

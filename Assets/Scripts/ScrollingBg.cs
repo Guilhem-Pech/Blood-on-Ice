@@ -5,41 +5,41 @@ using UnityEngine;
 public class ScrollingBg : MonoBehaviour
 {
     public float backgroundSize;
-    private Transform cameraTransform;
-    private Transform[] layers;
-    private float viewZone =10;
-    private int leftIndex;
-    private int rightIndex;
+    private Transform _cameraTransform;
+    private Transform[] _layers;
+    private float _viewZone =10;
+    private int _leftIndex;
+    private int _rightIndex;
 
     private void Start()
     {
-        cameraTransform = Camera.main.transform;
-        layers = new Transform[transform.childCount];
+        _cameraTransform = Camera.main.transform;
+        _layers = new Transform[transform.childCount];
         for (int i = 0; i < transform.childCount; i++)
-            layers[i] = transform.GetChild(i);
-        leftIndex = 0;
-        rightIndex = layers.Length - 1;
+            _layers[i] = transform.GetChild(i);
+        _leftIndex = 0;
+        _rightIndex = _layers.Length - 1;
 
     }
 
     private void ScrollLeft()
     {
-        int LastRight = rightIndex;
-        layers[rightIndex].position = Vector3.right * (layers[leftIndex].position.x - backgroundSize);
-        leftIndex = rightIndex;
-        rightIndex--;
-        if (rightIndex < 0)
-            rightIndex = layers.Length - 1;
+        int LastRight = _rightIndex;
+        _layers[_rightIndex].position = Vector3.right * (_layers[_leftIndex].position.x - backgroundSize);
+        _leftIndex = _rightIndex;
+        _rightIndex--;
+        if (_rightIndex < 0)
+            _rightIndex = _layers.Length - 1;
     }
 
     private void ScrollRight()
     {
-        int LastLeft = leftIndex;
-        layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize);
-        rightIndex = leftIndex;
-        leftIndex++;
-        if (leftIndex == layers.Length)
-            leftIndex = 0;
+        int LastLeft = _leftIndex;
+        _layers[_leftIndex].position = Vector3.right * (_layers[_rightIndex].position.x + backgroundSize);
+        _rightIndex = _leftIndex;
+        _leftIndex++;
+        if (_leftIndex == _layers.Length)
+            _leftIndex = 0;
     }
 
 }

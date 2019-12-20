@@ -11,7 +11,7 @@ public class FreeformLight : MonoBehaviour
     [SerializeField]
     private Transform anchor2; 
             
-    private Vector3[] shape;
+    private Vector3[] _shape;
 
     private void Start()
     {
@@ -36,8 +36,8 @@ public class FreeformLight : MonoBehaviour
 
     private void Update()
     {
-        shape = _light2D.shapePath;
-        shape[6] = transform.InverseTransformPoint(anchor1.position);
-        shape[7] = transform.InverseTransformPoint(anchor2.position);
+        _shape = _light2D.shapePath;
+        _shape[6] = transform.InverseTransformPoint(anchor1.position);
+        _shape[7] = transform.InverseTransformPoint(anchor2.position);
     }
 }

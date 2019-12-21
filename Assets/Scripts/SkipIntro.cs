@@ -9,20 +9,18 @@ public class SkipIntro : MonoBehaviour
     [FormerlySerializedAs("CameraIntro")] public GameObject cameraIntro;
     [FormerlySerializedAs("Eclairage")] public GameObject eclairage;
 
-    public float introskip = 0;
+    public int introskip = 0;
 
-    void Awake()
+    private void Awake()
     {
         DontDestroyOnLoad(this);
     }
 
-    void Update()
+    private void Update()
     {
-        if (intro.activeInHierarchy == false && introskip == 0)
-        {
-            Destroy(cameraIntro);
-            eclairage.SetActive(true);
-            ++introskip;
-        }
+        if (intro.activeInHierarchy != false || introskip != 0) return;
+        Destroy(cameraIntro);
+        eclairage.SetActive(true);
+        ++introskip;
     }
 }
